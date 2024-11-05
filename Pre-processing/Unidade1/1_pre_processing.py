@@ -1,5 +1,3 @@
-from pandas.conftest import axis_1
-
 from src.utils import load_volunteer_dataset
 
 volunteer = load_volunteer_dataset()
@@ -11,15 +9,14 @@ print(volunteer.shape)
 print(volunteer.info())
 
 #mostre quantos elementos do dataset estão faltando na coluna
-print(volunteer['locality'].isnull(.sum()))
+print(volunteer['locality'].isnull().sum())
 
 # Exclua as colunas Latitude e Longitude de volunteer
 volunteer_cols = volunteer.drop(['Longitude','Latitude'],axis=1)
 
 # Exclua as linhas com valores null da coluna category_desc de volunteer_cols
-volunteer_subset = volunteer_cols.dropna(subset)
+volunteer_subset = volunteer_cols.dropna(subset='category_desc')
 
 # Print o shape do subset
-___
-
+print(volunteer_subset.shape)
 
