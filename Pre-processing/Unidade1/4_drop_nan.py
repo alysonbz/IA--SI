@@ -7,6 +7,7 @@ volunteer = load_volunteer_dataset()
 
 print("DIMENSÃO: ", volunteer.shape)
 
+print("\nSOMA NaN COLUNAS")
 print(volunteer.isnull().sum())
 
 print("\nEXCLUINDO COLUNAS")
