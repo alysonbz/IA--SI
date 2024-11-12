@@ -1,4 +1,5 @@
 from pandas.conftest import axis_1
+from sklearn.model_selection import train_test_split
 
 from src.utils import load_volunteer_dataset
 _____
@@ -18,10 +19,10 @@ print(volunteer['category_desc'].value_counts(),'\n','\n')
 X = volunteer.drop(subset=['category_desc'])
 
 # Crie um dataframe de labels com a coluna category_desc
-y = __[['__']]
+y = volunteer[['category_desc']]
 
 # # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = __(__, __, stratify=__, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(__, __, stratify=__, random_state=42)
 
 # mostre o balanceamento das classes em 'category_desc' novamente
 ___
