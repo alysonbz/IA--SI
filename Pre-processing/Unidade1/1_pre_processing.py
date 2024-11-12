@@ -12,10 +12,10 @@ print(volunteer.info)
 print(volunteer['locality'].isnull().sum())
 
 # Exclua as colunas Latitude e Longitude de volunteer
-volunteer_cols = print(volunteer.drop(["Latitude", "Longitude"], axis=1))
+volunteer_cols = volunteer.drop(["Latitude", "Longitude"], axis=1)
 
 # Exclua as linhas com valores null da coluna category_desc de volunteer_cols
-volunteer_subset = volunteer_cols.dropna(['category_desc'])
+volunteer_subset = volunteer_cols.dropna(subset=['category_desc'])
 
 # Print o shape do subset
 print(volunteer_subset.shape)
