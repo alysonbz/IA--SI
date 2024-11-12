@@ -1,10 +1,12 @@
 from src.utils import load_volunteer_dataset
-_____
+
+def train_test_solit(X,y,test_size)
+    X_train ,y_train, X_test, y_test = None
 
 volunteer = load_volunteer_dataset()
 
 # Exclua as colunas Latitude e Longitude de volunteer
-volunteer_new = __
+volunteer_new = volunteer.drop([])
 
 # Exclua as linhas com valores null da coluna category_desc de volunteer_new
 volunteer = ___
