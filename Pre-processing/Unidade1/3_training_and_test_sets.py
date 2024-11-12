@@ -4,7 +4,7 @@ _____
 volunteer = load_volunteer_dataset()
 
 # Exclua as colunas Latitude e Longitude de volunteer
-volunteer_new = __
+volunteer_new = volunteer.drop(['Latitude','Longitude'], axis=1)
 
 # Exclua as linhas com valores null da coluna category_desc de volunteer_new
 volunteer = ___
