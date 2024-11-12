@@ -1,5 +1,7 @@
 from src.utils import load_volunteer_dataset
+hiking = pd.read_json("hiking.json")
 
+print (hiking.head())
 volunteer = load_volunteer_dataset()
 
 # Mostre a dimensão do dataset volunteer
