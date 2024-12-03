@@ -12,9 +12,9 @@ y = churn_df["churn"].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
 # Create neighbors
-neighbors = np.arange(1, 13)
 train_accuracies = {}
 test_accuracies = {}
+neighbors = np.arange(1, 12)
 
 for neighbor in neighbors:
     # Set up a KNN Classifier
@@ -27,22 +27,13 @@ for neighbor in neighbors:
     train_accuracies[neighbor] = knn.score(X_train, y_train)
     test_accuracies[neighbor] = knn.score(X_test, y_test)
 
-print("acuracy on train: ",train_accuracies, '\n',"acuracy on test: ", test_accuracies)
+print("Acuracy on Train: ",train_accuracies, '\n',"Acuracy on Test: ", test_accuracies)
 
-
-plt.figure(figsize=(8, 6))
 # Add a title
 plt.title("KNN: Varying Number of Neighbors")
-
-# Plot training accuracies
-plt.plot(neighbor, train_accuracies.values(), label="Training Accuracy")
-
-# Plot test accuracies
-plt.plot(neighbor, test_accuracies.values, label="Test Accuracy")
-
+plt.plot(neighbors, train_accuracies.values(), label="Training Accuracy")
+plt.plot(neighbors, test_accuracies.values(), label="Test Accuracy")
 plt.legend()
 plt.xlabel("Number of Neighbors")
 plt.ylabel("Accuracy")
-
-# Display the plot
 plt.show()
