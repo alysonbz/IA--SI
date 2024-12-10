@@ -52,19 +52,19 @@ for lis in lista:
     else:
         teste.append(lis)
 
-# Função para calcular a distância euclidiana
-def dist_euclidiana(v1, v2):
+# Função para calcular a distância manhattan
+def dist_manhattan(v1, v2):
     dim, soma = len(v1), 0
-    for i in range(dim - 1):  # Ignorar o último elemento (rótulo)
-        soma += math.pow(v1[i] - v2[i], 2)
-    return math.sqrt(soma)
+    for i in range(dim - 1):
+        soma += abs(v1[i] - v2[i])
+    return soma
 
 # Função KNN
 def knn(treinamento, nova_amostra, K):
     dists, len_treino = {}, len(treinamento)
 
     for i in range(len_treino):
-        d = dist_euclidiana(treinamento[i], nova_amostra)
+        d = dist_manhattan(treinamento[i], nova_amostra)
         dists[i] = d
 
     k_vizinhos = sorted(dists, key=dists.get)[:K]
