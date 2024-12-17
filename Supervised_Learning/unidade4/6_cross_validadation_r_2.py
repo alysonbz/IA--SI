@@ -1,7 +1,7 @@
 from src.utils import load_sales_clean_dataset
 from sklearn.linear_model import LinearRegression
 # Import the necessary modules
-from ____.____ import ____, ____
+from sklearn.linear_model import linearRegre , ____
 
 sales_df = load_sales_clean_dataset()
 # Create X and y arrays
