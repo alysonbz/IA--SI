@@ -6,14 +6,14 @@ wine = load_wine_dataset()
 
 pd.set_option('display.max_columns', None)
 
-#print as caractéristicas estatísticas do dataset wine
-print(wine.__)
+print(wine.describe())
 
-## Aplique a função de nomarlização logarítmica na coluna Proline
-wine[__] = np.__(___)
+# # Apply the log normalization function to the Proline column
+wine['Proline_log'] = np.log(wine['Proline'])
 #
-# Print a variância da coluna proline
-print(___)
 
-# print a variância da coluna proline normalizada
+# Print out the variance of the  total Proline column
+print(np.var(wine['Proline']))
+
+# # Check the variance of the normalized  total sulfur dioxide column
 print(np.var(wine['Proline_log']))

@@ -2,7 +2,6 @@ import numpy as np
 from src.utils import load_sales_clean_dataset
 from sklearn.linear_model import LinearRegression
 
-
 class KFold:
 
    def __init__(self,n_splits):
