@@ -177,10 +177,21 @@ RSS, MSE, RMSE e R_squared para esta regressão baseada somente no atributo mais
 
 ```questao7.py```
 
-Utilizando kfold e cross-validation faça uma regressão linear clássica, com ridge e lasso. Utilize uma implementação manual do kfold e cross-validation.
-calule as métricas RSS, MSE, RMSE e R_squared que também devem ser implementadas manualmente. Nesse caso, gere resultado de métricas para os 3 tipos de regressao linear e informe
-o caso de melhor desempenho.
+Implemente um modelo de regressão linear para resolver o problema a seguir. Siga os passos abaixo:  
 
+**Divisão de Dados:** Implemente manualmente o método *k-fold* e a validação cruzada (*cross-validation*).  
+
+**Modelos a Serem Testados:** Realize a regressão linear clássica, Ridge e Lasso.  
+
+**Métricas de Avaliação:** Implemente manualmente as seguintes métricas e calcule-as para cada modelo:  
+   - RSS (*Residual Sum of Squares*);  
+   - MSE (*Mean Squared Error*);  
+   - RMSE (*Root Mean Squared Error*);  
+   - R^2 (*Coeficiente de Determinação*).  
+
+**Análise de Desempenho:** Compare os resultados das métricas para os três tipos de regressão linear e identifique qual deles apresentou o melhor desempenho.  
+
+Obs.: Lembre de documentar as etapas e justifique a escolha do modelo com melhor desempenho.
 
 
 ### Observações para o Relatório - PRAZO PARA ENVIO E APRESENTAÇÃO: 14/01/2025
