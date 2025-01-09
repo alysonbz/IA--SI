@@ -19,7 +19,7 @@ regressão: https://www.kaggle.com/datasets/abrambeyer/openintro-possum
 
 Ingrid Melo e Helen Brandão: 
 
-classificação: https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset
+classificação: https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset
 
 regressão: https://www.kaggle.com/datasets/mirichoi0218/insurance
 
