@@ -7,7 +7,7 @@ sales_df = load_sales_clean_dataset()
 X = sales_df['radio'].values
 
 # Create y from the sales column's values
-y = C
+y = sales_df['sales'].values
 
 # Reshape X
 X = X.reshape(-1, 1)
