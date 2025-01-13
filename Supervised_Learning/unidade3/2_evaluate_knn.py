@@ -1,23 +1,20 @@
 from sklearn.neighbors import KNeighborsClassifier
+from src.utils import load_churn_dataset
+
+# Import the module
+from sklearn.model_selection import  train_test_split
 
 churn_df = load_churn_dataset()
-
-# Create arrays for the features and the target variable
+X = churn_df[["account_length",  "total_day_charge" , "total_eve_charge",  "total_night_charge","total_intl_charge","number_customer_service_calls"]].values
 y = churn_df["churn"].values
-X = churn_df[["account_length", "number_customer_service_calls"]].values
 
-# Create a KNN classifier with 6 neighbors
-knn = KNeighborsClassifier(n_neighbors=6)
+# Split into training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
-# Fit the classifier to the data
-knn.fit(X, y)
+knn = KNeighborsClassifier(n_neighbors=5)
 
-X_test = np.array([[30.0, 17.5],
-                  [107.0, 24.1],
-                  [213.0, 10.9]])
+# Fit the classifier to the training data
+knn.fit(X_train, y_train)
 
-# Predict the labels for the X_teste
-y_pred = knn.predict(X_test)
-
-# Print the predictions for X_test
-print("Predictions: {}".format(y_pred))
+# Print the accuracy
+print(knn.score(X_test, y_test))
