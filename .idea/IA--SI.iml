@@ -5,7 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/IA_GABRIEL" />
       <excludeFolder url="file://$MODULE_DIR$/gabriel" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
