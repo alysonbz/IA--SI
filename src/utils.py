@@ -5,7 +5,6 @@ from sklearn.linear_model import LinearRegression , LogisticRegression
 from sklearn.model_selection import train_test_split
 
 
-
 def load_volunteer_dataset():
     return pd.read_csv('../dataset/opportunities.csv')
 
