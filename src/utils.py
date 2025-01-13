@@ -1,9 +1,5 @@
 import pandas as pd
-import numpy as np
-from sklearn.preprocessing import LabelEncoder
-from sklearn.linear_model import LinearRegression , LogisticRegression
-from sklearn.model_selection import train_test_split
-
+import sklearn
 
 
 def load_volunteer_dataset():

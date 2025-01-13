@@ -33,10 +33,10 @@ sales_df = load_sales_clean_dataset()
 X = sales_df["tv"].values.reshape(-1, 1)
 y = sales_df["sales"].values
 
-# Create a KFold object
+# Create a KFold object
 kf = KFold(n_splits=6)
 
-reg = LinearRegression()
+reg=LinearRegression()
 
 # Compute 6-fold cross-validation scores
 cv_scores = kf.cross_val_score(reg,X, y)
@@ -49,4 +49,3 @@ print(np.mean(cv_scores))
 
 # Print the standard deviation
 print(np.std(cv_scores))
-
