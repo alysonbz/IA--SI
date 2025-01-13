@@ -15,7 +15,7 @@ sales_columns = X.columns
 lasso = Lasso(alpha=0.3)
 
 # Compute and print the coefficients
-lasso_coef = lasso.fit(X,y).coef_
+lasso_coef = lasso.fit(X, y).coef_
 print(lasso_coef)
 plt.bar(sales_columns, lasso_coef)
 plt.xticks(rotation=45)
