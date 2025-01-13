@@ -4,10 +4,10 @@ from sklearn.preprocessing import LabelEncoder
 hiking = load_hiking_dataset()
 
 # Set up the LabelEncoder object
-enc =
+enc = LabelEncoder()
 
 # Apply the encoding to the "Accessible" column
-____ = ____.____(____)
+hiking['Accessible_enc'] = enc.fit_transform(hiking["Accessible"])
 
 # Compare the two columns
-print(____[[____, ____]].head())
+print(hiking[['Accessible_enc', "Accessible"]].head())
