@@ -9,13 +9,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 # (importações já feitas acima)
 
 # 2. Carregar o dataset
-try:
-    df = pd.read_csv("housesalesprediction.csv")
+    df = pd.read_csv('/home/kali/Downloads/kc_house_data.csv')
     print("Dataset carregado.")
-except FileNotFoundError:
-    url = "https://www.kaggleusercontent.com/datasets/harlfoxem/housesalesprediction"
-    df = pd.read_csv(url)
-    print("Dataset carregado do Kaggle.")
 
 # 3. Exibir as primeiras linhas do dataframe
 print(df.head())
@@ -27,7 +22,6 @@ target = 'SalePrice'
 df = df.dropna()  # Remover linhas que contêm NaN
 
 # 6. Verificar as colunas mais relevantes para regressão
-# Selecionar as colunas que são relevantes
 correlation = df.corr()[target].sort_values(ascending=False).drop(target)
 
 # Atributo mais relevante

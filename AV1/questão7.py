@@ -6,13 +6,8 @@ from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.metrics import mean_squared_error, r2_score
 
 # 1. Carregar o dataset
-try:
-    df = pd.read_csv("housesalesprediction.csv")
-    print("Dataset carregado.")
-except FileNotFoundError:
-    url = "https://www.kaggleusercontent.com/datasets/harlfoxem/housesalesprediction"
-    df = pd.read_csv(url)
-    print("Dataset carregado do Kaggle.")
+df = pd.read_csv('/home/kali/Downloads/kc_house_data.csv')
+print("Dataset carregado.")
 
 # 2. Exibir as primeiras linhas do dataframe
 print(df.head())

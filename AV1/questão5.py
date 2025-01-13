@@ -7,15 +7,7 @@ from sklearn.model_selection import train_test_split
 # (importações já feitas acima)
 
 # 2. Carregar o dataset de regressão
-try:
-    # Tentar carregar o dataset atualizado
-    df = pd.read_csv("housesalesprediction.csv")
-    print("Dataset carregado.")
-except FileNotFoundError:
-    # Caso o arquivo não esteja disponível, carregá-lo do Kaggle
-    url = "https://www.kaggleusercontent.com/datasets/harlfoxem/housesalesprediction"
-    df = pd.read_csv(url)
-    print("Dataset carregado do Kaggle.")
+df = pd.read_csv('/home/kali/Downloads/kc_house_data.csv')
 
 # 3. Exibir as primeiras linhas do dataframe
 print(df.head())
@@ -26,11 +18,9 @@ target = 'SalePrice'
 print(f"Atributo alvo: {target}")
 
 # 5. Remover colunas insignificantes e tratar valores NaN
-# Verificar quais colunas contêm valores NaN e remover os registros que têm valores ausentes
 df = df.dropna()  # Remover linhas que contêm NaN
 
 # 6. Verificar as colunas mais relevantes para regressão
-# Um primeiro passo é verificar o desvio padrão e a correlação do preço da casa com outras variáveis
 print(df.corr())
 
 # Selecionar as colunas que são relevantes
@@ -44,8 +34,7 @@ plt.ylabel('Correlação')
 plt.xticks(rotation=45)
 plt.show()
 
-# 7. Remover colunas insignificantes (com correlação baixa)
-# Remover colunas com correlação menor que um valor arbitrário, como 0.1
+# 7. Remover colunas insignificantes (com correlação baixa) estou usando 0.1 pois e um valor baixo
 threshold = 0.1
 insignificant_cols = relevant_features[relevant_features.abs() < threshold].index
 df = df.drop(columns=insignificant_cols)

@@ -13,23 +13,22 @@ from collections import Counter
 # 2. Carregar o dataset atualizado ou original
 try:
     # Tentar carregar o dataset atualizado
-    df = pd.read_csv("gender_classification_adjusted.csv")
+    df = pd.read_csv("gender_classification_ajustado.csv")
     print("Dataset atualizado carregado.")
 except FileNotFoundError:
     # Carregar o dataset original caso o atualizado não esteja disponível
-    url = "https://www.kaggleusercontent.com/datasets/elakiricoder/gender-classification-dataset/data.csv"
-    df = pd.read_csv(url)
+    df = pd.read_csv('/home/kali/Downloads/gender_classification_v7.xls')
     print("Dataset original carregado.")
 
 # Manter apenas as colunas relevantes
-columns_needed = ['height', 'weight', 'gender']
+columns_needed = ['long_hair', 'forehead_width_cm', 'gender']
 df = df[columns_needed]
 
 # Converter classes para valores numéricos, se necessário
 df['gender'] = df['gender'].map({'Male': 0, 'Female': 1})
 
 # Dividir o dataset em treino e teste
-X = df[['height', 'weight']].values
+X = df[['long_hair', 'forehead_width_cm']].values
 y = df['gender'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 

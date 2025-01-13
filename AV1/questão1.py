@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. Carregar o dataset
-df = pd.read_csv('/home/userpet/Downloads/gender_classification_v7.xls')
+df = pd.read_csv('/home/kali/Downloads/gender_classification_v7.xls')
 print(df)
 
 # 2. Tratar valores ausentes (NaN)
