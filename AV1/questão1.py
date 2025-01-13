@@ -1,4 +1,4 @@
-import pandas as pd
+from pandas import pd
 
 # 1. Importe as bibliotecas necessárias
 # (já importado acima)
@@ -7,7 +7,7 @@ import pandas as pd
 try:
     # Carregar o dataset
     url = "https://www.kaggleusercontent.com/datasets/elakiricoder/gender-classification-dataset/data.csv"
-    df = pd.read_csv(url)
+    df = read_csv(url)
     print("Dataset carregado com sucesso!")
 except Exception as e:
     print(f"Erro ao carregar o dataset: {e}")
