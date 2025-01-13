@@ -4,10 +4,10 @@ import pandas as pd
 
 wine = load_wine_dataset()
 
-#pd.set_option('display.max_columns', None)
+pd.set_option('display.max_columns', None)
 
 #print as caractéristicas estatísticas do dataset wine
-#print(wine.info())
+print(wine.describe())
 
 ## Aplique a função de nomarlização logarítmica na coluna Proline
 wine['Proline_log'] = np.log(wine['Proline'])
