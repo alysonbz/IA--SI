@@ -1,7 +1,6 @@
 import pandas as pd
 
 # 1. Importação do dataset e bibliotecas
-# Substituímos o URL por um caminho local para o arquivo CSV baixado manualmente
 file_path = r"C:\Users\Kauem\Downloads\healthcare-dataset-stroke-data.csv"
 try:
     data = pd.read_csv(file_path)
@@ -12,15 +11,13 @@ except Exception as e:
     print(f"Erro ao carregar o dataset: {e}")
     exit()
 
-# 2. Verificação de valores nulos ou NaN e criação de um novo DataFrame sem eles
+# 2. Verificação e criação de um novo dataset
 if data.isnull().sum().any():
     data_cleaned = data.dropna()
 else:
     data_cleaned = data.copy()
 
 # 3. Análise de colunas mais relevantes
-# Aqui, as colunas mais importantes podem ser selecionadas baseando-se em um entendimento inicial do problema.
-# Exemplo de seleção de colunas (ajuste conforme necessário):
 relevant_columns = ['gender', 'age', 'hypertension', 'heart_disease', 'avg_glucose_level', 'bmi', 'smoking_status', 'stroke']
 try:
     data_relevant = data_cleaned[relevant_columns]
@@ -39,12 +36,10 @@ print(data_relevant.head())
 class_distribution(data_relevant, 'stroke')
 
 # 5. Renomeação de valores na coluna de classes (se necessário)
-# Exemplo: converter 'stroke' de categórico para valores numéricos
 if data_relevant['stroke'].dtype == 'object':
     data_relevant['stroke'] = data_relevant['stroke'].map({"yes": 1, "no": 0})
 
 # 6. Avaliação de necessidade de mais pré-processamento
-# Exemplo: Transformação de variáveis categóricas em numéricas com one-hot encoding
 categorical_columns = ['gender', 'smoking_status']
 data_preprocessed = pd.get_dummies(data_relevant, columns=categorical_columns, drop_first=True)
 
