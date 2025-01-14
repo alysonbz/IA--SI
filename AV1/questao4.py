@@ -12,12 +12,9 @@ y = data['stroke'].values
 
 # Função KNN otimizada
 def knn(X_train, y_train, X_test, k):
-    # Calcular as distâncias entre X_test e X_train de uma vez
     distances = cdist(X_test, X_train, 'euclidean')
-    # Obter os k vizinhos mais próximos e as classes
     k_nearest_indices = np.argsort(distances, axis=1)[:, :k]
     k_nearest_labels = y_train[k_nearest_indices]
-    # Votação majoritária para predizer a classe
     y_pred = [np.bincount(labels).argmax() for labels in k_nearest_labels]
     return np.array(y_pred)
 
@@ -35,13 +32,13 @@ for k in k_values:
     y_pred = knn(X_train_scaled, y_train, X_test_scaled, k)
     accuracies.append(np.mean(y_pred == y_test))
 
-# Plotar gráfico
+# mostrar um gráfico
 plt.plot(k_values, accuracies, marker='o')
 plt.title("Acurácia do KNN para diferentes valores de k")
 plt.xlabel("Valor de k")
 plt.ylabel("Acurácia")
 plt.grid(True)
-plt.show()  # Garantir que o gráfico será exibido
+plt.show() 
 
 # Exibir o melhor k
 best_k = k_values[np.argmax(accuracies)]
