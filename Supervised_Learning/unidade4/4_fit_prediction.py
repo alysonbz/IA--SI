@@ -1,4 +1,4 @@
-from src.utils import load_sales_clean_dataset
+7from src.utils import load_sales_clean_dataset
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 sales_df = load_sales_clean_dataset()
