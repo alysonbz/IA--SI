@@ -40,6 +40,6 @@ if df_final['class'].dtype == 'object':
     print("Coluna 'class' após conversão para numérico:")
     print(df_final['class'].head())
 
-df_final.to_csv(r"C:\Users\bende\SI\IA\IA--SI\IA--SI\star_classification_ajustado.csv", index=False)
+df_final.to_csv(r"C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1\star_classification.csv", index=False)
 
 print("Dataset salvo como 'star_classification_ajustado.csv'.")
