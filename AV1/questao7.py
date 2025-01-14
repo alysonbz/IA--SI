@@ -6,30 +6,25 @@ from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
 
-# Carregar o dataset atualizado
+
 from src.utils import load_laptopPrice_dataset
 laptop_price = load_laptopPrice_dataset()
 
-# Pré-processamento: Limpeza e transformação dos dados
 laptop_price['rating'] = laptop_price['rating'].str.replace(r'[^0-9.]', '', regex=True)
 laptop_price['rating'] = pd.to_numeric(laptop_price['rating'], errors='coerce')
 laptop_price = laptop_price.dropna(subset=['rating'])
 laptop_price['Number of Ratings'] = pd.to_numeric(laptop_price['Number of Ratings'], errors='coerce')
 laptop_price = laptop_price.dropna(subset=['Number of Ratings'])
 
-# Atributo mais relevante: 'Number of Ratings'
 x = laptop_price[['Number of Ratings']].values
 y = laptop_price['Price'].values
 
-# Normalização dos dados
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 x_scaled = scaler.fit_transform(x)
 
-# Divisão manual de k-folds
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
-# Função para calcular métricas
 def calculate_metrics(model, x, y, kf):
     rss_list, mse_list, rmse_list, r2_list = [], [], [], []
     for train_index, test_index in kf.split(x):
@@ -63,18 +58,15 @@ models = {
     'Lasso Regression': Lasso(alpha=0.1)
 }
 
-# Avaliação dos modelos
 results = {}
 for name, model in models.items():
     results[name] = calculate_metrics(model, x_scaled, y, kf)
 
-# Exibir os resultados
 for name, metrics in results.items():
     print(f"\n{name} Metrics:")
     for metric, value in metrics.items():
         print(f"{metric}: {value:.2f}")
 
-# Gráfico da regressão linear
 linear_model = LinearRegression()
 linear_model.fit(x_scaled, y)
 y_pred = linear_model.predict(x_scaled)
