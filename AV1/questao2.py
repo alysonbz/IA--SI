@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from scipy.spatial.distance import cdist
 from collections import Counter
 
+
 df = pd.read_csv(r"C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1\star_classification.csv")
 
 

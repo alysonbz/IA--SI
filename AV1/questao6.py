@@ -14,6 +14,12 @@ target = "Close"
 feature = "High"
 
 
+file_path = r"C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1\Ferrari (20.04.23 - 01.05.24).csv"
+df = pd.read_csv(file_path)
+
+target = "Close"
+feature = "High"
+
 scaler = MinMaxScaler()
 X = scaler.fit_transform(df[[feature]])
 y = df[target].values
@@ -21,6 +27,8 @@ y = df[target].values
 
 model = LinearRegression().fit(X, y)
 
+
+model = LinearRegression().fit(X, y)
 
 y_pred = model.predict(X)
 RSS = np.sum((y - y_pred) ** 2)
