@@ -10,6 +10,7 @@ print("O tamanho do dataset é", volunteer.shape)
 #mostre os tipos de dados existentes no dataset
 
 print(volunteer.info)
+
 #mostre quantos elementos do dataset estão faltando na coluna
 
 print(volunteer['locality'].isnull().sum())
