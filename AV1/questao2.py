@@ -5,21 +5,21 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from collections import Counter
 
-# 1. Carregar o dataset
+
 file_path = "stroke_prediction_dataset_ajustado.csv"
 data = pd.read_csv(file_path)
 
-# 2. Separar variáveis independentes e alvo
+#  Separa variáveis independentes e alvo
 X = data.drop(columns=['stroke']).values
 y = data['stroke'].values
 
-# 3. Dividir os dados em treino e teste e normalizar
+# Divide o dataset 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-# 4. Função KNN simplificada
+# Função do KNN
 def knn(X_train, y_train, X_test, k, metric):
 
     if metric == 'mahalanobis':
@@ -47,7 +47,7 @@ def knn(X_train, y_train, X_test, k, metric):
 
     return np.array(y_pred)
 
-# 5. Avaliar o modelo para diferentes métricas
+# métricas
 metrics = ['mahalanobis', 'chebyshev', 'manhattan', 'euclidean']
 k = 7
 print("\nResultados:")
