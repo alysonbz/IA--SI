@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 data = pd.read_csv("stroke_prediction_dataset_ajustado.csv")
 
 # Separar variáveis independentes e alvo
-X = data.drop(columns=['stroke']).values  # Garante que X seja um array NumPy
+X = data.drop(columns=['stroke']).values  
 y = data['stroke'].values
 
 # Função KNN
@@ -25,8 +25,8 @@ def knn(X_train, y_train, X_test, k=7):
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
 # Normalização logarítmica
-X_train_log = np.log1p(X_train.astype(float))  # Converte para float antes de aplicar log1p
-X_test_log = np.log1p(X_test.astype(float))    # Converte para float antes de aplicar log1p
+X_train_log = np.log1p(X_train.astype(float))  
+X_test_log = np.log1p(X_test.astype(float))  
 
 # Normalização de média zero e variância unitária
 scaler = StandardScaler()
@@ -41,5 +41,4 @@ accuracy_log = np.mean(y_pred_log == y_test)
 y_pred_scaled = knn(X_train_scaled, y_train, X_test_scaled)
 accuracy_scaled = np.mean(y_pred_scaled == y_test)
 
-# Amostra da comparação print(f"Acurácia com normalização logarítmica: {accuracy_log:.2f}")
 print(f"Acurácia com média zero e variância unitária: {accuracy_scaled:.2f}")
