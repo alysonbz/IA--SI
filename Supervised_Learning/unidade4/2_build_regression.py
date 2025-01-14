@@ -3,7 +3,7 @@ from src.utils import load_sales_clean_dataset
 sales_df = load_sales_clean_dataset()
 
 # Import LinearRegression
-from ____.____ import ____
+from sklearn.import
 
 
 y = sales_df["sales"].values
@@ -13,9 +13,9 @@ X = sales_df["radio"].values.reshape(-1, 1)
 reg = ____()
 
 # Fit the model to the data
-____
+reg.fit(X, y)
 
 # Make predictions
-predictions = ____
+predictions = reg.predict(X)
 
-print(__)
+print(0.5)
