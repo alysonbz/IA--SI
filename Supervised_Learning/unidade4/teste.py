@@ -1,6 +1,6 @@
 from src.utils import load_sales_clean_dataset
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error 
+from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 sales_df = load_sales_clean_dataset()
@@ -11,7 +11,8 @@ X = sales_df["tv"].values.reshape(-1, 1)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # Import LinearRegression
-from sklearn.linear_model import LinearRegression 
+from sklearn.linear_model import LinearRegression
+
 # Create the model
 reg =  LinearRegression()
 
@@ -45,4 +46,3 @@ plt.ylabel("Sales ($)")
 
 # Display the plot
 plt.show()
-
