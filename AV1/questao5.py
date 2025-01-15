@@ -1,42 +1,64 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import LabelEncoder
 
-dataset_path = 'bodyfat.csv'
 
-df = pd.read_csv(dataset_path)
+# Importando o dataset
+regressao = pd.read_csv('./dataset/data_regressao.csv')
 
-print(df.head())
+# Exploração inicial do dataset
+print('Exploração do dataset')
+print(regressao.head(10))
+print('\nVerificação do número de linhas e colunas:', regressao.shape)
+print('\nInformações do dataset:')
+print(regressao.info())
+print('\nEstatísticas do dataset:')
+print(regressao.describe().T)
 
-X = df.drop("BodyFat", axis=1) 
-y = df["BodyFat"]  
+# Verificação de valores nulos e duplicatas
+print('\nVerificação de valores nulos:')
+print(regressao.isna().sum())
+print('\nVerificação de duplicatas:')
+print(regressao.duplicated().sum())
 
-print(df.isnull().sum()) 
-df.dropna(inplace=True)
+# Verificação de valores categóricos
+print('\nValores únicos por categoria:')
+print('Sex:', regressao['sex'].value_counts())
+print('Smoker:', regressao['smoker'].value_counts())
+print('Region:', regressao['region'].value_counts())
 
-X = df.drop("BodyFat", axis=1)
-y = df["BodyFat"]
-
-correlation_matrix = df.corr()
-plt.figure(figsize=(12, 8))
-sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm", fmt=".2f")
-plt.title("Matriz de Correlação entre as variáveis")
+# Visualizações de distribuição
+sns.countplot(x='sex', data=regressao)
+plt.title('Distribuição por Sexo')
 plt.show()
 
-correlations = correlation_matrix["BodyFat"].sort_values(ascending=False)
-print(correlations)
-
-top_features = correlations[1:6]  
-plt.figure(figsize=(10, 6))
-top_features.plot(kind='bar', color='skyblue')
-plt.title('Correlação das variáveis mais relevantes com BodyFat')
-plt.ylabel('Correlação')
-plt.xlabel('Variáveis')
+sns.countplot(x='smoker', data=regressao)
+plt.title('Distribuição por Status de Fumante')
 plt.show()
 
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+sns.countplot(x='region', data=regressao)
+plt.title('Distribuição por Região')
+plt.show()
+
+# Transformar colunas categóricas em numéricas
+label_encoder = LabelEncoder()
+regressao['sex'] = label_encoder.fit_transform(regressao['sex'])
+regressao['smoker'] = label_encoder.fit_transform(regressao['smoker'])
+regressao['region'] = label_encoder.fit_transform(regressao['region'])
+
+# Análise gráfica de variáveis relevantes
+sns.scatterplot(x='bmi', y='charges', data=regressao)
+plt.title('Relação entre BMI e Charges')
+plt.show()
+
+sns.scatterplot(x='age', y='charges', data=regressao)
+plt.title('Relação entre Idade e Charges')
+plt.show()
+
+sns.boxplot(x='smoker', y='charges', data=regressao)
+plt.title('Impacto do Status de Fumante em Charges')
+plt.show()
+
+# Salvar o Dataset atualizado:
+regressao.to_csv('./dataset_regressao_ajustado.csv', index=False)
