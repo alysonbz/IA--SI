@@ -1,25 +1,49 @@
-from src.utils import load_volunteer_dataset
-from sklearn.model_selection import  train_test_split
+import numpy as np
+from src.utills import diabetes_ajustado_dataset
+from sklearn.model_selection import train_test_split
+from scipy.spatial.distance import chebyshev
+from sklearn.preprocessing import StandardScaler
 
-volunteer = load_volunteer_dataset()
+diabetes = diabetes_ajustado_dataset()
 
-# Exclua as colunas Latitude e Longitude de volunteer
-volunteer_new = ___
+X = diabetes.drop(columns=['Class']).values
+y = diabetes['Class'].values
 
-# Exclua as linhas com valores null da coluna category_desc de volunteer_new
-volunteer = __
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# mostre o balanceamento das classes em 'category_desc'
-print(__,'\n','\n')
+def knn_predict(X_train, y_train, X_test, k):
+    predictions = []
+    for test_point in X_test:
+        distances = []
 
-# Crie um DataFrame com todas as colunas, com exceção de ``category_desc``
-X = __
+        for i, train_point in enumerate(X_train):
+            distance = chebyshev(test_point, train_point)
+            distances.append((distance, y_train[i]))
 
-# Crie um dataframe de labels com a coluna category_desc
-y =__
+        distances.sort(key=lambda x: x[0])
+        k_nearest = [label for _, label in distances[:k]]
 
-# # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = ___(__, __, stratify=__, random_state=42)
+        prediction = max(set(k_nearest), key=k_nearest.count)
+        predictions.append(prediction)
 
-# mostre o balanceamento das classes em 'category_desc' novamente
-print(___)
+    return np.array(predictions)
+
+k = 7
+y_pred_original = knn_predict(X_train, y_train, X_test, k)
+accuracy_original = np.mean(y_pred_original == y_test)
+
+X_train_log = np.log1p(X_train)
+X_test_log = np.log1p(X_test)
+y_pred_log = knn_predict(X_train_log, y_train, X_test_log, k)
+accuracy_log = np.mean(y_pred_log == y_test)
+
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+y_pred_scaled = knn_predict(X_train_scaled, y_train, X_test_scaled, k)
+accuracy_scaled = np.mean(y_pred_scaled == y_test)
+
+print("Acurácias:")
+print(f"Sem normalização: {accuracy_original:.2f}")
+print(f"Com normalização logarítmica: {accuracy_log:.2f}")
+print(f"Com normalização de média zero e variância unitária: {accuracy_scaled:.2f}")
