@@ -1,11 +1,7 @@
 
 from src.utils import processing_sales_clean
-# Import matplotlib.pyplot
-<<<<<<< HEAD
+#Import matplotlib.pyplot
 import matplotlib.pyplot as plt
-=======
-import pyplot.matplotlib as plt
->>>>>>> 1239a00c96cd4d3adea696c64633d52b04d5adf1
 
 X,y,predictions = processing_sales_clean()
 
@@ -13,11 +9,7 @@ X,y,predictions = processing_sales_clean()
 plt.scatter(X, y, color="blue")
 
 # Create line plot
-<<<<<<< HEAD
 plt.plot(X, predictions, color="red")
-=======
-plt.plot(X, y, color="red")
->>>>>>> 1239a00c96cd4d3adea696c64633d52b04d5adf1
 plt.xlabel("Radio Expenditure ($)")
 plt.ylabel("Sales ($)")
 
