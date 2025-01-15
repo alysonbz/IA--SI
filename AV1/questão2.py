@@ -4,37 +4,17 @@ from sklearn.model_selection import train_test_split
 from scipy.spatial.distance import mahalanobis, chebyshev, cityblock, euclidean
 from collections import Counter
 
-# 1. Importe as bibliotecas necessárias
-# (importações acima já cobrem esta etapa)
-
-# 2. Carregar o dataset atualizado ou original
-try:
-    # Tentar carregar o dataset atualizado
-    df = pd.read_csv("gender_classification_ajustado.csv")
-    print("Dataset atualizado carregado.")
-except FileNotFoundError:
-    # Carregar o dataset original caso o atualizado não esteja disponível
-    df = pd.read_csv('/home/kali/Downloads/gender_classification_v7.xls')
-    print("Dataset original carregado.")
-
-# Manter apenas as colunas relevantes
+# 1. Carregar o dataset
+df = pd.read_csv('/home/kali/Downloads/gender_classification_ajustado.csv')
+print("Dataset carregado.")
 columns_needed = ['long_hair', 'forehead_width_cm', 'gender']
 df = df[columns_needed]
-
-# Converter classes para valores numéricos, se necessário
-df['gender'] = df['gender'].map({'Male': 0, 'Female': 1})
-
-# 3. Dividir o dataset em treino e teste sem normalizar
+# 3. Dividir o dataset em treino e teste
 X = df[['long_hair', 'forehead_width_cm']].values
 y = df['gender'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-
 # 4. Implementar o KNN manualmente
 def knn_predict(X_train, y_train, X_test, k, metric):
-    """
-    Implementa o algoritmo KNN de forma manual.
-    """
     y_pred = []
 
     # Calcular matriz de covariância para distância de Mahalanobis
@@ -68,12 +48,9 @@ def knn_predict(X_train, y_train, X_test, k, metric):
     return np.array(y_pred)
 
 
-# Função para calcular a acurácia
 def calculate_accuracy(y_true, y_pred):
     return np.sum(y_true == y_pred) / len(y_true)
 
-
-# Comparar acurácias para diferentes métricas
 k = 7
 metrics = ['mahalanobis', 'chebyshev', 'manhattan', 'euclidean']
 accuracies = {}
@@ -85,7 +62,7 @@ for metric in metrics:
     accuracies[metric] = accuracy
     print(f"Acurácia para {metric}: {accuracy:.4f}")
 
-# Exibir resultados
+# 6. Exibir resultados
 print("\nResumo das acurácias:")
 for metric, acc in accuracies.items():
     print(f"{metric.capitalize()}: {acc:.4f}")

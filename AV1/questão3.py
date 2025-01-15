@@ -1,41 +1,22 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 from scipy.spatial.distance import mahalanobis, chebyshev, cityblock, euclidean
-from sklearn.preprocessing import StandardScaler
+from collections import Counter
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
-# 1. Importar as bibliotecas necessárias
-# (importações feitas acima)
-
-# 2. Carregar o dataset atualizado ou original
-try:
-    # Tentar carregar o dataset atualizado
-    df = pd.read_csv("/home/kali/Downloads/gender_classification_ajustado.csv")
-    print("Dataset atualizado carregado.")
-except FileNotFoundError:
-    # Carregar o dataset original caso o atualizado não esteja disponível
-    df = pd.read_csv('/home/kali/Downloads/gender_classification_v7.xls')
-    print("Dataset original carregado.")
-
-# Manter apenas as colunas relevantes
+# 1. Carregar o dataset
+df = pd.read_csv('/home/kali/Downloads/gender_classification_ajustado.csv')
+print("Dataset carregado.")
 columns_needed = ['long_hair', 'forehead_width_cm', 'gender']
 df = df[columns_needed]
 
-# Converter classes para valores numéricos, se necessário
-df['gender'] = df['gender'].map({'Male': 0, 'Female': 1})
-
-# Dividir o dataset em treino e teste
+# 3. Dividir o dataset em treino e teste
 X = df[['long_hair', 'forehead_width_cm']].values
 y = df['gender'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-
-# Implementar o KNN manual com a melhor métrica
+# 4. Implementar o KNN manualmente
 def knn_predict(X_train, y_train, X_test, k, metric):
-    """
-    Implementa o algoritmo KNN de forma manual.
-    """
     y_pred = []
 
     # Calcular matriz de covariância para distância de Mahalanobis
@@ -69,28 +50,39 @@ def knn_predict(X_train, y_train, X_test, k, metric):
     return np.array(y_pred)
 
 
-# Melhor métrica de distância identificada
-best_metric = "euclidean"  # Substituir pela métrica identificada no exercício anterior
-k = 7
+def calculate_accuracy(y_true, y_pred):
+    return np.sum(y_true == y_pred) / len(y_true)
 
-# 3. Normalização logarítmica
-X_train_log = np.log1p(X_train)
-X_test_log = np.log1p(X_test)
+log_scale = np.log(X_train + 1)  # adicionando +1 para evitar log de 0
+standard_scale = StandardScaler().fit(X_train).transform(X_train)
+X_train_log = log_scale
+X_test_log = np.log(X_test + 1)
 
-# Predição e acurácia com normalização logarítmica
-y_pred_log = knn_predict(X_train_log, y_train, X_test_log, k, best_metric)
-accuracy_log = accuracy_score(y_test, y_pred_log)
+X_train_scaled = standard_scale
+X_test_scaled = StandardScaler().fit(X_test).transform(X_test)
+k = 7  # Número de vizinhos
+metrics = ['mahalanobis', 'chebyshev', 'manhattan', 'euclidean']
 
-# 4. Normalização de média zero e variância unitária
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+accuracies_log = {}
+accuracies_scaled = {}
 
-# Predição e acurácia com normalização padrão
-y_pred_scaled = knn_predict(X_train_scaled, y_train, X_test_scaled, k, best_metric)
-accuracy_scaled = accuracy_score(y_test, y_pred_scaled)
+# Calcula acurácias com os dados normalizados por log
+for metric in metrics:
+    y_pred_log = knn_predict(X_train_log, y_train, X_test_log, k, metric)
+    accuracy_log = calculate_accuracy(y_test, y_pred_log)
+    accuracies_log[metric] = accuracy_log
 
-# 5. Comparar acurácias
-print("\nComparação das acurácias:")
-print(f"Acurácia com normalização logarítmica: {accuracy_log:.4f}")
-print(f"Acurácia com normalização de média zero e variância unitária: {accuracy_scaled:.4f}")
+# Calcula acurácias com os dados normalizados por StandardScaler
+for metric in metrics:
+    y_pred_scaled = knn_predict(X_train_scaled, y_train, X_test_scaled, k, metric)
+    accuracy_scaled = calculate_accuracy(y_test, y_pred_scaled)
+    accuracies_scaled[metric] = accuracy_scaled
+
+# . Printar os resultados
+print("\nAcurácias com Normalização Logarítmica:")
+for metric, acc in accuracies_log.items():
+    print(f"{metric.capitalize()}: {acc:.4f}")
+
+print("\nAcurácias com Normalização Standard:")
+for metric, acc in accuracies_scaled.items():
+    print(f"{metric.capitalize()}: {acc:.4f}")
