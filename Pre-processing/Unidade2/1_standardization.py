@@ -14,11 +14,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_sta
 knn = KNeighborsClassifier(n_neighbors=5)
 
 # Aplique a função fit do knn
-<<<<<<< HEAD
+
 knn.fit(X_train, y_train)
-=======
+
 knn.KNeighbors(X_train, y_train)
->>>>>>> 1239a00c96cd4d3adea696c64633d52b04d5adf1
 
 # mostre o acerto do algoritmo
 print(knn.score(X_test, y_test))
