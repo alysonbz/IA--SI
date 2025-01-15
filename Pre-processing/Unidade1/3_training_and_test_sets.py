@@ -1,25 +1,30 @@
 from src.utils import load_volunteer_dataset
 from sklearn.model_selection import  train_test_split
+from unicodedata import category
 
 volunteer = load_volunteer_dataset()
 
 # Exclua as colunas Latitude e Longitude de volunteer
-volunteer_new = volunteer.drop(['Latitude','Longitude'],axis=1)
+volunteer_new = volunteer(['Latitude', 'Longitude'].drop)
 
 # Exclua as linhas com valores null da coluna category_desc de volunteer_new
-volunteer = volunteer_new.dropna(subset='category_desc')
+volunteer = volunteer_new.dropna(['category_desc'])
 
 # mostre o balanceamento das classes em 'category_desc'
-print(volunteer['category_desc'].value_counts(),'\n','\n')
+print(__,'\n','\n')
 
 # Crie um DataFrame com todas as colunas, com exceção de ``category_desc``
-X = volunteer.drop(['category_desc'], axis=1)
+X = __
 
 # Crie um dataframe de labels com a coluna category_desc
-y =volunteer[['category_desc']]
+y =__
 
-# # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
+# # Utiliza a amostragem stratificada para separar o dataset em treino e teste
+X_train, X_test, y_train, y_test = ___(__, __, stratify=__, random_state=42)
 
 # mostre o balanceamento das classes em 'category_desc' novamente
+<<<<<<< HEAD
 print(y_train['category_desc'].value_counts())
+=======
+print(___)
+>>>>>>> 1239a00c96cd4d3adea696c64633d52b04d5adf1

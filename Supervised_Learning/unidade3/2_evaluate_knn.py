@@ -4,8 +4,11 @@ import matplotlib
 
 # Import the module
 from sklearn.model_selection import train_test_split
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1239a00c96cd4d3adea696c64633d52b04d5adf1
 
 churn_df = load_churn_dataset()
 X = churn_df[["account_length",  "total_day_charge" , "total_eve_charge",  "total_night_charge","total_intl_charge","number_customer_service_calls"]].values
@@ -17,7 +20,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 knn = KNeighborsClassifier(n_neighbors=5)
 
 # Fit the classifier to the training data
+<<<<<<< HEAD
 knn.fit(X_train, y_train)
+=======
+train_test_split.fit(X_train, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=test_aifc))
+knn = KNeighborsClassifier(n_neighbors=5)
+>>>>>>> 1239a00c96cd4d3adea696c64633d52b04d5adf1
 
 # Print the accuracy
 print(knn.score(X_test, y_test))
