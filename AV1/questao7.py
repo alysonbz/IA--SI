@@ -1,66 +1,92 @@
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
-
-dataset_path = 'bodyfat.csv'
-df = pd.read_csv(dataset_path)
-
-df = df.dropna()
-
-X = df.drop("BodyFat", axis=1)
-y = df["BodyFat"]
-
 from sklearn.preprocessing import StandardScaler
+
+# 1. Importar o dataset
+regressao = pd.read_csv('./dataset/dataset_regressao_ajustado.csv')
+
+# 2. Escolher o atributo mais relevante para o modelo
+X = regressao[['smoker']]  # Variável independente
+y = regressao['charges']  # Variável dependente
+
+# 3. Normalização dos dados
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-def k_fold_cross_validation(X, y, k, model_class, **model_kwargs):
-    fold_size = len(X) // k
-    results = {"RSS": [], "MSE": [], "RMSE": [], "R2": []}
 
-    for i in range(k):
-        # Divisão dos dados em treino e teste
-        test_start = i * fold_size
-        test_end = (i + 1) * fold_size if i < k - 1 else len(X)
-        
-        X_train = np.concatenate([X[:test_start], X[test_end:]])
-        y_train = np.concatenate([y[:test_start], y[test_end:]])
-        X_test, y_test = X[test_start:test_end], y[test_start:test_end]
+# Função para calcular as métricas manualmente
+def calculate_metrics(y_true, y_pred):
+    # RSS (Residual Sum of Squares)
+    RSS = np.sum((y_true - y_pred) ** 2)
 
-        model = model_class(**model_kwargs)
+    # MSE (Mean Squared Error)
+    MSE = mean_squared_error(y_true, y_pred)
+
+    # RMSE (Root Mean Squared Error)
+    RMSE = np.sqrt(MSE)
+
+    # R² (Coeficiente de Determinação)
+    R2 = r2_score(y_true, y_pred)
+
+    return RSS, MSE, RMSE, R2
+
+
+# Implementação do K-Fold Cross-Validation manualmente
+k = 5  # Definir o número de folds
+fold_size = len(X) // k
+
+# Inicializando o armazenamento dos resultados das métricas
+results = {'LinearRegression': {'RSS': [], 'MSE': [], 'RMSE': [], 'R2': []},
+           'Ridge': {'RSS': [], 'MSE': [], 'RMSE': [], 'R2': []},
+           'Lasso': {'RSS': [], 'MSE': [], 'RMSE': [], 'R2': []}}
+
+for i in range(k):
+    # Dividir os dados em treino e validação
+    validation_start = i * fold_size
+    validation_end = (i + 1) * fold_size if i != k - 1 else len(X)
+
+    X_train = np.concatenate([X_scaled[:validation_start], X_scaled[validation_end:]], axis=0)
+    X_valid = X_scaled[validation_start:validation_end]
+
+    y_train = np.concatenate([y[:validation_start], y[validation_end:]], axis=0)
+    y_valid = y[validation_start:validation_end]
+
+    # 4. Modelos a serem testados (Regressão Linear, Ridge, Lasso)
+    models = {
+        'LinearRegression': LinearRegression(),
+        'Ridge': Ridge(alpha=1),
+        'Lasso': Lasso(alpha=1)
+    }
+
+    for model_name, model in models.items():
+        # Treinar o modelo
         model.fit(X_train, y_train)
 
-        y_pred = model.predict(X_test)
+        # Fazer previsões
+        y_pred = model.predict(X_valid)
 
-        rss = np.sum((y_test - y_pred) ** 2)
-        mse = mean_squared_error(y_test, y_pred)
-        rmse = np.sqrt(mse)
-        r2 = r2_score(y_test, y_pred)
+        # Calcular as métricas
+        RSS, MSE, RMSE, R2 = calculate_metrics(y_valid, y_pred)
 
-        results["RSS"].append(rss)
-        results["MSE"].append(mse)
-        results["RMSE"].append(rmse)
-        results["R2"].append(r2)
+        # Armazenar os resultados nas listas correspondentes
+        results[model_name]['RSS'].append(RSS)
+        results[model_name]['MSE'].append(MSE)
+        results[model_name]['RMSE'].append(RMSE)
+        results[model_name]['R2'].append(R2)
 
-    metrics = {key: np.mean(value) for key, value in results.items()}
-    return metrics
+# 5. Calcular a média das métricas para cada modelo
+averages = {}
+for model_name, metrics in results.items():
+    averages[model_name] = {metric: np.mean(values) for metric, values in metrics.items()}
 
-k = 5 
+# Exibir os resultados
+for model_name, avg_metrics in averages.items():
+    print(f"\n{model_name}:")
+    for metric, avg_value in avg_metrics.items():
+        print(f"Average {metric}: {avg_value}")
 
-linear_metrics = k_fold_cross_validation(X_scaled, y, k, LinearRegression)
-
-ridge_metrics = k_fold_cross_validation(X_scaled, y, k, Ridge, alpha=1.0)
-
-lasso_metrics = k_fold_cross_validation(X_scaled, y, k, Lasso, alpha=0.1)
-
-print(f"Modelo Linear (Clássico) - Métricas: {linear_metrics}")
-print(f"Modelo Ridge - Métricas: {ridge_metrics}")
-print(f"Modelo Lasso - Métricas: {lasso_metrics}")
-models = ["Linear", "Ridge", "Lasso"]
-metrics_dict = {"Linear": linear_metrics, "Ridge": ridge_metrics, "Lasso": lasso_metrics}
-
-best_model = min(models, key=lambda model: metrics_dict[model]["RMSE"])
-print(f"\nO melhor modelo é: {best_model}")
+# 6. Comparar os modelos
+best_model = min(averages, key=lambda model: averages[model]['RMSE'])  # Escolher o modelo com o menor RMSE
+print(f"\nMelhor modelo: {best_model}")
