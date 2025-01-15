@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="Atualizações de tudo">
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py" afterDir="false" />
+    <list default="true" id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -101,7 +105,7 @@
     &quot;Python.questão1-teste.executor&quot;: &quot;Debug&quot;,
     &quot;Python.utils.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Rebasing helen-brandao&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;helen-brandao&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI/AV1/data_classificacao_ajustado.csv&quot;
