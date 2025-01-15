@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="Atualizações de tudo">
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;helen-brandao&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alysonbz/IA--SI.git&quot;,
+    &quot;accountId&quot;: &quot;e51a8dcb-11a4-431f-9784-785f611a9ac2&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;alysonbz&quot;,
+    &quot;repository&quot;: &quot;IA--SI&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2oQxez1RubK0K9R3OVo1UTWjIBe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.0_class_anotation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_create_features.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_k-Nearest-Neighbors-Fit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_pre_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_standardization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_build_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_evaluate_knn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_log_normalization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_training_and_test_sets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_underfiting_overfiting.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_visualize_predictions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_drop_nan.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_fit_prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_compute_manual_score.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_manual_train_test_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_cross_validadation_r_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7_ridge_regularization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.8_lasso_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Atividade_de_casa.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Atv_casa_Knn_manual.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dist_chebyshev.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dist_manhattan.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dist_minkowski.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q1-teste.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questão1-teste.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Rebasing helen-brandao&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI/AV1/data_classificacao_ajustado.csv&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\win11\Desktop\IA-SI\IA--SI\AV1\dataset" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.questao2">
+    <configuration name="3_visualize_predictions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="q1-teste" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV1/q1-teste.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV1/questao2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.q1-teste" />
+        <item itemvalue="Python.3_visualize_predictions" />
+        <item itemvalue="Python.q1-teste" />
+        <item itemvalue="Python.q1-teste" />
+        <item itemvalue="Python.q1-teste" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="" />
+      <created>1730815700010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730815700010</updated>
+    </task>
+    <task id="LOCAL-00001" summary="atv">
+      <option name="closed" value="true" />
+      <created>1731419790368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731419790369</updated>
+    </task>
+    <task id="LOCAL-00002" summary="atv">
+      <option name="closed" value="true" />
+      <created>1731419982470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731419982471</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Atividade">
+      <option name="closed" value="true" />
+      <created>1733840846546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733840846546</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Atividades-IA">
+      <option name="closed" value="true" />
+      <created>1733841138164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733841138165</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Atualizações das Atividades">
+      <option name="closed" value="true" />
+      <created>1734443604385</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734443604387</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Atualizações das Atividades">
+      <option name="closed" value="true" />
+      <created>1734444129888</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734444129888</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Atualizações das Atividades">
+      <option name="closed" value="true" />
+      <created>1734444597950</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734444597951</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Atualizações de tudo">
+      <option name="closed" value="true" />
+      <created>1736909959036</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736909959038</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="helen-brandao" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="helen-brandao" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="atv" />
+    <MESSAGE value="Atividade" />
+    <MESSAGE value="Atividades-IA" />
+    <MESSAGE value="Atualizações das Atividades" />
+    <MESSAGE value="Atualizações de tudo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizações de tudo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
