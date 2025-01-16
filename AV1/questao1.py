@@ -1,39 +1,52 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
 
-dataset_path = "Dataset_coletado.csv"
-df = pd.read_csv(dataset_path)
+def load_customer_data():
+    return pd.read_csv('customer_data.csv')
 
-print("Dados antes de tratar NaN:")
-print(df.info())
+customer_data = load_customer_data()
 
-df_cleaned = df.dropna()
+def load_payment_data():
+    return pd.read_csv('payment_data.csv')
 
-print("Dados após remoção do NaN:")
-print(df_cleaned.info())
+payment_data = load_payment_data()
 
-colunas_relevantes = df_cleaned.columns[:7]
-df_selected = df_cleaned[colunas_relevantes]
+# 2. Exploração Inicial dos Dados
+print(payment_data.head())
+print(customer_data.head())
 
-print("\nDataframe final com colunas relevantes:")
-print(df_selected.head())
+payment_data_cols = payment_data.drop(['update_date', 'report_date'], axis=1)
+# 3. Limpeza de Dados
 
-coluna_classe = df_selected.columns[-1]
-print("\nDistribuição das classes:")
-print(df_selected[coluna_classe].value_counts())
+#Verificar valores ausentes
+print(payment_data_cols.isnull().sum())
+print(customer_data.isnull().sum())
 
-if df_selected[coluna_classe].dtype == 'object':
-    # dtype Converter valores numéricos por códigso
-    df_selected[coluna_classe] = df_selected[coluna_classe].astype('category').cat.codes
-    print("\nColuna de classes convertida para valores numéricos.")
+#Tratar valores ausentes
+payment_data_cols.dropna(inplace=True)
+customer_data.dropna(inplace=True)
 
-colunas_numericas = df_selected.select_dtypes(include=['float64', 'int64']).columns
-scaler = StandardScaler()
-df_selected[colunas_numericas] = scaler.fit_transform(df_selected[colunas_numericas])
-print("\nColunas numéricas normalizadas:")
-print(df_selected.head())
-df_selected.to_csv("Dataset_coletado.csv", index=False)
-print("\nDataset atualizado 'Dataset_coletado.csv'.")
+#Remover duplicatas
+payment_data_cols.drop_duplicates(inplace=True)
+customer_data.drop_duplicates(inplace=True)
 
-# Remover linhas com valores NaN
-# Astype muda caracteras pra númericos se for solicitado
+#Verificar valores ausentes
+print(payment_data_cols.isnull().sum())
+print(customer_data.isnull().sum())
+
+# Combinar os dois DataFrames usando a coluna 'id'
+combined_data = pd.merge(payment_data_cols, customer_data, on='id')
+
+#Features e Target
+X = combined_data.drop(['label'], axis=1)  # Features
+y = combined_data['label']  # Target
+
+#Dimensões dos dados processados
+print("Dimensões dos dados de features:", X.shape)
+print("Dimensões dos dados de rótulos:", y.shape)
+
+print(combined_data.head())  #Print do DataFrame final
+print("Distribuição de classes:")
+print(y.value_counts())  #Mostra a distribuição de classes
+
+combined_data.to_csv('credit_risk_data.csv', index=False)
+print("Dataset alterado salvo como 'credit_risk_data.csv'")

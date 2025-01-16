@@ -1,51 +1,65 @@
-import pandas as pd
-import numpy as np
-from scipy.spatial.distance import mahalanobis, cityblock, chebyshev, euclidean
 from sklearn.model_selection import train_test_split
+from scipy.spatial.distance import mahalanobis, chebyshev, cityblock, euclidean
+import numpy as np
+import pandas as pd
 from collections import Counter
 
-dataset = pd.read_csv('Dataset_coletado.csv')
+def load_combined_data():
+    return pd.read_csv('credit_risk_data.csv')
 
-X = dataset.drop(columns=['blue'])
-y = dataset['blue']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+credit_risk_data = load_combined_data()
 
-def knn(X_train, y_train, X_test, k, distance_func):
+# Features e Target
+X = credit_risk_data.drop(['label'], axis=1).values  # Features
+y = credit_risk_data['label'].values  # Target
+
+# Divisão do dataset em treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# KNN Manual
+def knn(X_train, y_train, X_test, k, dist_metric):
     predictions = []
     for test_point in X_test:
-        distances = []
-        for i, train_point in enumerate(X_train):
-            distance = distance_func(test_point, train_point)
-            distances.append((distance, y_train[i]))
-        distances.sort(key=lambda x: x[0])
-        k_nearest = distances[:k]
-        k_nearest_labels = [label for _, label in k_nearest]
-        prediction = Counter(k_nearest_labels).most_common(1)[0][0]
-        predictions.append(prediction)
-    return predictions
+        # Calcular distâncias
+        if dist_metric == 'euclidean':
+            dists = np.array([euclidean(x, test_point) for x in X_train])
+        elif dist_metric == 'manhattan':
+            dists = np.array([cityblock(x, test_point) for x in X_train])
+        elif dist_metric == 'chebyshev':
+            dists = np.array([chebyshev(x, test_point) for x in X_train])
+        elif dist_metric == 'mahalanobis':
+            vi = np.cov(X_train.T)  # Matriz de covariância
+            try:
+                inv_vi = np.linalg.inv(vi)  # Inversa da matriz de covariância
+                dists = np.array([mahalanobis(test_point, x, inv_vi) for x in X_train])
+            except np.linalg.LinAlgError:
+                print("A matriz de covariância é singular. Usando distância euclidiana como fallback.")
+                dists = np.array([euclidean(x, test_point) for x in X_train])
 
-X_train_array = X_train.to_numpy()
-X_test_array = X_test.to_numpy()
-y_train_array = y_train.to_numpy()
+        # K vizinhos mais próximos
+        k_indices = np.argsort(dists)[:k]
+        k_nearest_labels = [y_train[i] for i in k_indices]
 
-def compute_accuracy(y_true, y_pred):
+        # Predição pela classe mais comum
+        most_common = Counter(k_nearest_labels).most_common(1)[0][0]
+        predictions.append(most_common)
+
+    return np.array(predictions)
+
+# Cálculo da acurácia
+def accuracy(y_true, y_pred):
     return np.sum(y_true == y_pred) / len(y_true)
 
-distance_functions = {
-    'Mahalanobis': lambda x, y: mahalanobis(x, y, np.linalg.inv(np.cov(X_train_array, rowvar=False))),
-    'Chebyshev': chebyshev,
-    'Manhattan': cityblock,
-    'Euclidean': euclidean
-}
-results = {}
+k = 7
+metrics = ['euclidean', 'manhattan', 'chebyshev', 'mahalanobis']
+accuracies = {}
 
-for name, func in distance_functions.items():
-    print(f"Calculando KNN usando {name}...")
-    y_pred = knn(X_train_array, y_train_array, X_test_array, k=7, distance_func=func)
-    accuracy = compute_accuracy(y_test.to_numpy(), y_pred)
-    results[name] = accuracy
-    print(f"Acurácia usando {name}: {accuracy:.2f}")
+for metric in metrics:
+    y_pred = knn(X_train, y_train, X_test, k, metric)
+    acc = accuracy(y_test, y_pred)
+    accuracies[metric] = acc
 
-print("\nResultados finais:")
-for distance, acc in results.items():
-    print(f"{distance}: {acc:.2f}")
+# Printar as acurácias
+print("\nAcurácias para diferentes métricas de distância:")
+for metric, acc in accuracies.items():
+    print(f"{metric.capitalize()}: {acc:.9f}")
