@@ -1,9 +1,22 @@
 import pandas as pd
-import numpy as np
-
 
 df = pd.read_csv("flavors_of_cacao.csv")
-dfn = df.dropna()
-newdataset = dfn.drop(['Bean\nType'],axis=1)
-print(newdataset.isnull().sum())
-print("Colunas disponíveis:", list(newdataset.columns))
+print("Resumo:")
+print(df.info())
+
+df = df.dropna()
+
+df = df.drop(["REF", "Review\nDate"], axis=1)
+
+print(df.dtypes)
+
+def percentfloat(df):
+    return df.apply(lambda x: float(x.strip('%'))/100)
+
+df['Cocoa\nPercent'] = percentfloat(df["Cocoa\nPercent"])
+
+print(df.dtypes)
+
+df.to_csv("sabores_de_cacau_ajustado.csv", index=False)
+
+print(df.info)
