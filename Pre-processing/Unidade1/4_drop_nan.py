@@ -13,7 +13,7 @@ print(volunteer.isnull().sum())
 print("\nEXCLUINDO COLUNAS")
 volunteer_cols = volunteer.drop(['is_priority', 'amsl', 'amsl_unit', 'primary_loc'], axis=1)
 print(volunteer_cols.isnull().sum())
-
+print("\nAQUI")
 volunteer_line = volunteer_cols.dropna()
 print(volunteer_line.isnull().sum())
 

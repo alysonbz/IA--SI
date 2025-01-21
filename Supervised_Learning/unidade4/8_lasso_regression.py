@@ -1,7 +1,5 @@
 import matplotlib.pyplot as plt
 from src.utils import load_sales_clean_dataset
-
-# Import Lasso
 from sklearn.linear_model import Lasso
 
 sales_df = load_sales_clean_dataset()
