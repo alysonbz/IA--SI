@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="src">
+      <change beforePath="$PROJECT_DIR$/.idea/IA--SI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IA--SI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/dataset.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset_coletado.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/3_logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/3_logistic_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bodyfat.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/alysonbz/IA--SI.git&quot;,
-    &quot;accountId&quot;: &quot;e51a8dcb-11a4-431f-9784-785f611a9ac2&quot;
+    &quot;accountId&quot;: &quot;8f4281a2-1a41-4202-aa3a-d71486d27dd9&quot;
   },
   &quot;recentNewPullRequestHead&quot;: {
     &quot;server&quot;: {
@@ -68,60 +74,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.0_class_anotation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1_create_features.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1_k-Nearest-Neighbors-Fit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1_pre_processing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1_standardization.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_build_regression.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_evaluate_knn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_log_normalization.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_training_and_test_sets.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_underfiting_overfiting.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_visualize_predictions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4_drop_nan.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4_fit_prediction.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5_compute_manual_score.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5_manual_train_test_split.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6_cross_validadation_r_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7_ridge_regularization.executor&quot;: &quot;Run&quot;,
-    &quot;Python.8_lasso_regression.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atividade_de_casa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atv_casa_Knn_manual.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dist_chebyshev.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dist_manhattan.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dist_minkowski.executor&quot;: &quot;Run&quot;,
-    &quot;Python.q1-teste.executor&quot;: &quot;Run&quot;,
-    &quot;Python.questao1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.questao2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.questao3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.questao5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.questao6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.questao7.executor&quot;: &quot;Run&quot;,
-    &quot;Python.questão1-teste.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;helen-brandao&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI/AV1/data_classificacao_ajustado.csv&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.0_class_anotation.executor": "Run",
+    "Python.1_create_features.executor": "Run",
+    "Python.1_k-Nearest-Neighbors-Fit.executor": "Run",
+    "Python.1_pre_processing.executor": "Run",
+    "Python.1_standardization.executor": "Run",
+    "Python.2_build_regression.executor": "Run",
+    "Python.2_data_types.executor": "Run",
+    "Python.2_evaluate_knn.executor": "Run",
+    "Python.2_log_normalization.executor": "Run",
+    "Python.3_Scaling_data.executor": "Run",
+    "Python.3_logistic_regression.executor": "Run",
+    "Python.3_training_and_test_sets.executor": "Run",
+    "Python.3_underfiting_overfiting.executor": "Run",
+    "Python.3_visualize_predictions.executor": "Run",
+    "Python.4_drop_nan.executor": "Run",
+    "Python.4_fit_prediction.executor": "Run",
+    "Python.5_compute_manual_score.executor": "Run",
+    "Python.5_manual_train_test_split.executor": "Run",
+    "Python.6_cross_validadation_r_2.executor": "Run",
+    "Python.7_ridge_regularization.executor": "Run",
+    "Python.8_lasso_regression.executor": "Run",
+    "Python.Atividade_de_casa.executor": "Run",
+    "Python.Atv_casa_Knn_manual.executor": "Run",
+    "Python.dist_chebyshev.executor": "Run",
+    "Python.dist_manhattan.executor": "Run",
+    "Python.dist_minkowski.executor": "Run",
+    "Python.q1-teste.executor": "Run",
+    "Python.questao1.executor": "Run",
+    "Python.questao2.executor": "Run",
+    "Python.questao3.executor": "Run",
+    "Python.questao4.executor": "Run",
+    "Python.questao5.executor": "Run",
+    "Python.questao6.executor": "Run",
+    "Python.questao7.executor": "Run",
+    "Python.questão1-teste.executor": "Debug",
+    "Python.utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "helen-brandao",
+    "last_opened_file_path": "C:/Users/win11/Desktop/IA-SI/IA--SI",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "two.files.diff.last.used.file": "C:/Users/win11/Desktop/IA-SI/IA--SI/AV1/data_classificacao_ajustado.csv"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\win11\Desktop\IA-SI\IA--SI\AV1\dataset" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.questao2">
+  <component name="RunManager">
     <configuration name="3_visualize_predictions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
@@ -278,7 +286,135 @@
       <option name="project" value="LOCAL" />
       <updated>1736909959038</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="questão1 atualizada">
+      <option name="closed" value="true" />
+      <created>1736978025366</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978025367</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pasta dataset atualizada">
+      <option name="closed" value="true" />
+      <created>1736978189810</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978189810</updated>
+    </task>
+    <task id="LOCAL-00011" summary="questão2 atualizada">
+      <option name="closed" value="true" />
+      <created>1736978287670</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978287672</updated>
+    </task>
+    <task id="LOCAL-00012" summary="questão3 atualizada">
+      <option name="closed" value="true" />
+      <created>1736978479795</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978479795</updated>
+    </task>
+    <task id="LOCAL-00013" summary="questão4 atualizada">
+      <option name="closed" value="true" />
+      <created>1736978686097</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978686097</updated>
+    </task>
+    <task id="LOCAL-00014" summary="questão5 atualizada">
+      <option name="closed" value="true" />
+      <created>1736978897348</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978897350</updated>
+    </task>
+    <task id="LOCAL-00015" summary="datasets atualizados">
+      <option name="closed" value="true" />
+      <created>1736978975399</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978975399</updated>
+    </task>
+    <task id="LOCAL-00016" summary="questao6 atualizada">
+      <option name="closed" value="true" />
+      <created>1736979207943</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736979207944</updated>
+    </task>
+    <task id="LOCAL-00017" summary="questao7 atualizada">
+      <option name="closed" value="true" />
+      <created>1736979306437</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736979306437</updated>
+    </task>
+    <task id="LOCAL-00018" summary="unidade 1 - atualizada">
+      <option name="closed" value="true" />
+      <created>1736980087602</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736980087604</updated>
+    </task>
+    <task id="LOCAL-00019" summary="unidade 2 - atualizada">
+      <option name="closed" value="true" />
+      <created>1736980447758</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736980447759</updated>
+    </task>
+    <task id="LOCAL-00020" summary="unidade 3 - atualizada">
+      <option name="closed" value="true" />
+      <created>1736980738913</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736980738913</updated>
+    </task>
+    <task id="LOCAL-00021" summary="unidade 4 - atualizada">
+      <option name="closed" value="true" />
+      <created>1736981029833</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1736981029833</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Adicionado arquivo PDF à pasta av1.">
+      <option name="closed" value="true" />
+      <created>1736989108050</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736989108051</updated>
+    </task>
+    <task id="LOCAL-00023" summary="atv">
+      <option name="closed" value="true" />
+      <created>1737469572321</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1737469572321</updated>
+    </task>
+    <task id="LOCAL-00024" summary="src">
+      <option name="closed" value="true" />
+      <created>1738071008374</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1738071008374</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,12 +466,27 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="atv" />
     <MESSAGE value="Atividade" />
     <MESSAGE value="Atividades-IA" />
     <MESSAGE value="Atualizações das Atividades" />
     <MESSAGE value="Atualizações de tudo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizações de tudo" />
+    <MESSAGE value="questão1 atualizada" />
+    <MESSAGE value="pasta dataset atualizada" />
+    <MESSAGE value="questão2 atualizada" />
+    <MESSAGE value="questão3 atualizada" />
+    <MESSAGE value="questão4 atualizada" />
+    <MESSAGE value="questão5 atualizada" />
+    <MESSAGE value="datasets atualizados" />
+    <MESSAGE value="questao6 atualizada" />
+    <MESSAGE value="questao7 atualizada" />
+    <MESSAGE value="unidade 1 - atualizada" />
+    <MESSAGE value="unidade 2 - atualizada" />
+    <MESSAGE value="unidade 3 - atualizada" />
+    <MESSAGE value="unidade 4 - atualizada" />
+    <MESSAGE value="Adicionado arquivo PDF à pasta av1." />
+    <MESSAGE value="atv" />
+    <MESSAGE value="src" />
+    <option name="LAST_COMMIT_MESSAGE" value="src" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
