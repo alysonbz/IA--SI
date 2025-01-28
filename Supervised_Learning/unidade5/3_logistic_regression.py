@@ -1,6 +1,6 @@
 from src.utils import load_diabetes_clean_dataset
 from sklearn.model_selection import train_test_split
-from sklean.linear_model import LogisticRegresssion
+from sklearn.linear_model import LogisticRegression
 
 diabetes_df = load_diabetes_clean_dataset()
 X = diabetes_df.drop(['diabetes'],axis=1)
@@ -9,7 +9,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 
 # Instantiate the model
-logreg = LogisticRegresssion
+logreg = LogisticRegression()
 
 # Fit the model
 logreg.fit(X_train, y_train)
