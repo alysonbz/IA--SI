@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
+<<<<<<< HEAD
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
+=======
+    <orderEntry type="jdk" jdkName="Python 3.11 (IA--SI)" jdkType="Python SDK" />
+>>>>>>> 19ff1d64c8fb77cf33e1c8859ac796054638046f
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
