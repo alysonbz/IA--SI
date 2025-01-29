@@ -46,4 +46,3 @@ plt.ylabel("Sales ($)")
 
 # Display the plot
 plt.show()
-

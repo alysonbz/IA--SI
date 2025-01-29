@@ -1,28 +1,35 @@
-from src.utils import load_sales_clean_dataset
+import numpy as np
 from sklearn.linear_model import LinearRegression
-# Import the necessary modules
-from ____.____ import ____, ____
+from sklearn.model_selection import cross_val_score, KFold
 
+# Se o diretório 'src' não estiver no caminho de importação, adicione o seguinte:
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+from src.utils import load_sales_clean_dataset
+
+# Carregar os dados
 sales_df = load_sales_clean_dataset()
-# Create X and y arrays
-X = sales_df["radio"].values.reshape(-1, 1)
-y = sales_df["sales"].values
 
+# Criar arrays X (variáveis independentes) e y (variável dependente)
+X = sales_df["tv"].values.reshape(-1, 1)  # "tv" é a variável preditora
+y = sales_df["sales"].values  # "sales" é a variável alvo
 
-#Create a KFold object
-kf = ____(n_splits=____, shuffle=____, random_state=5)
+# Criar o objeto KFold
+kf = KFold(n_splits=6, shuffle=True, random_state=5)
 
+# Criar o modelo de regressão linear
 reg = LinearRegression()
 
-# Compute 6-fold cross-validation scores
-cv_scores = ____(____, ____, ____, cv=____)
+# Calcular as pontuações de validação cruzada (cross-validation)
+cv_scores = cross_val_score(reg, X, y, cv=kf)
 
-# Print cv_scores
-print(____)
+# Exibir as pontuações de cada fold
+print("Pontuações de cada fold: ", cv_scores)
 
-# Print the mean
-print(___(__))
+# Exibir a média das pontuações
+print("Média das pontuações de validação cruzada: ", np.mean(cv_scores))
 
-# Print the standard deviation
-print(___(__))
-
+# Exibir o desvio padrão das pontuações
+print("Desvio padrão das pontuações de validação cruzada: ", np.std(cv_scores))
