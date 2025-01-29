@@ -1,3 +1,5 @@
+from unicodedata import category
+
 from src.utils import load_volunteer_dataset
 
 def train_test_split(X,y,test_size):
@@ -12,10 +14,10 @@ def train_test_split(X,y,test_size):
 volunteer = load_volunteer_dataset()
 
 # Exclua as colunas Latitude e Longitude de volunteer
-volunteer_new = __
+volunteer_new = dr['latitude', 'longitude']
 
 # Exclua as linhas com valores null da coluna category_desc de volunteer_new
-volunteer = ___
+volunteer = volunteer_new.drop(category("null"))
 
 # mostre o balanceamento das classes em 'category_desc'
 print(___['category_desc'].__,'\n','\n')
