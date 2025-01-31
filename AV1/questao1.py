@@ -1,39 +1,28 @@
 import pandas as pd
+import numpy as np
 
-#Onde está o dataset
-water_path = r'C:\Users\Bill0ca\PycharmProjects\IA--SI\AV1\Datasets\waterQuality1.csv'
-water = pd.read_csv(water_path)
+# 1) Importar bibliotecas e carregar o dataset
+# Criando o dataset a partir do exemplo fornecido
+data = pd.read_csv('waterquality.csv')
+# Criar DataFrame
+df = pd.DataFrame(data)
 
-#Exclusão das celulas vazias e criação de uma nova caso tenha valores NaN
-#Indentificação dos valores #NUM!
-invalid_rows = water[water['is_safe'] == '#NUM!']
-print("\nEntradas invalidas por valores #NUM!\n", invalid_rows)
+# 2) Verificar células vazias, zeros, NaN ou strings
+if df.isnull().any().any() or (df == 0).any().any() or df.applymap(lambda x: isinstance(x, str)).any().any():
+    df = df[(df != 0).all(axis=1)].dropna()
 
-#Tratamento dos valores #NUM! para NaN
-water['is_safe'] = pd.to_numeric(water['is_safe'], errors='coerce')
+# 3) Selecionar colunas relevantes (ammonia, chloramine, lead, nitrates, is_safe)
+selected_columns = ['ammonia', 'chloramine', 'lead', 'nitrates', 'is_safe']
+df_selected = df[selected_columns]
 
-if water.isnull().sum().sum() > 0:
-    print("Valores NaN detectados. Novo arquivo criado!")
-    water_cleaned = water.dropna()
-else:
-    print("Sem valores NaN")
-    water_cleaned = water.copy()
+# 4) Exibir o DataFrame final e a distribuição de classes
+print("DataFrame Final:\n", df_selected)
+print("\nDistribuição de Classes:\n", df_selected['is_safe'].value_counts())
 
-#Colunas relevantes
-selected_colums = [
-    'aluminium', 'ammonia', 'arsenic', 'barium', 'cadmium', 'chloramine',
-    'chromium', 'copper', 'flouride', 'bacteria', 'viruses', 'lead',
-    'nitrates', 'nitrites', 'mercury', 'perchlorate', 'radium', 'selenium',
-    'silver', 'uranium', 'is_safe'
-]
-water_relevant = water_cleaned[selected_colums]
-
-#Distribuição de classes
-print("\nDistribuição de classes:")
-print(water_relevant['is_safe'].value_counts())
-
-#Dataframe atual
-print("\nDataframe atual:\n", water_relevant.head())
-
-water_relevant.to_csv("waterQuality_ajustado.csv", index=False)
-print("\nDataset ajustado salvo como 'waterQuality_ajustado.csv'.")
+# 5) Avaliar necessidade de mais pré-processamento
+# Exemplo: Normalização para as colunas contínuas (se necessário)
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+df_selected[['ammonia', 'chloramine', 'lead', 'nitrates']] = scaler.fit_transform(df_selected[['ammonia', 'chloramine', 'lead', 'nitrates']])
+# 6) Salvar o dataset ajustado em um novo arquivo CSV
+df_selected.to_csv('waterquality_ajustado.csv', index=False)
