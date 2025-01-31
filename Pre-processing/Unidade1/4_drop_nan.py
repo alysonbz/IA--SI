@@ -2,5 +2,11 @@ from src.utils import load_volunteer_dataset
 
 volunteer = load_volunteer_dataset()
 
-#Elabore um código para motrar o shape e dados do dataset volunteer corrigido, sem NAN em suas colunas.
-#pronto para utilizar em um proxima etapa.
+# Remove as linhas com valores NaN em qualquer coluna
+volunteer_cleaned = volunteer.dropna()
+
+# Exibe o shape do dataset após a remoção de valores NaN
+print("Shape do dataset limpo:", volunteer_cleaned.shape)
+
+# Exibe os primeiros dados do dataset limpo para conferir
+print(volunteer_cleaned.head())
