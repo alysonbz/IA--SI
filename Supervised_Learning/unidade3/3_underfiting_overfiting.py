@@ -5,42 +5,42 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 churn_df = load_churn_dataset()
-X = churn_df[["account_length",  "total_day_charge" , "total_eve_charge",  "total_night_charge","total_intl_charge","number_customer_service_calls"]].values
+X = churn_df[["account_length", "total_day_charge", "total_eve_charge", "total_night_charge", "total_intl_charge", "number_customer_service_calls"]].values
 y = churn_df["churn"].values
 
-# Split into training and test sets
+# Divisão em conjuntos de treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
-# Create neighbors
-neighbors = np.arange(____, ____)
+# Criação de vizinhos
+neighbors = np.arange(1, 21)
 train_accuracies = {}
 test_accuracies = {}
 
 for neighbor in neighbors:
-    # Set up a KNN Classifier
-    knn = ____(____=____)
+    # Configuração do classificador KNN
+    knn = KNeighborsClassifier(n_neighbors=neighbor)
 
-    # Fit the model
-    knn.____(____, ____)
+    # Ajuste do modelo
+    knn.fit(X_train, y_train)
 
-    # Compute accuracy
-    train_accuracies[____] = knn.____(____, ____)
-    test_accuracies[____] = knn.____(____, ____)
+    # Computação da acurácia
+    train_accuracies[neighbor] = knn.score(X_train, y_train)
+    test_accuracies[neighbor] = knn.score(X_test, y_test)
 
-print("acuracy on train: ",train_accuracies, '\n',"acuracy on test: ", test_accuracies)
+print("Acurácia no treino: ", train_accuracies, '\n', "Acurácia no teste: ", test_accuracies)
 
-# Add a title
-plt.title("____")
+# Adicionar um título
+plt.title("Acurácia do KNN para diferentes números de vizinhos")
 
-# Plot training accuracies
-plt.plot(____, ____, label="____")
+# Plotando as acurácias de treino
+plt.plot(neighbors, list(train_accuracies.values()), label="Acurácia de Treino")
 
-# Plot test accuracies
-plt.plot(____, ____, label="____")
+# Plotando as acurácias de teste
+plt.plot(neighbors, list(test_accuracies.values()), label="Acurácia de Teste")
 
 plt.legend()
-plt.xlabel("Number of Neighbors")
-plt.ylabel("Accuracy")
+plt.xlabel("Número de Vizinhos")
+plt.ylabel("Acurácia")
 
-# Display the plot
-____
+# Exibindo o gráfico
+plt.show()

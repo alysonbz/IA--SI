@@ -1,27 +1,27 @@
 from src.utils import load_churn_dataset
 import numpy as np
 
-# Import KNeighborsClassifier
-from ____.____ import ____
+# Importando o KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier
 
 churn_df = load_churn_dataset()
 
-# Create arrays for the features and the target variable
-y = ____["____"].values
-X = ____[["____", "____"]].values
+# Criando arrays para as variáveis de entrada e saída
+y = churn_df["Churn"].values
+X = churn_df[["Age", "Balance"]].values
 
-# Create a KNN classifier with 6 neighbors
-knn = ____
+# Criando um classificador KNN com 6 vizinhos
+knn = KNeighborsClassifier(n_neighbors=6)
 
-# Fit the classifier to the data
-knn.____(____, ____)
+# Treinando o classificador com os dados
+knn.fit(X, y)
 
 X_test = np.array([[30.0, 17.5],
                   [107.0, 24.1],
                   [213.0, 10.9]])
 
-# Predict the labels for the X_teste
-y_pred = __.__(__)
+# Predizendo as labels para os dados de teste
+y_pred = knn.predict(X_test)
 
-# Print the predictions for X_test
-print("Predictions: {}".format(__))
+# Imprimindo as previsões para X_test
+print("Previsões: {}".format(y_pred))
