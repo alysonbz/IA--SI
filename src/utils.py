@@ -13,7 +13,7 @@ def load_wine_dataset():
     wine = pd.read_csv('../dataset/wine.csv')
     return wine
 
-def load_hiking_dataset():
+def load_hiking_dataset
     return pd.read_json('../dataset/hiking.json')
 
 def load_df1_unidade1():
