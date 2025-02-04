@@ -1,6 +1,5 @@
 from src.utils import process_diabetes
 
-
 class Metrics:
 
     def __init__(self, y_pred, y_test):
