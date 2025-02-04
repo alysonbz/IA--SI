@@ -27,7 +27,7 @@ lasso = Lasso()
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
 #Set up the parameter grid
-param_grid = {"alpha": np.linspace(0.0001, 1, 20)}
+param_grid = {"alpha": np.linspace(0.00001, 1, 20)}
 
 # Instantiate lasso_cv
 lasso_cv = GridSearchCV(lasso, param_grid, cv=kf)
