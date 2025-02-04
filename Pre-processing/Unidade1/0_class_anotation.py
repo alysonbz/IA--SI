@@ -16,3 +16,4 @@ print(hiking.head())
 
 
 
+print(df1.info())
