@@ -1,5 +1,6 @@
 from src.utils import load_volunteer_dataset
 
+
 volunteer = load_volunteer_dataset()
 
 # Mostre a dimensão do dataset volunteer

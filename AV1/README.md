@@ -81,8 +81,8 @@ regressão: https://www.kaggle.com/datasets/fedesoriano/body-fat-prediction-data
 
 ```questao1.py```
 
-Neste primeiro exercício você deve realizar manipulação em um dataset com a biblioteca pandas e realizar o pré-processamento deste.
-
+Neste primeiro exercício você deve realizar manipulação em um dataset com a biblioteca pandas e reali[zar o pré-processamento deste.
+]()
 #### Instruções:
 
 1) Importe as bibliotecas necessárias.
