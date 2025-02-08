@@ -1,5 +1,5 @@
 # Import StandardScaler
-from sklearn.preprocessing import ____
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from src.utils import load_wine_dataset
 from sklearn.neighbors import KNeighborsClassifier
