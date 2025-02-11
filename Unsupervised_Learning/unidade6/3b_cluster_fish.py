@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 
 samples_df = load_fish_dataset()
 samples = samples_df.drop(['specie'],axis=1)
-specie = samples_df['specie'].values
+varieties = samples_df['specie'].values
 
 # Create KMeans instance: kmeans with 4 custers
 model = KMeans(n_clusters=4)
@@ -17,8 +17,9 @@ pipeline = make_pipeline(scaler, model)
 label = model.fit(samples)
 
 # Create a DataFrame with labels and varieties as columns: df
-df = pd.DataFrame({'label': labels, 'varietes': varietes})
+df = pd.DataFrame({'label': label, 'specie': varieties})
 
 # Create crosstab: ct
-ct = pd.crosstab(df['labels'], df['varietes'])
+ct = pd.crosstab(df['label'], df['specie'])
 # Display ct
+print(ct)
