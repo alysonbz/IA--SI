@@ -1,6 +1,4 @@
 import pandas as pd
-
-# Perform the necessary imports
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
@@ -16,7 +14,7 @@ species = samples_df['specie'].values
 scaler = StandardScaler()
 
 # Create KMeans instance: kmeans
-kmeans = KMeans()
+kmeans = KMeans(n_clusters=4)
 
 # Create pipeline: pipeline
 pipeline = make_pipeline(scaler, kmeans)
@@ -25,13 +23,13 @@ pipeline = make_pipeline(scaler, kmeans)
 pipeline.fit(samples)
 
 # Calculate the cluster labels: labels
-labels = model.fit_predict()
+labels = kmeans.fit_predict(samples)
 
 # Create a DataFrame with labels and species as columns: df
-df = ____
+df = pd.DataFrame({'labels': labels, 'specie': species})
 
 # Create crosstab: ct
-ct = ____
+ct = pd.crosstab(df['labels'], df['specie'])
 
 # Display ct
 print(ct)
