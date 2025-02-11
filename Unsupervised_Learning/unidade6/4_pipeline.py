@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Perform the necessary imports
-from ____ import ____
-from ____ import ____
-from ____ import ____
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
 
 from src.utils import load_fish_dataset
 
@@ -13,19 +13,19 @@ species = samples_df['specie'].values
 
 
 # Create scaler: scaler
-scaler = ____
+scaler = StandardScaler()
 
 # Create KMeans instance: kmeans
-kmeans = ____
+kmeans = KMeans()
 
 # Create pipeline: pipeline
-pipeline = ____
+pipeline = make_pipeline(scaler, kmeans)
 
 # Fit the pipeline to samples
-____
+pipeline.fit(samples)
 
 # Calculate the cluster labels: labels
-labels = ____
+labels = model.fit_predict()
 
 # Create a DataFrame with labels and species as columns: df
 df = ____
