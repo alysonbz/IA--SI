@@ -1,6 +1,6 @@
 # Perform the necessary imports
 import matplotlib.pyplot as plt
-
+from scipy.stats import pearsonr
 from src.utils import load_grains_dataset
 
 
@@ -12,13 +12,13 @@ grains_df = load_grains_dataset()
 
 
 # Assign the 0th column of grains: width
-width = __
+width = grains_df.iloc[:, 0].values
 
 # Assign the 1st column of grains: length
-length = __
+length = grains_df.iloc[:, 1].values
 
 # Calculate the Pearson correlation
-correlation = pearson_correlation(width,length)
+correlation, _ = pearsonr(width,length)
 
 # Display the correlation
 print(correlation)

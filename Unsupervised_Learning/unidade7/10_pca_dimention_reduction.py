@@ -1,4 +1,4 @@
-
+import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from src.utils import load_fish_dataset
@@ -11,16 +11,20 @@ scaled_samples = scaler.fit_transform(samples)
 
 
 # Create a PCA model with components in adequate number: pca
-pca = __
+pca = PCA(n_components=2)
 
 # Fit the PCA instance to the scaled samples
-__
+pca.fit(scaled_samples)
 
 # Transform the scaled samples: pca_features
-__
+pca_features = pca.transform(scaled_samples)
 
 # Print the shape of pca_features
-__
+print("Shape of pca_features:", pca_features.shape)
 
 #vizualize scatter plot with dimension reduced
-__
+plt.scatter(pca_features[:, 0], pca_features[:, 1])
+plt.xlabel("Componente Principal 1")
+plt.ylabel("Componente Principal 2")
+plt.title("Visualização PCA dos Dados de Peixes")
+plt.show()

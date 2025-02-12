@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7b432a3-5c56-4f0a-88e0-2a60a811f639" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/10_pca_dimention_reduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/10_pca_dimention_reduction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/2_dedogram_movements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/2_dedogram_movements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/3_fcluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/3_fcluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/4_tsne.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/4_tsne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/5_tsne_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/5_tsne_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/6_pearson_correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/6_pearson_correlation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/7_manual_pearson_correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/7_manual_pearson_correlation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/8_PCA_decorrelation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/8_PCA_decorrelation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/9_pca_variance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/9_pca_variance_analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +46,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.10_pca_dimention_reduction.executor": "Run",
     "Python.1_Clustering_2D_points.executor": "Run",
+    "Python.1_dendogram.executor": "Run",
     "Python.1_pre_processing.executor": "Run",
+    "Python.2_dedogram_movements.executor": "Run",
     "Python.2_inertia.executor": "Run",
     "Python.3_Scaling_data.executor": "Run",
     "Python.3_crosstab.executor": "Run",
+    "Python.3_fcluster.executor": "Run",
     "Python.3_training_and_test_sets.executor": "Run",
     "Python.3b_cluster_fish.executor": "Run",
     "Python.4_drop_nan.executor": "Run",
     "Python.4_pipeline.executor": "Run",
     "Python.5_normalizer.executor": "Run",
+    "Python.5_tsne_2.executor": "Run",
+    "Python.6_pearson_correlation.executor": "Run",
+    "Python.7_manual_pearson_correlation.executor": "Run",
+    "Python.8_PCA_decorrelation.executor": "Run",
+    "Python.9_pca_variance_analysis.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "kauemartins",
