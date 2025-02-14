@@ -1,7 +1,5 @@
 # Import pandas
-from random import sample
 import pandas as pd
-
 # Import Normalizer
 from sklearn.preprocessing import Normalizer
 from sklearn.pipeline import make_pipeline

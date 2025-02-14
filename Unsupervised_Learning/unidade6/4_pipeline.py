@@ -4,6 +4,7 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
+
 from src.utils import load_fish_dataset
 
 samples_df = load_fish_dataset()
