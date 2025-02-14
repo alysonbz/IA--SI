@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7b432a3-5c56-4f0a-88e0-2a60a811f639" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AV2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV2/questao1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV2/questao2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV2/questao3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV2/questao4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/0_cluster_similarity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/10_pca_dimention_reduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/10_pca_dimention_reduction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/2_dedogram_movements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/2_dedogram_movements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/3_fcluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/3_fcluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/4_tsne.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/4_tsne.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/5_tsne_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/5_tsne_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/6_pearson_correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/6_pearson_correlation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/7_manual_pearson_correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/7_manual_pearson_correlation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/8_PCA_decorrelation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/8_PCA_decorrelation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/9_pca_variance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/9_pca_variance_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/dataset.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +65,7 @@
     "Python.9_pca_variance_analysis.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "kauemartins",
+    "git-widget-placeholder": "Merging kauemartins",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Kauem/PycharmProjects/IA--SI",
     "nodejs_package_manager_path": "npm",
