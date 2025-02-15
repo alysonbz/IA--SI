@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from src.utils import load_grains_splited_datadet
 
 #import linkage and dendogram
-from ___ y import __, __
+from scipy.cluster.hierarchy import linkage, dendrogram
 
 
 
@@ -11,7 +11,7 @@ X_train, samples, y_train, varieties = load_grains_splited_datadet()
 
 
 # Calculate the linkage: mergings
-mergings = ____
+mergings = linkage(samples, method='complete')
 
 # Plot the dendrogram, using varieties as labels
 dendrogram(____,
