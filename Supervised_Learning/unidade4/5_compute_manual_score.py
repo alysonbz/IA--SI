@@ -1,4 +1,4 @@
-import numpy as np
+#import np
 from src.utils import processing_all_features_sales_clean
 
 def compute_RSS(predictions,y):

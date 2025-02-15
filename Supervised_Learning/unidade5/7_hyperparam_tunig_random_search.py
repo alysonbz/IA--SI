@@ -1,4 +1,4 @@
-
+pip
 import numpy as np
 
 #import Logistic regression
