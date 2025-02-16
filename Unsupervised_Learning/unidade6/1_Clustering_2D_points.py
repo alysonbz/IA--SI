@@ -28,7 +28,7 @@ ys = test_points[:,1]
 ___
 
 # Assign the cluster centers: centroids
-centroids =
+centroids = 3
 
 # Assign the columns of centroids: centroids_x, centroids_y
 centroids_x = centroids[:,0]

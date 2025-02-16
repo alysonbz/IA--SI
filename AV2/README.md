@@ -66,9 +66,6 @@ Raimundo Rafael e Ryan Guilherme:
 https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification
 
 
-
-
-
 ### Questão 1
 
 ```questao1.py```
