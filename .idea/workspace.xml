@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ed03c08-aef3-44a1-a693-62265f528d3d" name="Changes" comment="alterações">
-      <change afterPath="$PROJECT_DIR$/AV1/dataset.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/5_manual_trainnin_and_test_sets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/atividade de casa/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/dataset/company-stock-movements-2010-2015-incl.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/dataset/eurovision-2016.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/dataset/fish.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/dataset/grains.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/dataset/lcd-digits.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/dataset/wine.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3b_cluster_fish.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/10_pca_dimention_reduction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/11_apply_no_supervised_tec.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/1_dendogram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/2_dedogram_movements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/3_fcluster.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/4_tsne.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/5_tsne_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/6_pearson_correlation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/7_manual_pearson_correlation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/8_PCA_decorrelation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/9_pca_variance_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IA--SI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IA--SI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/1_Encoding_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/1_Enconding_data_resp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/2_Encoding_data_dummies.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/3_loc_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/4_convert_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/5_re_expression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/6_vectorize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/6_vectorize_resp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Feature_Engineering/text_classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/5_manual_train_test_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/5_manual_train_test_split.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/teste.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="7ed03c08-aef3-44a1-a693-62265f528d3d" name="Changes" comment="alterações" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +55,7 @@
     "Python.4_drop_nan.executor": "Run",
     "Python.4_pipeline.executor": "Run",
     "Python.5_manual_train_test_split.executor": "Run",
+    "Python.5_normalizer.executor": "Run",
     "Python.6_hyperparam_tuning_grid_search.executor": "Run",
     "Python.Atividade_de_casa.executor": "Run",
     "Python.questao1.executor": "Run",
@@ -125,7 +68,7 @@
     "Python.teste.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging glaubermelo",
+    "git-widget-placeholder": "glaubermelo",
     "last_opened_file_path": "C:/Users/glaub/Desktop/IA-SI/IA--SI",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
@@ -170,7 +113,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738678369665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1739828387434</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739828387434</updated>
+    </task>
+    <task id="LOCAL-00005" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1739828407328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739828407328</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
