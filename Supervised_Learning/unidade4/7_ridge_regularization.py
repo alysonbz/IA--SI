@@ -1,7 +1,10 @@
 from src.utils import load_sales_clean_dataset
-from sklearn.model_selection import train_test_split
 # Import Ridge
+<<<<<<< HEAD
 from sklearn.linear_model import Ridge
+=======
+from scikit.learn import Ridge
+>>>>>>> 8dbee5f0bdad0e083bc03654e1a4101bf868fd0d
 
 
 sales_df = load_sales_clean_dataset()
@@ -17,9 +20,16 @@ for alpha in alphas:
     ridge = Ridge(alpha=alpha)
 
     # Fit the data
+<<<<<<< HEAD
     ridge.fit(X_train, y_train)
 
     # Obtain R-squared
     score = ridge.score(X_test, y_test)
+=======
+    ridge.fit = (X_train, y_train)
+
+    # Obtain R-squared
+    score = ridge.scores(X_test,y_test)
+>>>>>>> 8dbee5f0bdad0e083bc03654e1a4101bf868fd0d
     ridge_scores.append(score)
 print(ridge_scores)

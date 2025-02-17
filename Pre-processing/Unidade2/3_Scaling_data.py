@@ -11,6 +11,7 @@ wine = load_wine_dataset()
 # Inicializer o scale
 scaler = StandardScaler()
 
+<<<<<<< HEAD
 # exclua do dataset a coluna Quality
 X = wine.drop(['Quality'],axis=1)
 
@@ -19,6 +20,16 @@ X_norm = np.log(X)
 
 #obtenha as labels da coluna Quality
 y = wine['Quality'].values
+=======
+# exclua do dataset a coluna
+X = wine.drop(['Quality'],axis=1)
+
+#normalize o dataset com scaler
+X_norm = scaler.fit_transform(X)
+
+#obtenha as labels da coluna Quality
+y = wine[''].__
+>>>>>>> 8dbee5f0bdad0e083bc03654e1a4101bf868fd0d
 
 #print a valriância de X
 print('variancia',X.var())

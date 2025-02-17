@@ -2,8 +2,13 @@ from src.utils import processing_all_features_sales_clean
 import numpy as np
 
 def compute_RSS(predictions,y):
+<<<<<<< HEAD
     sub_squared = np.squared(y - predictions)
     RSS = np.sum(sub_squared)
+=======
+    sub_square = np.square(predictions-y)
+    RSS = np.sum(sub_square)
+>>>>>>> 8dbee5f0bdad0e083bc03654e1a4101bf868fd0d
     return RSS
 def compute_MSE(predictions,y):
     RSS= compute_RSS(predictions, y)
