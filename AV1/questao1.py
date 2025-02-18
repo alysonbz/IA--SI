@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. puxar o dataset pelo caminnho
-file_path = r"C:\Users\Administrator\Downloads\healthcare-dataset-stroke-data.csv"
+file_path = r"C:\Users\Administrator\IA--SI\AV2\healthcare-dataset-stroke-data.csv"
 try:
     data = pd.read_csv(file_path)
 except FileNotFoundError:
