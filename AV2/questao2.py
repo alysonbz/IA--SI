@@ -5,18 +5,16 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
-# 1️⃣ Carregar o dataset
+
 data = pd.read_csv("Dataset_coletado.csv")
 
-# 2️⃣ Remover a coluna alvo se existir
 if "blue" in data.columns:
     data = data.drop(columns=["blue"])
 
-# 3️⃣ Normalizar os dados
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(data)
 
-# 4️⃣ Método do Cotovelo
+
 inertias = []
 k_range = range(2, 11)  # Testando valores de k de 2 a 10
 
@@ -35,7 +33,7 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# 5️⃣ Método da Silhueta
+
 silhouette_scores = []
 
 for k in k_range:
