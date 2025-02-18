@@ -12,7 +12,7 @@ y = churn_df["churn"].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
 # Create neighbors
-neighbors = np.arange(1, 12)
+neighbors = np.arange(1, 13)
 train_accuracies = {}
 test_accuracies = {}
 
@@ -30,13 +30,13 @@ for neighbor in neighbors:
 print("acuracy on train: ",train_accuracies, '\n',"acuracy on test: ", test_accuracies)
 
 # Add a title
-plt.title("Varying Number of Neighbors")
+plt.title("KNN: Varying Number of Neighbors")
 
 # Plot training accuracies
 plt.plot(neighbors, train_accuracies.values(), label="Training Accuracy")
 
 # Plot test accuracies
-plt.plot(neighbors, train_accuracies.values(), label="Test Accuracy")
+plt.plot(neighbors, test_accuracies.values(), label="Test Accuracy")
 
 plt.legend()
 plt.xlabel("Number of Neighbors")
