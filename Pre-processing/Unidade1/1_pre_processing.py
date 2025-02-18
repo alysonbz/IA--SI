@@ -1,4 +1,3 @@
-from fontTools.subset import subset
 from src.utils import load_volunteer_dataset
 
 volunteer = load_volunteer_dataset()

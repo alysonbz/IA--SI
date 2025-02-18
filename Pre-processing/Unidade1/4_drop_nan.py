@@ -7,7 +7,7 @@ volunteer = load_volunteer_dataset()
 
 print(volunteer.shape)
 print(volunteer.isnull().sum())
-volunteercorrigido =volunter.drop(['is_priority', 'amsl', 'asml_unit', 'primary_loc'],axis =1)
+volunteercorrigido = volunteer.drop(['is_priority', 'asml', 'amsl_unit', 'primary_loc'], axis = 1)
 print(volunteercorrigido)
 
 volunteerfinal = volunteercorrigido.dropna()

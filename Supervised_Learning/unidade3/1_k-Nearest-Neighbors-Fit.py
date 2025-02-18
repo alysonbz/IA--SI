@@ -8,7 +8,7 @@ churn_df = load_churn_dataset()
 
 # Create arrays for the features and the target variable
 y = churn_df["churn"].values
-X = churn_df[["account_lenght", "number_customer_service_calls"]].values
+X = churn_df[["account_length", "number_customer_services_calls"]].values
 
 # Create a KNN classifier with 6 neighbors
 knn = KNeighborsClassifier(n_neighbors=5)

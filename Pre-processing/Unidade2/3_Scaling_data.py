@@ -1,10 +1,9 @@
 # Import StandardScaler
-from sklearn.preprocessing import ____, StandardScaler
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from src.utils import load_wine_dataset
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
-
 
 wine = load_wine_dataset()
 
@@ -12,10 +11,11 @@ wine = load_wine_dataset()
 scaler = StandardScaler()
 
 # exclua do dataset a coluna Quality
-X = wine.drop(['Quality'],axis=1)
+X = wine.drop(['Quality'],axis= 1)
 
 #normalize o dataset com scaler
 X_norm = scaler.fit_transform(X)
+
 #obtenha as labels da coluna Quality
 y = wine['Quality'].values
 

@@ -14,8 +14,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 knn = KNeighborsClassifier(n_neighbors=5)
 
 # Fit the classifier to the training data
-train_test_split.fit(X_train, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=test_aifc))
-knn = KNeighborsClassifier(n_neighbors=5)
+train_test_split.fit(X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_state= 42, stratify= test_aifc))
 
 # Print the accuracy
 print(knn.score(X_test, y_test))

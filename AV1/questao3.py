@@ -5,7 +5,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
 
-# Carregar o dataset
-dataset_path = 'Dataset_coletado.csv' # Substitua pelo caminho correto
+dataset_path = 'Dataset_coletado.csv'
 df = pd.read_csv(dataset_path)
 
