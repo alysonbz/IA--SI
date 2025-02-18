@@ -6,14 +6,11 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-# Passo 2: Carregar o dataset
-dataset_path = 'bodyfat.csv'  # Ajuste o caminho conforme necessário
+dataset_path = 'bodyfat.csv' 
 df = pd.read_csv(dataset_path)
 
-# Passo 3: Verificar dados ausentes
-print(df.isnull().sum())  # Verifique se há NaNs
+print(df.isnull().sum())
 
-# Remover valores ausentes (se houver)
 df = df.dropna()
 
 # Passo 4: Separar o alvo (BodyFat) e as variáveis independentes
