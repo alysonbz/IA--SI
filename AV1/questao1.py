@@ -1,39 +1,89 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelEncoder
 
-dataset_path = "Dataset_coletado.csv"
-df = pd.read_csv(dataset_path)
+#Importando o dataset:
+classificacao = pd.read_csv('./dataset/data_classificacao.csv')
 
-print("Dados antes de tratar NaN:")
-print(df.info())
+#Exploração do dataset:
+print('Exploração do dataset')
+print(classificacao.head(100))
 
-df_cleaned = df.dropna()
+# Verificação do numero de linhas e colunas:
+print('Verificação do numero de linhas e colunas')
+print(classificacao.shape)
 
-print("Dados após remoção do NaN:")
-print(df_cleaned.info())
+#Todas as informações do dataset:
+print('Informações do dataset')
+print(classificacao.info())
 
-colunas_relevantes = df_cleaned.columns[:7]
-df_selected = df_cleaned[colunas_relevantes]
+#Estatísticas do dataset:
+print('Estatísticas do dataset')
+print(classificacao.describe().T)
 
-print("\nDataframe final com colunas relevantes:")
-print(df_selected.head())
+#Nome das colunas:
+print('Colunas do dataset')
+print(classificacao.columns)
 
-coluna_classe = df_selected.columns[-1]
-print("\nDistribuição das classes:")
-print(df_selected[coluna_classe].value_counts())
+#Tipo de dados de cada coluna:
+print('Tipos de dados das colunas')
+print(classificacao.dtypes)
 
-if df_selected[coluna_classe].dtype == 'object':
-    # dtype Converter valores numéricos por códigso
-    df_selected[coluna_classe] = df_selected[coluna_classe].astype('category').cat.codes
-    print("\nColuna de classes convertida para valores numéricos.")
+#Verificação de valores nulos:
+print('Verificação de valores nulos')
+print(classificacao.isna().sum())
 
-colunas_numericas = df_selected.select_dtypes(include=['float64', 'int64']).columns
-scaler = StandardScaler()
-df_selected[colunas_numericas] = scaler.fit_transform(df_selected[colunas_numericas])
-print("\nColunas numéricas normalizadas:")
-print(df_selected.head())
-df_selected.to_csv("Dataset_coletado.csv", index=False)
-print("\nDataset atualizado 'Dataset_coletado.csv'.")
+#Verificação de duplicatas:
+print('Verificação de duplicatas')
+print(classificacao.duplicated().sum())
 
-# Remover linhas com valores NaN
-# Astype muda caracteras pra númericos se for solicitado
+#Separação de colunas com dados categóricos:
+print('Colunas com dados categoricos')
+categoricos_col = [cat for cat in classificacao.columns if classificacao[cat].dtype=='O']
+print('Existem {} colunas categóricas'.format(len(categoricos_col)))
+print(categoricos_col)
+
+#Separação de colunas com dados numéricos:
+print('Colunas com dados numericos')
+numericos_col = [num for num in classificacao.columns if classificacao[num].dtype!='O']
+print('Existem {} colunas numericas'.format(len(numericos_col)))
+print(numericos_col)
+
+#Selecionar colunas relevantes
+print('Colunas relevantes')
+colunas_relevantes = ['type_of_meal_plan', 'room_type_reserved', 'market_segment_type', 'booking_status', 'lead_time', 'avg_price_per_room', 'no_of_special_requests', 'no_of_previous_cancellations']
+classificacao = classificacao[colunas_relevantes]
+
+#Codificação de rótulo em colunas categóricas que são: type_of_meal_plan, room_type_reserved, market_segment_type, booking_status
+label_enconder=LabelEncoder()
+classificacao['type_of_meal_plan']=label_enconder.fit_transform(classificacao['type_of_meal_plan'])
+classificacao['room_type_reserved']=label_enconder.fit_transform(classificacao['room_type_reserved'])
+classificacao['market_segment_type']=label_enconder.fit_transform(classificacao['market_segment_type'])
+classificacao['booking_status']=label_enconder.fit_transform(classificacao['booking_status'])
+print(classificacao)
+
+# Mostrar a distribuição de classes
+print("Distribuição de classes:")
+print(classificacao['booking_status'].value_counts())
+
+#DataFrame final
+print("DataFrame final após pré-processamento:")
+print(classificacao.head())
+
+# Contar ocorrências
+contagem = classificacao['booking_status'].value_counts()
+
+# Gráfico
+plt.figure(figsize=(10, 5))
+plt.bar(contagem.index, contagem.values, color=['skyblue', 'salmon'])
+plt.xticks([0, 1], ['Canceled', 'Not_Canceled'])
+plt.xlabel('Status de Reserva')
+plt.ylabel('Contagem')
+plt.title('Status de Reservas')
+plt.show()
+
+# Verificar necessidade de mais pré-processamento
+print("O pré-processamento atual cobre todas as etapas necessárias para este exercício.")
+
+# Salvar o dataset atualizado
+classificacao.to_csv('dataset_classificacao_ajustado.csv', index=False)
