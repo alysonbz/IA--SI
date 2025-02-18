@@ -20,5 +20,5 @@ df_clusters = pd.DataFrame({'labels': labels, 'varieties': varieties})
 # Criar crosstab
 ct = pd.crosstab(df_clusters['labels'], df_clusters['varieties'])
 
-# Exibir crosstab
+# Exibir c
 print(ct)

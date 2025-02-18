@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="96473f6a-ac12-4f58-8818-4cca0d03b256" name="Changes" comment="av2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AV2/questao3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AV2/questao4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/sabores_de_cacau_ajustado.csv" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/sabores_de_cacau_ajustado.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739844176300</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="av2">
+      <option name="closed" value="true" />
+      <created>1739851045109</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739851045109</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
