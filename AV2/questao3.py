@@ -6,21 +6,19 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.linear_model import Lasso
 
-# 1️⃣ Carregar o dataset
 data = pd.read_csv("Dataset_coletado.csv")
 
-# 2️⃣ Remover a coluna alvo se existir
 if "blue" in data.columns:
     y = data["blue"]  # Alvo
     X = data.drop(columns=["blue"])  # Atributos
 else:
     X = data
 
-# 3️⃣ Normalizar os dados
+
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# 4️⃣ Selecionar os dois atributos mais importantes com Lasso
+
 lasso = Lasso(alpha=0.01)  # Alpha controla a penalização
 lasso.fit(X_scaled, y)
 
@@ -34,7 +32,6 @@ print(f"Atributos mais importantes selecionados pelo Lasso: {selected_features.t
 # Criando um novo conjunto de dados apenas com os dois atributos selecionados
 X_selected = X_scaled[:, top_2_indices]
 
-# 5️⃣ Método do Cotovelo com os atributos selecionados
 inertias = []
 k_range = range(2, 11)
 
@@ -53,7 +50,6 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# 6️⃣ Método da Silhueta
 silhouette_scores = []
 
 for k in k_range:
@@ -71,7 +67,6 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# 7️⃣ Scatter Plot dos Clusters
 best_k = k_range[np.argmax(silhouette_scores)]  # Melhor k pela silhueta
 kmeans = KMeans(n_clusters=best_k, random_state=42, n_init=10)
 labels = kmeans.fit_predict(X_selected)
