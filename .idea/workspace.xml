@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7c4c7e07-f960-4b60-babd-6fcc87b3ff3b" name="Changes" comment="alterações">
+      <change afterPath="$PROJECT_DIR$/AV1/star_classification_processado.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV2/star_classification.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV2/star_classification_processado.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IA--SI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IA--SI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/star_classification.csv" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/star_classification.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao4.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vitorcastro07&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alysonbz/IA--SI.git&quot;,
+    &quot;accountId&quot;: &quot;491642ec-8f39-48ef-9e24-4d05c23f59a5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2oQvf8pMsSzScZWIkt5e0JsNxMa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.1_create_features.executor": "Run",
+    "Python.1_k-Nearest-Neighbors-Fit. (1).executor": "Debug",
+    "Python.1_k-Nearest-Neighbors-Fit.executor": "Run",
+    "Python.2_types_atividade_casa_.executor": "Run",
+    "Python.3_logistic_regression.executor": "Run",
+    "Python.3_training_and_test_sets.executor": "Run",
+    "Python.4_drop_nan.executor": "Run",
+    "Python.4_roc_curve.executor": "Run",
+    "Python.5_auc.executor": "Run",
+    "Python.5_manual_train_test_split.executor": "Run",
+    "Python.Knn.atividade.executor": "Run",
+    "Python.knn prova~2 quest.executor": "Run",
+    "Python.knnmeuvei.executor": "Run",
+    "Python.questao1 (1).executor": "Run",
+    "Python.questao1.executor": "Run",
+    "Python.questao2.executor": "Run",
+    "Python.questao3.executor": "Run",
+    "Python.questao4.executor": "Run",
+    "Python.questao5.executor": "Run",
+    "Python.questao6.executor": "Run",
+    "Python.questao7.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "vitorcastro",
+    "last_opened_file_path": "C:/Users/vitor/Downloads/IA.BLACK/IA--SI/AV1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV2" />
+      <recent name="C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.questao1 (1)">
+    <configuration name="questao1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV2/questao1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV1" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV1/questao1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV2/questao2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV2/questao3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV2/questao4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.questao1 (1)" />
+        <item itemvalue="Python.questao4" />
+        <item itemvalue="Python.questao3" />
+        <item itemvalue="Python.questao1" />
+        <item itemvalue="Python.questao2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c4c7e07-f960-4b60-babd-6fcc87b3ff3b" name="Changes" comment="" />
+      <created>1730814716941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730814716941</updated>
+    </task>
+    <task id="LOCAL-00001" summary="atv">
+      <option name="closed" value="true" />
+      <created>1731419990116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731419990116</updated>
+    </task>
+    <task id="LOCAL-00002" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1736776407153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736776407153</updated>
+    </task>
+    <task id="LOCAL-00003" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1736776672328</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736776672328</updated>
+    </task>
+    <task id="LOCAL-00004" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1736855114539</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736855114539</updated>
+    </task>
+    <task id="LOCAL-00005" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1736859039603</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736859039603</updated>
+    </task>
+    <task id="LOCAL-00006" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1736880269103</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736880269103</updated>
+    </task>
+    <task id="LOCAL-00007" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1736880404176</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736880404176</updated>
+    </task>
+    <task id="LOCAL-00008" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1738678391364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738678391364</updated>
+    </task>
+    <task id="LOCAL-00009" summary="alterações">
+      <option name="closed" value="true" />
+      <created>1738678438486</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738678438486</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="src" />
+    <MESSAGE value="atv" />
+    <MESSAGE value="análise AV1" />
+    <MESSAGE value="alterações" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterações" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit..py</url>
+          <line>10</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AV1/questao7.py</url>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
