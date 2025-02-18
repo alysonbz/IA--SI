@@ -6,7 +6,7 @@ from scipy.spatial.distance import cdist
 from collections import Counter
 
 
-df = pd.read_csv(r"C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1\star_classification.csv")
+df = pd.read_csv(r"/AV2/star_classification.csv")
 
 
 colunas_relevantes = ['alpha', 'delta', 'u', 'g', 'r', 'i', 'z', 'redshift', 'class']
