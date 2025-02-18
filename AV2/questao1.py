@@ -1,27 +1,22 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.spatial.distance import mahalanobis, cityblock, chebyshev, euclidean
+from scipy.spatial.distance import cityblock, chebyshev, euclidean
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 from collections import Counter
 
-# Carregar dataset atualizado
 dataset = pd.read_csv('Dataset_coletado.csv')
 
-# Separar features e target
 X = dataset.drop(columns=['blue'])
 y = dataset['blue']
 
-# Normalização (caso necessário)
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# Separar conjunto de treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-# Função KNN manual
 def knn(X_train, y_train, X_test, k, distance_func):
     predictions = []
     for test_point in X_test:
@@ -31,14 +26,12 @@ def knn(X_train, y_train, X_test, k, distance_func):
         predictions.append(Counter(k_nearest).most_common(1)[0][0])
     return predictions
 
-# Funções de distância
 distance_functions = {
     'Euclidean': euclidean,
     'Manhattan': cityblock,
     'Chebyshev': chebyshev
 }
 
-# Avaliar diferentes valores de k
 k_values = range(1, 21)
 results_manual = {}
 for name, func in distance_functions.items():
@@ -49,7 +42,6 @@ for name, func in distance_functions.items():
         accuracies.append(accuracy)
     results_manual[name] = accuracies
 
-# Plotando os resultados
 plt.figure(figsize=(10, 6))
 for name, accuracies in results_manual.items():
     plt.plot(k_values, accuracies, label=name)
@@ -59,7 +51,6 @@ plt.title('KNN Manual: Acurácia vs k')
 plt.legend()
 plt.show()
 
-# GridSearchCV com Scikit-learn
 param_grid = {
     'n_neighbors': list(k_values),
     'metric': ['euclidean', 'manhattan', 'chebyshev']
@@ -69,7 +60,6 @@ knn_sklearn = KNeighborsClassifier()
 grid_search = GridSearchCV(knn_sklearn, param_grid, cv=5, scoring='accuracy')
 grid_search.fit(X_train, y_train)
 
-# Melhor configuração encontrada
 best_k = grid_search.best_params_['n_neighbors']
 best_metric = grid_search.best_params_['metric']
 best_score = grid_search.best_score_
@@ -78,15 +68,14 @@ print(f"Melhor k encontrado pelo GridSearchCV: {best_k}")
 print(f"Melhor métrica encontrada pelo GridSearchCV: {best_metric}")
 print(f"Melhor acurácia no treino: {best_score:.2f}")
 
-# Comparação entre manual e GridSearchCV
 print("\nComparação de Resultados:")
 for name in results_manual:
     best_k_manual = k_values[np.argmax(results_manual[name])]
     best_acc_manual = max(results_manual[name])
     print(f"{name}: Melhor k (Manual) = {best_k_manual}, Melhor Acurácia = {best_acc_manual:.2f}")
     
-# Comparando os melhores valores
 if best_k_manual == best_k and best_metric == name.lower():
     print("Os resultados do GridSearchCV e do KNN manual são consistentes!")
 else:
     print("Houve diferenças entre os resultados do GridSearchCV e do KNN manual.")
+
