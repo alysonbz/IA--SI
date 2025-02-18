@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="Q 6">
-      <change afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/src/utils.py" afterDir="false" />
+    <list default="true" id="2727a503-0e40-4f5f-9a4a-e984d64ba381" name="Changes" comment="relatório - unidade 5">
+      <change afterPath="$PROJECT_DIR$/AV2/dataset/dataset_classificacao_ajustado.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV2/gridsearch_results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,28 +76,42 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in test_grid_search.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.0_class_anotation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.0_cluster_similarity.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_Clustering_2D_points.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_confusion_matrix.executor&quot;: &quot;Run&quot;,
     &quot;Python.1_create_features.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_dendogram.executor&quot;: &quot;Run&quot;,
     &quot;Python.1_k-Nearest-Neighbors-Fit.executor&quot;: &quot;Run&quot;,
     &quot;Python.1_pre_processing.executor&quot;: &quot;Run&quot;,
     &quot;Python.1_standardization.executor&quot;: &quot;Run&quot;,
     &quot;Python.2_build_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_compute_metric_manual.executor&quot;: &quot;Run&quot;,
     &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_dedogram_movements.executor&quot;: &quot;Run&quot;,
     &quot;Python.2_evaluate_knn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_inertia.executor&quot;: &quot;Run&quot;,
     &quot;Python.2_log_normalization.executor&quot;: &quot;Run&quot;,
     &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_crosstab.executor&quot;: &quot;Run&quot;,
     &quot;Python.3_logistic_regression.executor&quot;: &quot;Run&quot;,
     &quot;Python.3_training_and_test_sets.executor&quot;: &quot;Run&quot;,
     &quot;Python.3_underfiting_overfiting.executor&quot;: &quot;Run&quot;,
     &quot;Python.3_visualize_predictions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3b_cluster_fish.executor&quot;: &quot;Run&quot;,
     &quot;Python.4_drop_nan.executor&quot;: &quot;Run&quot;,
     &quot;Python.4_fit_prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_pipeline.executor&quot;: &quot;Run&quot;,
     &quot;Python.4_roc_curve.executor&quot;: &quot;Run&quot;,
     &quot;Python.5_auc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_comp_knn_logistic_regression.executor&quot;: &quot;Run&quot;,
     &quot;Python.5_compute_manual_score.executor&quot;: &quot;Run&quot;,
     &quot;Python.5_manual_train_test_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_normalizer.executor&quot;: &quot;Run&quot;,
     &quot;Python.6_cross_validadation_r_2.executor&quot;: &quot;Run&quot;,
     &quot;Python.6_hyperparam_tuning_grid_search.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7_hyperparam_tunig_random_search.executor&quot;: &quot;Run&quot;,
     &quot;Python.7_ridge_regularization.executor&quot;: &quot;Run&quot;,
     &quot;Python.8_lasso_regression.executor&quot;: &quot;Run&quot;,
     &quot;Python.Atividade_de_casa.executor&quot;: &quot;Run&quot;,
@@ -109,11 +128,12 @@
     &quot;Python.questao6.executor&quot;: &quot;Run&quot;,
     &quot;Python.questao7.executor&quot;: &quot;Run&quot;,
     &quot;Python.questão1-teste.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.questão1_continua.executor&quot;: &quot;Run&quot;,
     &quot;Python.utils.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;helen-brandao&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI/Supervised_Learning/unidade5&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
     &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/win11/Desktop/IA-SI/IA--SI/AV1/data_classificacao_ajustado.csv&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -125,8 +145,11 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\win11\Desktop\IA-SI\IA--SI\Supervised_Learning\unidade5" />
+      <recent name="C:\Users\win11\Desktop\IA-SI\IA--SI\AV2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\win11\Desktop\IA-SI\IA--SI\AV2\dataset" />
+      <recent name="C:\Users\win11\Desktop\IA-SI\IA--SI\AV2" />
       <recent name="C:\Users\win11\Desktop\IA-SI\IA--SI\AV1\dataset" />
     </key>
   </component>
@@ -455,8 +478,35 @@
       <option name="project" value="LOCAL" />
       <updated>1738676927543</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="atualização de questões">
+      <option name="closed" value="true" />
+      <created>1739472935575</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1739472935577</updated>
+    </task>
+    <task id="LOCAL-00031" summary="atualização de questões">
+      <option name="closed" value="true" />
+      <created>1739474284583</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1739474284583</updated>
+    </task>
+    <task id="LOCAL-00032" summary="relatório - unidade 5">
+      <option name="closed" value="true" />
+      <created>1739563302966</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1739563302966</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
@@ -507,7 +557,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Atividade" />
     <MESSAGE value="Atividades-IA" />
     <MESSAGE value="Atualizações das Atividades" />
     <MESSAGE value="Atualizações de tudo" />
@@ -531,7 +580,9 @@
     <MESSAGE value="Questões 3 e 4 feitas" />
     <MESSAGE value="Q 5" />
     <MESSAGE value="Q 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Q 6" />
+    <MESSAGE value="atualização de questões" />
+    <MESSAGE value="relatório - unidade 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="relatório - unidade 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

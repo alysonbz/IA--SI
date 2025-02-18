@@ -66,9 +66,6 @@ Raimundo Rafael e Ryan Guilherme:
 https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification
 
 
-
-
-
 ### Questão 1
 
 ```questao1.py```
@@ -77,7 +74,6 @@ Na AV1 você realizou uma análise do KNN para descobrir o melhor valor de k e t
 a metrica de distância. Utilando o GridSearchCV que está disponível na scikit-learn, realize o mesmo processo para descobrir
 qual a melhor parametrização no processo de classificação do seu dataset. Gere os deados de acertos completos e faça uma análise
 do resultado. Verifique se o resultado obtido na AV1 é o mesmo que você obteve nesta AV2.
-
 
 ### Questão 2
 
@@ -105,4 +101,4 @@ alvo do seu dataset. Utilize o K means e utilize o k obtido pelo indice de silhu
 ### Observações para o Relatório
 
 Discutir **organizadamente** na sessão de resultados os números obtidos de cada questão.
-Ao concluir o relatório, realizar o push na sua branch nesta mesma pasta.
+Ao concluir o relatório, realizar o push na sua branch nesta mesma pasta. 
