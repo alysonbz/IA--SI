@@ -3,7 +3,7 @@ from src.utils import process_diabetes
 
 class Metrics:
 
-    def __init__(self, y_pred, y_test):
+    def _init_(self, y_pred, y_test):
         self.vp_c1 = 0
         self.vn_c1 = 0
         self.fp_c1 = 0

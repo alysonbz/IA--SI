@@ -1,5 +1,5 @@
 import numpy as np
-from src.utills import diabetes_ajustado_dataset
+from src.utils import diabetes_ajustado_dataset
 from sklearn.model_selection import train_test_split
 from scipy.spatial.distance import chebyshev
 from sklearn.preprocessing import StandardScaler

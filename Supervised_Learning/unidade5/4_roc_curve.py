@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 from src.utils import log_reg_diabetes
 # Import roc_curve
+from sklearn.metrics import roc_curve
+
 y_prob,y_test ,_= log_reg_diabetes()
 
 # Generate ROC curve values: fpr, tpr, thresholds

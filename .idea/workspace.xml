@@ -5,7 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cfc14aa-12a7-402e-9503-cb8b11db48cf" name="Changes" comment="ei">
+      <change afterPath="$PROJECT_DIR$/AV2/src/utills.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao5.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao6.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao7.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV2/questao4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV2/questao4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3b_cluster_fish.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3b_cluster_fish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/1_dendogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/1_dendogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/2_dedogram_movements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade7/2_dedogram_movements.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +76,10 @@
     &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
     &quot;Python.2_inertia.executor&quot;: &quot;Run&quot;,
     &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_drop_nan.executor&quot;: &quot;Run&quot;,
     &quot;Python.questao1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao4.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;naterciasousa&quot;,
@@ -56,29 +87,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.3_crosstab">
-    <configuration name="2_inertia" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="IA--SI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.4_drop_nan">
     <configuration name="3_crosstab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
@@ -101,10 +110,101 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="4_drop_nan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pre-processing/Unidade1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pre-processing/Unidade1/4_drop_nan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV2/questao1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV2/questao2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="questao4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA--SI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV2/questao4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4_drop_nan" />
+        <item itemvalue="Python.questao1" />
+        <item itemvalue="Python.questao4" />
+        <item itemvalue="Python.questao2" />
         <item itemvalue="Python.3_crosstab" />
-        <item itemvalue="Python.2_inertia" />
       </list>
     </recent_temporary>
   </component>

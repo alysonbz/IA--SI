@@ -1,7 +1,4 @@
-from imghdr import tests
-
 import matplotlib.pyplot as plt
-from Supervised_Learning.unidade4.teste import X_train, y_train
 from src.utils import load_sales_clean_dataset
 
 # Import Lasso
@@ -18,7 +15,7 @@ sales_columns = X.columns
 lasso = Lasso(alpha=0.3)
 
 # Compute and print the coefficients
-lasso_coef = Lasso.fit(X_train, y_train)
+lasso_coef = lasso.fit(X, y).coef_
 print(lasso_coef)
 plt.bar(sales_columns, lasso_coef)
 plt.xticks(rotation=45)
