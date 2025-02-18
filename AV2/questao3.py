@@ -14,7 +14,6 @@ if "blue" in data.columns:
 else:
     X = data
 
-
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
