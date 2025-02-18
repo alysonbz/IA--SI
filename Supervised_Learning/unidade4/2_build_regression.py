@@ -19,4 +19,3 @@ reg.fit(X, y)
 predictions = reg.predict(X)
 
 print(predictions[:5])
-print(y[:5])

@@ -1,8 +1,9 @@
+import numpy as np
+
 from src.utils import load_sales_clean_dataset
 from sklearn.linear_model import LinearRegression
 # Import the necessary modules
 from sklearn.model_selection import cross_val_score, KFold
-import numpy as np
 
 sales_df = load_sales_clean_dataset()
 # Create X and y arrays
@@ -26,3 +27,4 @@ print(np.mean(cv_scores))
 
 # Print the standard deviation
 print(np.std(cv_scores))
+

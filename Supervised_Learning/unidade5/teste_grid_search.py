@@ -1,8 +1,8 @@
-
+#Testar com meu dataset
 import numpy as np
 
-#import Logistic regression
-from sklearn.linear_model import LogisticRegression
+#import knn
+from sklearn.neighbors import KNeighborsClassifier
 
 #import train_test_split
 from sklearn.model_selection import train_test_split
@@ -23,20 +23,18 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 
 
-#inicialize Logistic regression
-logreg  = LogisticRegression()
+#inicialize o KNN
+knn = KNeighborsClassifier()
 
 #inicialize kfold
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
 #create the parameter space
-params = {"penalty": ["l1", "l2"],
-         "tol": np.linspace(0.0001, 1.0, 50),
-         "C": np.linspace(0.1, 1, 50),
-         "class_weight": ["balanced", {0:0.8, 1:0.2}]}
+params = {'n_neighbors' : [5, 6, 7, 8, 9, 10],
+         'metric' : ['minkowiski', 'euclidian', 'manhattan', 'haversine']}
 
 # Instantiate the RandomizedSearchCV object
-logreg_cv = RandomizedSearchCV(logreg, params, cv=kf)
+logreg_cv = RandomizedSearchCV(knn, params, cv=kf)
 
 # Fit the data to the model
 logreg_cv.fit(X_train, y_train)
