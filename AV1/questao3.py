@@ -5,7 +5,7 @@ from scipy.spatial.distance import cdist
 from collections import Counter
 
 
-df = pd.read_csv(r"C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1\star_classification.csv")
+df = pd.read_csv(r"/AV2/star_classification.csv")
 
 
 colunas_relevantes = ['alpha', 'delta', 'u', 'g', 'r', 'i', 'z', 'redshift', 'class']
@@ -28,7 +28,7 @@ X_fixed = X_fixed.fillna(X_fixed.median(numeric_only=True))
 X_train_fixed, X_test_fixed, y_train, y_test = train_test_split(X_fixed, y, test_size=0.3, random_state=42)
 
 
-df = pd.read_csv(r"C:\Users\vitor\Downloads\IA.BLACK\IA--SI\AV1\star_classification.csv")
+df = pd.read_csv(r"/AV2/star_classification.csv")
 
 colunas_relevantes = ['alpha', 'delta', 'u', 'g', 'r', 'i', 'z', 'redshift', 'class']
 df_final = df[colunas_relevantes]
