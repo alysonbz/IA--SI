@@ -25,7 +25,7 @@ param_grid = {
 n_cores = joblib.cpu_count()
 grid_search = GridSearchCV(knn, param_grid, cv=5, scoring='accuracy', n_jobs=n_cores)
 grid_search.fit(X_train, y_train)
-print("Melhor combinação de parâmetros:", grid_search.best_params_)
+print("A melhor combinação de parâmetros:", grid_search.best_params_)
 y_pred = grid_search.best_estimator_.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Acurácia do modelo com os melhores parâmetros:", accuracy)
