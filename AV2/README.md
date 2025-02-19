@@ -65,19 +65,14 @@ Raimundo Rafael e Ryan Guilherme:
 
 https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification
 
-
-
-
-
 ### Questão 1
 
 ```questao1.py```
 
 Na AV1 você realizou uma análise do KNN para descobrir o melhor valor de k e também a forma mais adequada de determinar
 a metrica de distância. Utilando o GridSearchCV que está disponível na scikit-learn, realize o mesmo processo para descobrir
-qual a melhor parametrização no processo de classificação do seu dataset. Gere os deados de acertos completos e faça uma análise
+qual a melhor parametrização no processo de classificação do seu dataset. Gere os dados de acertos completos e faça uma análise
 do resultado. Verifique se o resultado obtido na AV1 é o mesmo que você obteve nesta AV2.
-
 
 ### Questão 2
 
@@ -89,10 +84,9 @@ feita. Considerem usar o o metodo do cotovelo e da silhueta.
 
 ```questao3.py```
 
-Escolha os dois atributos mais relevantes utilizando o metodo de Lasso
-e recalcule a quantidade de clusters com método do cotovelo e silhueta. Mudou a quantidade de cluster em relação aquestão anterior ? Se k diferentes para os dois metodos de deteminação da quantidade de clusters,
+Escolha os dois atributos mais relevantes utilizando o metodo de Lasso e recalcule a quantidade de clusters com método do cotovelo e silhueta. 
+Mudou a quantidade de cluster em relação aquestão anterior ? Se k diferentes para os dois metodos de deteminação da quantidade de clusters,
 Faça dois scatterplots e faça uma análise visual.
-
 
 ### Questão 4
 
@@ -100,7 +94,6 @@ Faça dois scatterplots e faça uma análise visual.
 
 Faça um crosstab para que possamos identificar como ficou a distribuição de cluster de acordo com classes presentes na coluna 
 alvo do seu dataset. Utilize o K means e utilize o k obtido pelo indice de silhueta.
-
 
 ### Observações para o Relatório
 

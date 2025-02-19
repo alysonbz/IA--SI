@@ -1,15 +1,22 @@
 from src.utils import load_volunteer_dataset
+import pandas as pd
 
 volunteer = load_volunteer_dataset()
 
-# Print os primeiros elementos da coluna hits
-___
+# Mostre a dimensão do dataset volunteer
+print("DIMENSÃO: ", volunteer.shape)
 
-# Print as caracteristicas da coluna hits
-__
+#mostre os tipos de dados existentes no dataset
+print(volunteer.info())
 
-# Converta a coluna hits para o tipo int
-___
+#mostre quantos elementos do dataset estão faltando na coluna
+print(volunteer['locality'].isnull().sum())
 
-# Print as caracteristicas da coluna hits novamente
----
+# Exclua as colunas Latitude e Longitude de volunteer
+volunteer_cols = volunteer.drop(['Latitude', 'Longitude'], axis=1)
+
+# Exclua as linhas com valores null da coluna category_desc de volunteer_cols
+volunteer_subset = volunteer_cols.dropna(subset=['category_desc'])
+
+# Print o shape do subset
+print(volunteer_subset.shape)
