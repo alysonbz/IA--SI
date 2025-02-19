@@ -1,28 +1,24 @@
-from src.utils import processing_all_features_sales_clean
 import numpy as np
+from src.utils import processing_all_features_sales_clean
 
-def compute_RSS(predictions,y):
-<<<<<<< HEAD
-    sub_squared = np.squared(y - predictions)
-    RSS = np.sum(sub_squared)
-=======
-    sub_square = np.square(predictions-y)
-    RSS = np.sum(sub_square)
->>>>>>> 8dbee5f0bdad0e083bc03654e1a4101bf868fd0d
+def compute_RSS(predictions, y):
+    RSS = np.sum(np.square(predictions - y))
     return RSS
-def compute_MSE(predictions,y):
-    RSS= compute_RSS(predictions, y)
-    MSE= np.divide(RSS, len(predictions))
+
+def compute_MSE(predictions, y):
+    MSE = np.mean(np.square(predictions - y))
     return MSE
-def compute_RMSE(predictions,y):
-    MSE= compute_MSE(predictions, y)
-    RMSE = np.sqrt(MSE)
+
+def compute_RMSE(predictions, y):
+    RMSE = np.sqrt(compute_MSE(predictions, y))
     return RMSE
-def compute_R_squared(predictions,y):
-    r_pred = np.sum(np.squared(predictions - np.mean(y)))
-    r_data = np.sum(np.squared(y - np.mean(y)))
-    r_squared = np.divide(r_pred, r_data)
+
+def compute_R_squared(predictions, y):
+    total = np.sum(np.square(y - np.mean(y)))
+    residual = compute_RSS(predictions, y)
+    r_squared = 1 - (residual / total)
     return r_squared
+
 
 X,y,predictions = processing_all_features_sales_clean()
 

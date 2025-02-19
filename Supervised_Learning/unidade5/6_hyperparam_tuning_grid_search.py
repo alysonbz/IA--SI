@@ -1,17 +1,6 @@
 import numpy as np
-
-#import Lasso
 from sklearn.linear_model import Lasso
-
-#import train_test_split
-from sklearn.model_selection import train_test_split, KFold
-
-#import kfold
-
-# Import GridSearchCV
-from sklearn.model_selection import GridSearchCV
-
-
+from sklearn.model_selection import train_test_split, KFold, GridSearchCV
 from src.utils import load_diabetes_clean_dataset
 
 diabetes_df = load_diabetes_clean_dataset()
@@ -21,20 +10,18 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 
 #inicialize Lasso
-lasso  = Lasso(alpha=0.1)
+lasso = Lasso()
 
 #inicialize kfold
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
 #Set up the parameter grid
-param_grid = {"alpha": np.linspace(0.0001, 1, 20)}
+param_grid = {"alpha": np.linspace(0.00001, 1, 20)}
 
 # Instantiate lasso_cv
 lasso_cv = GridSearchCV(lasso, param_grid, cv=kf)
 
 # Fit to the training data
 lasso_cv.fit(X_train, y_train)
-
-
 print("Tuned lasso paramaters: {}".format(lasso_cv.best_params_))
 print("Tuned lasso score: {}".format(lasso_cv.best_score_))

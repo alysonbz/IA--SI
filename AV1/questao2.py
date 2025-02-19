@@ -16,6 +16,7 @@ def calculate_distance(metric, point1, point2, cov_matrix=None):
     else:
         raise ValueError("Métrica desconhecida.")
 
+
 def knn(X_train, y_train, X_test, k, metric):
     predictions = []
     cov_matrix_inv = None
@@ -38,6 +39,7 @@ def knn(X_train, y_train, X_test, k, metric):
 
     return np.array(predictions)
 
+
 def evaluate_knn(X_train, y_train, X_test, y_test, k, metric):
     X_train_array = X_train.to_numpy(dtype=np.float64)
     X_test_array = X_test.to_numpy(dtype=np.float64)
@@ -58,10 +60,19 @@ y = drug_data['Drug']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 metrics = ["mahalanobis", "chebyshev", "manhattan", "euclidean"]
-k = 7
-results = {}
+k_values = range(1, 20, 2)  # Testando valores ímpares de k de 1 a 19
+best_k_results = {}
 
 for metric in metrics:
-    acc = evaluate_knn(X_train, y_train, X_test, y_test, k, metric)
-    results[metric] = acc
-    print(f"Acurácia usando {metric}: {acc:.2f}")
+    best_k = None
+    best_accuracy = 0
+
+    for k in k_values:
+        acc = evaluate_knn(X_train, y_train, X_test, y_test, k, metric)
+
+        if acc > best_accuracy:
+            best_accuracy = acc
+            best_k = k
+
+    best_k_results[metric] = (best_k, best_accuracy)
+    print(f"Melhor k para {metric}: {best_k} com acurácia de {best_accuracy:.2f}")
