@@ -39,7 +39,7 @@ for k in range(1, 11):
     inertia.append(kmeans.inertia_)
 
 # Determinar o melhor k com o método do cotovelo
-best_k_elbow = 3
+best_k_elbow = 2
 
 # Plot do gráfico do método do cotovelo
 plt.figure(figsize=(8, 6))
