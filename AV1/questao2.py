@@ -8,8 +8,8 @@ def load_combined_data():
 credit_risk_data = load_combined_data()
 
 #Features e Target
-X = credit_risk_data.drop(['label'], axis=1).values  # Features
-y = credit_risk_data['label'].values  #Target
+X = credit_risk_data.drop(['label'], axis=1).values
+y = credit_risk_data['label'].values
 
 #Divisão do dataset em treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
