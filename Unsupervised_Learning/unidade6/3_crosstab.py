@@ -2,21 +2,25 @@ import pandas as pd
 from src.utils import load_grains_dataset
 from sklearn.cluster import KMeans
 
+# Carregar o dataset
 samples_df = load_grains_dataset()
-samples = samples_df.drop(['variety','variety_number'],axis=1)
+
+# Separar as amostras e os rótulos
+samples = samples_df.drop(['variety', 'variety_number'], axis=1)
 varieties = samples_df['variety'].values
 
-# Create a KMeans model with 3 clusters: model
-model = ____
+# Criar um modelo KMeans com 3 clusters
+model = KMeans(n_clusters=3, random_state=42)
 
-# Use fit_predict to fit model and obtain cluster labels: labels
-labels = ____
+# Ajustar o modelo e obter os rótulos dos clusters
+labels = model.fit_predict(samples)
 
-# Create a DataFrame with labels and varieties as columns: df
+# Criar um DataFrame com os rótulos dos clusters e as variedades reais
 df = pd.DataFrame({'labels': labels, 'varieties': varieties})
 
-# Create crosstab: ct
-ct = ____
+# Criar a tabela cruzada
+ct = pd.crosstab(df['labels'], df['varieties'])
 
-# Display ct
+# Exibir a tabela cruzada
 print(ct)
+
