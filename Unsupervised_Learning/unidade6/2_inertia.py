@@ -3,25 +3,28 @@ import pandas as pd
 from src.utils import load_grains_dataset
 from sklearn.cluster import KMeans
 
+# Carregar dataset
 samples_df = load_grains_dataset()
-samples = samples_df.drop(['variety','variety_number'],axis=1)
+samples = samples_df.drop(['variety', 'variety_number'], axis=1)
 
+# Definir intervalo de clusters a serem testados
 ks = range(1, 6)
 inertias = []
 
+# Loop para testar diferentes valores de k
 for k in ks:
-    # Create a KMeans instance with k clusters: model
-    ____
+    # Criar um modelo KMeans com k clusters
+    model = KMeans(n_clusters=k, random_state=42)
 
-    # Fit model to samples
-    ____
+    # Ajustar modelo aos dados
+    model.fit(samples)
 
-    # Append the inertia to the list of inertias
-    ____
+    # Salvar inércia do modelo atual
+    inertias.append(model.inertia_)
 
-# Plot ks vs inertias
+# Plotar gráfico de Elbow Method
 plt.plot(ks, inertias, '-o')
-plt.xlabel('number of clusters, k')
-plt.ylabel('inertia')
+plt.xlabel('Número de clusters (k)')
+plt.ylabel('Inércia')
 plt.xticks(ks)
 plt.show()
