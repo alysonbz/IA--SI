@@ -9,3 +9,9 @@ df2 = load_df2_unidade1()
 
 
 print(df1.info())
+
+#-----------------
+print(df1, "\n")
+
+print(df1.dropna(thresh=2))
+
