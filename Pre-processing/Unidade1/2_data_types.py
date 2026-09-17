@@ -2,14 +2,16 @@ from src.utils import load_volunteer_dataset
 
 volunteer = load_volunteer_dataset()
 
-# Print os primeiros elementos da coluna hits
-___
+print("\n* --># Print os primeiros elementos da coluna hits:\n")
+print(volunteer["hits"] .head())
 
-# Print as caracteristicas da coluna hits
-__
+print("\n* --># Print as caracteristicas da coluna hits:\n")
+print(volunteer["hits"].info())
 
-# Converta a coluna hits para o tipo int
-___
+print("\n* --># Converta a coluna hits para o tipo int32:\n")
+volunteer["hits"] = volunteer["hits"].astype("int32")
+print(volunteer.dtypes)
 
-# Print as caracteristicas da coluna hits novamente
----
+print("\n* --># Print as caracteristicas da coluna hits novamente:\n")
+print(volunteer["hits"].info())
+

@@ -1,25 +1,29 @@
 from src.utils import load_volunteer_dataset
-_____
+from sklearn.model_selection import train_test_split
 
 volunteer = load_volunteer_dataset()
 
-# Exclua as colunas Latitude e Longitude de volunteer
-volunteer_new = __
+print("\n* --># Exclua as colunas Latitude e Longitude de volunteer:\n")
+volunteer_new = volunteer.drop(["Latitude","Longitude"],axis=1)
+print(volunteer_new)
 
-# Exclua as linhas com valores null da coluna category_desc de volunteer_new
-volunteer = ___
+print("\n* --># Exclua as linhas com valores null da coluna category_desc de volunteer_new:\n")
+volunteer = volunteer_new.dropna(subset= ["category_desc"])
+print(volunteer)
 
-# mostre o balanceamento das classes em 'category_desc'
-print(___['category_desc'].__,'\n','\n')
+print("\n* --># mostre o balanceamento das classes em 'category_desc':\n")
+print(volunteer['category_desc'].value_counts(),'\n','\n')
 
-# Crie um DataFrame com todas as colunas, com exceção de ``category_desc``
-X = volunteer.__(__, axis=1)
+print("\n* --># Crie um DataFrame com todas as colunas, com exceção de ``category_desc``:\n")
+X = volunteer.drop(['category_desc'], axis=1)
+print(X)
 
-# Crie um dataframe de labels com a coluna category_desc
-y = __[['__']]
+print("\n* --># Crie um dataframe de labels com a coluna category_desc:\n")
+y = volunteer[['category_desc']]
+print(y)
 
-# # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = __(__, __, stratify=__, random_state=42)
+print("\n* --># # Utiliza a a amostragem stratificada para separar o dataset em treino e teste:\n")
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
 
-# mostre o balanceamento das classes em 'category_desc' novamente
-___
+print("\n* --># mostre o balanceamento das classes em 'category_desc' novamente:\n")
+print(volunteer['category_desc'].value_counts(),'\n','\n')
