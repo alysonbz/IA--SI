@@ -2,13 +2,13 @@ from src.utils import load_churn_dataset
 import numpy as np
 
 # Import KNeighborsClassifier
-from ____.____ import ____
+from sklearn.neighborn import KNeighborsClassifier
 
 churn_df = load_churn_dataset()
 
 # Create arrays for the features and the target variable
-y = ____["____"].values
-X = ____[["____", "____"]].values
+y = churn_df["churn"].values
+X = churn_df[["____", "____"]].values
 
 # Create a KNN classifier with 6 neighbors
 knn = ____
