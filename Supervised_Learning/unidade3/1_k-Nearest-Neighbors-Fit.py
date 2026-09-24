@@ -2,7 +2,7 @@ from src.utils import load_churn_dataset
 import numpy as np
 
 # Import KNeighborsClassifier
-from ____.____ import ____
+from sklearn.neighborns import KNeighbornsClassifier
 
 churn_df = load_churn_dataset()
 

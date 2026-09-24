@@ -8,4 +8,5 @@ df1 = load_df1_unidade1()
 df2 = load_df2_unidade1()
 
 
-print(df1.info())
+print(hiking.head())
+
