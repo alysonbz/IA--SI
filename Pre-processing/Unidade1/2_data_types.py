@@ -7,11 +7,10 @@ print(volunteer["hits"].head(), "\n")
 
 
 # Print as caracteristicas da coluna hits
-print(volunteer["hits"].info(), "\n")
-
+print(volunteer[["hits"]].info(), "\n")
 # Converta a coluna hits para o tipo int
 volunteer["hits"] = volunteer["hits"].astype("int32")
 print(volunteer.dtypes, "\n")
 
 # Print as caracteristicas da coluna hits novamente
-print(volunteer["hits"].info(), "\n")
+print(volunteer[["hits"]].info(), "\n")
