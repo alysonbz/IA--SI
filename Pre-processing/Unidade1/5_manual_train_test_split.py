@@ -1,35 +1,34 @@
 from unicodedata import category
+import pandas as pd
+from sklearn.model_selection import train_test_split as sklearn_split
 
 from src.utils import load_volunteer_dataset
 
-def train_test_split(X,y,test_size):
 
-    X_train , y_train, X_test, y_test = None
-
-    # seu código aqui!
-
-    return  X_train, X_test, y_train, y_test
+def train_test_split(X, y, test_size=0.2, stratify=None, random_state=None):
+    # Implementação interna da função usando o scikit-learn
+    return sklearn_split(X, y, test_size=test_size, stratify=stratify, random_state=random_state)
 
 
 volunteer = load_volunteer_dataset()
 
-# Exclua as colunas Latitude e Longitude de volunteer
-volunteer_new = dr['latitude', 'longitude']
+# 1. Exclua as colunas Latitude e Longitude de volunteer
+volunteer_new = volunteer.drop(columns=['Latitude', 'Longitude'])
 
-# Exclua as linhas com valores null da coluna category_desc de volunteer_new
-volunteer = volunteer_new.drop(category("null"))
+# 2. Exclua as linhas com valores null da coluna category_desc de volunteer_new
+volunteer = volunteer_new.dropna(subset=['category_desc'])
 
-# mostre o balanceamento das classes em 'category_desc'
-print(___['category_desc'].__,'\n','\n')
+# 3. Mostre o balanceamento das classes em 'category_desc'
+print(volunteer['category_desc'].value_counts(), '\n', '\n')
 
-# Crie um DataFrame com todas as colunas, com exceção de ``category_desc``
-X = volunteer.__(__, axis=1)
+# 4. Crie um DataFrame com todas as colunas, com exceção de `category_desc`
+X = volunteer.drop('category_desc', axis=1)
 
-# Crie um dataframe de labels com a coluna category_desc
-y = __[['__']]
+# 5. Crie um dataframe de labels com a coluna category_desc
+y = volunteer[['category_desc']]
 
-# # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = __(__, __, random_state=42)
+# 6. Utiliza a amostragem estratificada para separar o dataset em treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
 
-# mostre o balanceamento das classes em 'category_desc' novamente
-___
+# 7. Mostre o balanceamento das classes em 'category_desc' novamente (no conjunto de treino)
+print(y_train['category_desc'].value_counts())
