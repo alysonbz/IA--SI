@@ -9,35 +9,35 @@ from src.utils import load_wine_dataset
 
 wine = load_wine_dataset()
 
-# Inicializer o scale
+print("\n* --># Inicializer o scale:\n")
 scaler = StandardScaler()
 
-# exclua do dataset a coluna
+print("\n* --># exclua do dataset a coluna:\n")
 X = wine.drop(['Quality'],axis=1)
 
-#normalize o dataset com scaler
+print("\n* -->#normalize o dataset com scaler:\n")
 X_norm = scaler.fit_transform(X)
 
-#obtenha as labels da coluna Quality
+print("\n* -->#obtenha as labels da coluna Quality:\n")
 y = wine['Quality'].var
 
-#print a valriância de X
+print("\n* -->#print a valriância de X:\n")
 print('variancia',X)
 
-#print a variânca do dataset X_norm
+print("\n* -->#print a variânca do dataset X_norm:\n")
 print('variancia do dataset normalizado',X_norm)
 
 
 #ATE AQUI FUNCIONA ... ABAIXO AINDA NAO!
 
-# Divida o dataset em treino e teste com amostragem estratificada
-X_train, X_test, y_train, y_test = train_test_split(X_norm, ___, ___, random_state=42)
+print("\n* --># Divida o dataset em treino e teste com amostragem estratificada:\n")
+X_train, X_test, y_train, y_test = train_test_split(X_norm, X, y, random_state=42)
 
-#inicialize o algoritmo KNN
-knn = ___
+print("\n* -->#inicialize o algoritmo KNN:\n")
+knn = KNeighborsClassifier
 
-# Aplique a função fit do KNN
-knn.__(__,__)
+print("\n* --># Aplique a função fit do KNN:\n")
+knn.fit(X_train,y_train)
 
-# Verifique o acerto do classificador
-print('score', knn.__(__, __))
+print("\n* --># Verifique o acerto do classificador:\n")
+print('score', knn.fit(X_train, y_train))

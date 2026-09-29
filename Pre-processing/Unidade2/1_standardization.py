@@ -17,7 +17,7 @@ knn = KNeighborsClassifier()
 knn.fit(X_train, y_train)
 
 #mostre a quantidade de elemento faltando em locality.
-print(wine.["locality"] .isna() .sum())
+print(wine["locality"] .isna() .sum())
 
 # mostre o acerto do algoritmo
 print(knn.score())

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="(T_T)">
+    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="precisa-se de um manual.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2026_20_08_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2026_20_08__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/5_manual_train_test_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/5_manual_train_test_split.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +78,7 @@
     "Python.1_pre_processing.executor": "Run",
     "Python.1_standardization.executor": "Run",
     "Python.2_data_types.executor": "Run",
+    "Python.2_log_normalization.executor": "Run",
     "Python.3_Scaling_data.executor": "Run",
     "Python.3_training_and_test_sets.executor": "Run",
     "Python.4_drop_nan.executor": "Run",
@@ -80,7 +87,8 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "yasmim__coelho",
-    "last_opened_file_path": "C:/Users/aluno/PycharmProjects/IA--SI"
+    "last_opened_file_path": "C:/Users/aluno/PycharmProjects/IA--SI",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -267,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789828665576</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="precisa-se de um manual.">
+      <option name="closed" value="true" />
+      <created>1789830323330</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1789830323330</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +302,7 @@
     <MESSAGE value="questão nova" />
     <MESSAGE value="AV2" />
     <MESSAGE value="(T_T)" />
-    <option name="LAST_COMMIT_MESSAGE" value="(T_T)" />
+    <MESSAGE value="precisa-se de um manual." />
+    <option name="LAST_COMMIT_MESSAGE" value="precisa-se de um manual." />
   </component>
 </project>
