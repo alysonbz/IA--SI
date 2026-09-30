@@ -1,3 +1,5 @@
+from pandas.conftest import dropna
+
 from src.utils import load_hiking_dataset , load_df2_unidade1,load_wine_dataset, load_df1_unidade1, load_volunteer_dataset
 import pandas as pd
 
@@ -7,5 +9,15 @@ wine  = load_wine_dataset()
 df1 = load_df1_unidade1()
 df2 = load_df2_unidade1()
 
+print(hiking.head(), "\n")
+print(hiking.info(), "\n")
+print(wine.head(), "\n")
 
-print(df1.info())
+print(df1, "\n")
+
+print(df1.dropna(),"\n")
+
+print(df1.isna().sum(), "\n")
+print(df1.dropna(subset=["B"]),"\n")
+
+print(df1.dropna(thresh=2),"\n")
