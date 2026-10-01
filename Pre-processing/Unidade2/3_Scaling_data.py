@@ -26,11 +26,10 @@ print('variancia', X.var())
 print('variancia do dataset normalizado', X_norm.var())
 
 # Divida o dataset em treino e teste com amostragem estratificada
-X_train, X_test, y_train, y_test = train_test_split( X, y, stratify= y)
+X_train, X_test, y_train, y_test = train_test_split(X_norm, y, stratify=y, test_size=0.2, random_state=42)
 
 #inicialize o algoritmo KNN
 knn = KNeighborsClassifier()
-
 
 # Aplique a função fit do KNN
 knn.fit(X_train, y_train)

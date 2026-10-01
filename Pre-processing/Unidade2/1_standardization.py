@@ -5,7 +5,6 @@ import numpy as np
 wine = load_wine_dataset()
 
 X = wine.drop(['Quality'],axis=1)
-X = np.log(X)
 y = wine['Quality'].values
 
 # divida o dataset em treino e teste
