@@ -33,4 +33,4 @@ knn.fit(X_train,y_train)
 print('score', knn.score(X_test,y_test))
 
 #desse jeito o dataset tem informações não era pra ele ter.
-#ele acessa o X todo antes da divisão
+#ele acessa o X  antes da divisão

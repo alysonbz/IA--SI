@@ -30,7 +30,7 @@ print("acuracy on train: ",train_accuracies, '\n',"acuracy on test: ", test_accu
 
 # Add a title
 plt.title("KNN: Vriying Number of Neighbors")
-# Plot training accuracies
+#NBSPPlot training accuracies
 plt.plot(neighbors,train_accuracies.values(), label="Training Accuracy")
 # Plot test accuracies
 plt.plot(neighbors,test_accuracies.values(), label="Test Accuracy")
