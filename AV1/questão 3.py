@@ -69,15 +69,3 @@ plt.xlabel("Number of Neighbors")
 plt.ylabel("Accuracy")
 plt.grid(True)
 plt.savefig('grafico_knn.png', dpi=300, bbox_inches='tight')
-
-#treinamento do modelo
-k_otimo = 5
-knn_final = KNeighborsClassifier(n_neighbors=k_otimo)
-knn_final.fit(X_train_norm, y_train)
-
-#teste final
-acc_teste_final = knn_final.score(X_test_norm, y_test)
-print("\nvalor de K utilizado:")
-print(k_otimo)
-print("\nteste:")
-print(acc_teste_final)
