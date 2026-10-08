@@ -4,6 +4,8 @@ from sklearn.base import clone
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
 import matplotlib.pyplot as plt
+from sklearn.pipeline import make_pipeline
+from sklearn.model_selection import StratifiedKFold, cross_val_score
 
 # ==============================================================================
 # QUESTÃO 1: PREPARAÇÃO DE DADOS, ESTATÍSTICAS E EXPORTAÇÃO
@@ -229,3 +231,56 @@ def investigar_k(X_tr, y_tr, X_te, y_te, nome_scaler, titulo_vinho):
 # Roda a investigação para Tinto e Branco
 tabela_k_red = investigar_k(X_train_red, y_train_red, X_test_red, y_test_red, melhor_nome, "tinto")
 tabela_k_white = investigar_k(X_train_white, y_train_white, X_test_white, y_test_white, melhor_nome, "branco")
+
+# ==============================================================================
+# QUESTÃO 3 (COMPLEMENTO): K ESCOLHIDO SEM USAR O TESTE + MODELO FINAL
+# ==============================================================================
+
+print("\n\n==================================================")
+print("QUESTÃO 3 (COMPLEMENTO): K ESCOLHIDO SEM USAR O TESTE + MODELO FINAL")
+print("==================================================")
+
+# Separa uma validação de verdade DENTRO do treino (o teste fica intocado)
+X_tr3, X_val3, y_tr3, y_val3 = train_test_split(
+    X_train_red, y_train_red, test_size=0.25, random_state=42, stratify=y_train_red
+)
+cv5 = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+linhas = []
+for k in range(1, 31):
+    pipe = make_pipeline(scalers_disponiveis[melhor_nome](),
+                         KNeighborsClassifier(n_neighbors=k, metric='euclidean'))
+    pipe.fit(X_tr3, y_tr3)
+    linhas.append({
+        'Valor de K': k,
+        'Acurácia de treinamento': pipe.score(X_tr3, y_tr3),
+        'Acurácia de validação': pipe.score(X_val3, y_val3),
+        'Acurácia CV-5': cross_val_score(pipe, X_train_red, y_train_red, cv=cv5).mean(),
+    })
+tabela_q3 = pd.DataFrame(linhas).round(4)
+print(tabela_q3.to_string(index=False))
+
+melhor_val = tabela_q3.loc[tabela_q3['Acurácia de validação'].idxmax()]
+melhor_cv = tabela_q3.loc[tabela_q3['Acurácia CV-5'].idxmax()]
+k_final = int(melhor_cv['Valor de K'])
+print(f"Maior acurácia de validação: K={int(melhor_val['Valor de K'])} ({melhor_val['Acurácia de validação']:.4f})")
+print(f"Maior acurácia CV-5 (critério adotado): K={k_final} ({melhor_cv['Acurácia CV-5']:.4f})")
+print("K a até 1 p.p. do melhor na CV-5:",
+      tabela_q3[tabela_q3['Acurácia CV-5'] >= melhor_cv['Acurácia CV-5'] - 0.01]['Valor de K'].tolist())
+
+plt.figure(figsize=(10, 5.5))
+plt.plot(tabela_q3['Valor de K'], tabela_q3['Acurácia de treinamento'], marker='o', label='Acurácia de treinamento')
+plt.plot(tabela_q3['Valor de K'], tabela_q3['Acurácia de validação'], marker='s', label='Acurácia de validação')
+plt.axvline(k_final, color='gray', linestyle='--', alpha=0.6, label=f'K escolhido = {k_final}')
+plt.title(f"KNN - acurácia por K (vinho tinto, {melhor_nome}) - validação sem usar o teste")
+plt.xlabel("Valor de K"); plt.ylabel("Acurácia")
+plt.grid(alpha=0.3); plt.legend(); plt.tight_layout()
+plt.savefig("datasetwinw/knn_k_tinto_validacao.png", dpi=150)
+plt.show()
+
+# MODELO FINAL: treina com todo o treino e usa o TESTE uma única vez
+final = make_pipeline(scalers_disponiveis[melhor_nome](),
+                      KNeighborsClassifier(n_neighbors=k_final, metric='euclidean'))
+final.fit(X_train_red, y_train_red)
+print(f"\nMODELO FINAL: {melhor_nome} + K={k_final}")
+print(f"Acurácia no conjunto de TESTE: {final.score(X_test_red, y_test_red):.4f}")
