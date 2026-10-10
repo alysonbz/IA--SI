@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="AV2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV1/Apresentação.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AV1/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000006017986" />
-      <entry key="MS500" value="1.014318260073118" />
-      <entry key="S2" value="1.3467815016111508" />
-      <entry key="S5" value="1.7652857464648637" />
-      <entry key="S10" value="2.6169109505962527" />
-      <entry key="S30" value="6.839915135226368" />
-      <entry key="S60" value="11.553906936092806" />
-      <entry key="M2" value="17.257862970746324" />
-      <entry key="M5" value="27.41515956047628" />
-      <entry key="M10" value="41.00216942904257" />
-      <entry key="M15" value="52.59209876424758" />
-      <entry key="M30" value="74.98543104910526" />
-      <entry key="H1" value="93.9932006048407" />
-      <entry key="H2" value="106.61618337003833" />
-      <entry key="H4" value="113.92430237115225" />
-      <entry key="D1" value="120.5970879609962" />
-      <entry key="W1" value="121.79813852518411" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0000000000000013" />
+      <entry key="M30" value="1.0000004530464286" />
+      <entry key="H1" value="1.0101359137086543" />
+      <entry key="H2" value="2.8167654211504427" />
+      <entry key="H4" value="29.927766578172736" />
+      <entry key="D1" value="341.67821540787503" />
+      <entry key="W1" value="529.5846749619227" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.522136793878756E-176" />
-      <entry key="S5" value="8.428610044108321E-71" />
-      <entry key="S10" value="9.18074618107655E-36" />
-      <entry key="S30" value="2.0941608901428584E-12" />
-      <entry key="S60" value="1.4627345640727498E-6" />
-      <entry key="M2" value="0.0013360492477299426" />
-      <entry key="M5" value="0.10704986548544522" />
-      <entry key="M10" value="0.5726260238721319" />
-      <entry key="M15" value="1.0559475079446616" />
-      <entry key="M30" value="2.0158477232326155" />
-      <entry key="H1" value="2.8253757990270474" />
-      <entry key="H2" value="3.3574898872191707" />
-      <entry key="H4" value="3.6635172051361558" />
-      <entry key="D1" value="3.941670538819479" />
-      <entry key="W1" value="3.9916103007236416" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="1.2669885720173378E-255" />
+      <entry key="M2" value="4.456694161286341E-128" />
+      <entry key="M5" value="1.9149585781211502E-51" />
+      <entry key="M10" value="7.442618526001134E-26" />
+      <entry key="M15" value="2.6528806561542904E-17" />
+      <entry key="M30" value="1.0705153498250523E-8" />
+      <entry key="H1" value="2.487240698619903E-4" />
+      <entry key="H2" value="0.04691584547609039" />
+      <entry key="H4" value="0.7800950851469542" />
+      <entry key="D1" value="9.522422359641242" />
+      <entry key="W1" value="14.851312293202422" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.462404039146839E-5" />
-      <entry key="MS500" value="0.15085662928884583" />
-      <entry key="S2" value="0.8152885382898075" />
-      <entry key="S5" value="1.4475226912824606" />
-      <entry key="S10" value="2.381444529056604" />
-      <entry key="S30" value="6.595912741226145" />
-      <entry key="S60" value="11.325547434396494" />
-      <entry key="M2" value="17.08260387288574" />
-      <entry key="M5" value="27.41496419750435" />
-      <entry key="M10" value="41.50078998506611" />
-      <entry key="M15" value="53.58758485885724" />
-      <entry key="M30" value="76.960175972153" />
-      <entry key="H1" value="96.79330597416089" />
-      <entry key="H2" value="109.95944650758197" />
-      <entry key="H4" value="117.58024145777864" />
-      <entry key="D1" value="124.53742435737188" />
-      <entry key="W1" value="125.78955639979736" />
+      <entry key="MS100" value="0.8645372313078652" />
+      <entry key="MS500" value="0.9713074955416333" />
+      <entry key="S2" value="0.992748375440308" />
+      <entry key="S5" value="0.9970930153280337" />
+      <entry key="S10" value="0.9985454498058832" />
+      <entry key="S30" value="0.9995149146655609" />
+      <entry key="S60" value="0.9997574279121715" />
+      <entry key="M2" value="0.9998787066000413" />
+      <entry key="M5" value="0.9999514808744516" />
+      <entry key="M10" value="0.9999757401429555" />
+      <entry key="M15" value="0.9999838266965776" />
+      <entry key="M30" value="0.9999923769404578" />
+      <entry key="H1" value="1.0103790025159671" />
+      <entry key="H2" value="2.863528142699005" />
+      <entry key="H4" value="30.706636617148035" />
+      <entry key="D1" value="351.19822492426744" />
+      <entry key="W1" value="544.4354524834882" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -113,42 +112,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;Python.0_class_anotation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1_pre_processing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1_standardization.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_log_normalization.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_training_and_test_sets.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5_manual_train_test_split.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5_manual_trainnin_and_test_sets.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atividade_de_casa.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#8 on Camila__Ramos&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/adam27/PycharmProjects/IA--SI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "Python.0_class_anotation.executor": "Run",
+    "Python.1_pre_processing.executor": "Run",
+    "Python.1_standardization.executor": "Run",
+    "Python.2_data_types.executor": "Run",
+    "Python.2_log_normalization.executor": "Run",
+    "Python.3_Scaling_data.executor": "Run",
+    "Python.3_training_and_test_sets.executor": "Run",
+    "Python.5_manual_train_test_split.executor": "Run",
+    "Python.5_manual_trainnin_and_test_sets.executor": "Run",
+    "Python.Atividade_de_casa.executor": "Run",
+    "Python.atvidade_knn.executor": "Run",
+    "Python.dataset.executor": "Run",
+    "Python.importar dataset.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.teste.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "#8 on Camila__Ramos",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/adam27/PycharmProjects/IA--SI/AV1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AV1" />
       <recent name="D:\mega\Drive\UFC_Itapaje\SI\IA\IA--SI" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AV1" />
+      <recent name="$PROJECT_DIR$/Unsupervised_Learning/unidade7/testes" />
+      <recent name="$PROJECT_DIR$/Unsupervised_Learning/unidade7" />
+      <recent name="$PROJECT_DIR$/Unsupervised_Learning" />
+      <recent name="$PROJECT_DIR$/AV1/testes" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.1_standardization">
+  <component name="RunManager">
     <configuration name="1_standardization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
@@ -283,7 +298,14 @@
       <workItem from="1790007766789" duration="1173000" />
       <workItem from="1790009794300" duration="70000" />
       <workItem from="1790249200843" duration="1150000" />
-      <workItem from="1790603203979" duration="340000" />
+      <workItem from="1790603203979" duration="1276000" />
+      <workItem from="1791020252388" duration="2251000" />
+      <workItem from="1791234977971" duration="4999000" />
+      <workItem from="1791288889945" duration="674000" />
+      <workItem from="1791416468699" duration="12367000" />
+      <workItem from="1791464732004" duration="4015000" />
+      <workItem from="1791504877099" duration="5834000" />
+      <workItem from="1791512177284" duration="5257000" />
     </task>
     <task id="LOCAL-00001" summary="resultado av1">
       <created>1738338975384</created>
@@ -368,14 +390,19 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IA__SI$0_class_anotation.coverage" NAME="0_class_anotation Coverage Results" MODIFIED="1790249651903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Supervised_Learning/unidade3" />
+    <SUITE FILE_PATH="coverage/IA__SI$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1791238883027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AV1" />
+    <SUITE FILE_PATH="coverage/IA__SI$importar_dataset.coverage" NAME="importar dataset Coverage Results" MODIFIED="1791236976565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AV1" />
     <SUITE FILE_PATH="coverage/IA__SI$2_log_normalization.coverage" NAME="2_log_normalization Coverage Results" MODIFIED="1789742906026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
-    <SUITE FILE_PATH="coverage/IA__SI$1_pre_processing.coverage" NAME="1_pre_processing Coverage Results" MODIFIED="1789779776608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
     <SUITE FILE_PATH="coverage/IA__SI$5_manual_train_test_split.coverage" NAME="5_manual_train_test_split Coverage Results" MODIFIED="1789745077408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
-    <SUITE FILE_PATH="coverage/IA__SI$2_data_types.coverage" NAME="2_data_types Coverage Results" MODIFIED="1789779866081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
     <SUITE FILE_PATH="coverage/IA__SI$5_manual_trainnin_and_test_sets.coverage" NAME="5_manual_trainnin_and_test_sets Coverage Results" MODIFIED="1789743321300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
     <SUITE FILE_PATH="coverage/IA__SI$3_training_and_test_sets.coverage" NAME="3_training_and_test_sets Coverage Results" MODIFIED="1789779971984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
     <SUITE FILE_PATH="coverage/IA__SI$3_Scaling_data.coverage" NAME="3_Scaling_data Coverage Results" MODIFIED="1789723477690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
     <SUITE FILE_PATH="coverage/IA__SI$Atividade_de_casa.coverage" NAME="Atividade_de_casa Coverage Results" MODIFIED="1789780235253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
-    <SUITE FILE_PATH="coverage/IA__SI$1_standardization.coverage" NAME="1_standardization Coverage Results" MODIFIED="1790007827182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
+    <SUITE FILE_PATH="coverage/IA__SI$1_standardization.coverage" NAME="1_standardization Coverage Results" MODIFIED="1791512193356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
+    <SUITE FILE_PATH="coverage/IA__SI$teste.coverage" NAME="teste Coverage Results" MODIFIED="1791466042886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AV1" />
+    <SUITE FILE_PATH="coverage/IA__SI$main.coverage" NAME="main Coverage Results" MODIFIED="1791545167793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AV1" />
+    <SUITE FILE_PATH="coverage/IA__SI$1_pre_processing.coverage" NAME="1_pre_processing Coverage Results" MODIFIED="1789779776608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
+    <SUITE FILE_PATH="coverage/IA__SI$2_data_types.coverage" NAME="2_data_types Coverage Results" MODIFIED="1789779866081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
+    <SUITE FILE_PATH="coverage/IA__SI$atvidade_knn.coverage" NAME="atvidade_knn Coverage Results" MODIFIED="1791288951001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AV1" />
   </component>
 </project>
