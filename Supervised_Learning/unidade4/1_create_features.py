@@ -14,3 +14,5 @@ X = x.reshape(-1,1)
 
 # Check the shape of the features and targets
 print(y.shape, X.shape)
+
+#RODANDO...
