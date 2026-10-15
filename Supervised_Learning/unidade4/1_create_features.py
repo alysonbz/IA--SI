@@ -10,7 +10,7 @@ X = sales_df["radio"].values
 y = sales_df["sales"].values
 
 # Reshape X
-X = x.reshape(-1,1)
+X = X.reshape(-1,1)
 
 # Check the shape of the features and targets
 print(y.shape, X.shape)
