@@ -1,4 +1,5 @@
 from src.utils import load_sales_clean_dataset
+import pandas as pd
 
 sales_df = load_sales_clean_dataset()
 
@@ -13,10 +14,13 @@ X = sales_df["radio"].values.reshape(-1, 1)
 reg = LinearRegression()
 
 # Fit the model to the data
-reg.fit(X_bmi, y)
+reg.fit(X, y)
 
 # Make predictions
-predictions = preg.redict(X_bmi)
+predictions = reg.predict(X)
 
 
-print(predictions.head())
+print("**5 primriras predições: \n", predictions[:5])
+#print(sales_df.head())#inicio od dataset
+
+#FUNCIONANDO..
