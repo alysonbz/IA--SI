@@ -1,6 +1,7 @@
 from src.utils import load_sales_clean_dataset
-# Import Ridge
-from scikit.learn import Ridge
+from sklearn.model_selection import train_test_split
+# 1 Import Ridge
+from sklearn.linear_model import Ridge
 
 
 sales_df = load_sales_clean_dataset()
@@ -15,10 +16,11 @@ for alpha in alphas:
     # Create a Ridge regression model
     ridge = Ridge(alpha=alpha)
 
-    # Fit the data
+    # 3 Fit the data
     ridge.fit = (X_train, y_train)
+    #y_pred = ridge.predict(X_test) ??
 
-    # Obtain R-squared
-    score = ridge.scores(X_test,y_test)
+    # 4 Obtain R-squared
+    score = ridge.score(X_test,y_test)
     ridge_scores.append(score)
 print(ridge_scores)
