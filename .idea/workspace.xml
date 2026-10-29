@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="AV1_FINAL">
+    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="ENTREGA_FINAL_DA_AV1">
+      <change afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/atividade de casa/866472794_895439246893816_2243463111672976522_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/atividade de casa/868729310_1014338718363968_7116992886133860089_n.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AV1/q1 trab.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/q1 trab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/AV1.md" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/AV1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +37,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jaosntxx&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alysonbz/IA--SI.git&quot;,
+    &quot;accountId&quot;: &quot;49ea6e02-1cbf-4a96-8406-bfe785192b5d&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,13 +65,18 @@
   "keyToString": {
     "Git.Branch.Popup.ShowAllRemotes": "true",
     "Python.0_class_anotation.executor": "Run",
+    "Python.1_create_features.executor": "Run",
     "Python.1_k-Nearest-Neighbors-Fit.executor": "Run",
     "Python.1_pre_processing.executor": "Run",
     "Python.1_standardization.executor": "Run",
+    "Python.2_build_regression.executor": "Run",
     "Python.2_data_types.executor": "Run",
     "Python.2_log_normalization.executor": "Run",
     "Python.3_Scaling_data.executor": "Run",
     "Python.3_training_and_test_sets.executor": "Run",
+    "Python.3_visualize_predictions.executor": "Run",
+    "Python.4_fit_prediction.executor": "Run",
+    "Python.6_cross_validadation_r_2.executor": "Run",
     "Python.Atividade_de_casa.executor": "Run",
     "Python.q1 trab.executor": "Run",
     "Python.trab2_test.executor": "Run",
@@ -62,7 +87,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "joao-victor",
-    "last_opened_file_path": "C:/Users/João Vitor/Documents/Faculdade/alysson/IA--SI/AV1/datasets",
+    "last_opened_file_path": "C:/Users/João Vitor/Documents/Faculdade/alysson/IA--SI/Supervised_Learning/unidade4/atividade de casa",
     "node.js.detected.package.jshint": "true",
     "node.js.selected.package.jshint": "",
     "nodejs_package_manager_path": "npm",
@@ -79,8 +104,8 @@
       <recent name="C:\Users\João Vitor\Documents\Faculdade\alysson\IA--SI\AV1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.q1 trab">
-    <configuration name="1_standardization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.6_cross_validadation_r_2">
+    <configuration name="1_create_features" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,13 +114,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pre-processing/Unidade2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +129,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2_data_types" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2_build_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,14 +138,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pre-processing/Unidade1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="q1 trab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="3_visualize_predictions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,13 +162,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV1/q1 trab.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +177,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trab2_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="4_fit_prediction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,13 +186,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV1/trab2_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,7 +201,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trabalho_apresentação" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="6_cross_validadation_r_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,13 +210,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV1/trabalho_apresentação.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.q1 trab" />
-        <item itemvalue="Python.1_standardization" />
-        <item itemvalue="Python.trabalho_apresentação" />
-        <item itemvalue="Python.trab2_test" />
-        <item itemvalue="Python.2_data_types" />
+        <item itemvalue="Python.6_cross_validadation_r_2" />
+        <item itemvalue="Python.4_fit_prediction" />
+        <item itemvalue="Python.3_visualize_predictions" />
+        <item itemvalue="Python.2_build_regression" />
+        <item itemvalue="Python.1_create_features" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791422754356</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ENTREGA_FINAL_DA_AV1">
+      <option name="closed" value="true" />
+      <created>1791424385141</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1791424385141</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +357,9 @@
     <MESSAGE value="questão nova" />
     <MESSAGE value="AV2" />
     <MESSAGE value="AV1_FINAL" />
-    <option name="LAST_COMMIT_MESSAGE" value="AV1_FINAL" />
+    <MESSAGE value="ENTREGA FINAL DA AV1" />
+    <MESSAGE value="ENTREGA_FINAL_DA_AV1" />
+    <option name="LAST_COMMIT_MESSAGE" value="ENTREGA_FINAL_DA_AV1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -333,6 +367,10 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
