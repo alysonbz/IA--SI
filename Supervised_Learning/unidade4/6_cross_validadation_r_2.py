@@ -25,5 +25,4 @@ print(cv_scores)
 print(np.mean(cv_scores))
 
 # Print the standard deviation
-print(np.std(cv_scores))
-
+print(np.std((cv_scores)))
