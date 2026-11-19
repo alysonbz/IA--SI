@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="ENTREGA_FINAL_DA_AV1">
-      <change afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/atividade de casa/866472794_895439246893816_2243463111672976522_n.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/atividade de casa/868729310_1014338718363968_7116992886133860089_n.jpg" afterDir="false" />
+    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="entrega da atividade de casa sobre regressao linear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AV1/AV1.md" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/AV1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/5_compute_manual_score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/3_logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/3_logistic_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/4_roc_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/4_roc_curve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/5_auc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/5_auc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/6_hyperparam_tuning_grid_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/6_hyperparam_tuning_grid_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/7_hyperparam_tunig_random_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/7_hyperparam_tunig_random_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3b_cluster_fish.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3b_cluster_fish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,41 +66,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "Python.0_class_anotation.executor": "Run",
-    "Python.1_create_features.executor": "Run",
-    "Python.1_k-Nearest-Neighbors-Fit.executor": "Run",
-    "Python.1_pre_processing.executor": "Run",
-    "Python.1_standardization.executor": "Run",
-    "Python.2_build_regression.executor": "Run",
-    "Python.2_data_types.executor": "Run",
-    "Python.2_log_normalization.executor": "Run",
-    "Python.3_Scaling_data.executor": "Run",
-    "Python.3_training_and_test_sets.executor": "Run",
-    "Python.3_visualize_predictions.executor": "Run",
-    "Python.4_fit_prediction.executor": "Run",
-    "Python.6_cross_validadation_r_2.executor": "Run",
-    "Python.Atividade_de_casa.executor": "Run",
-    "Python.q1 trab.executor": "Run",
-    "Python.trab2_test.executor": "Run",
-    "Python.trabalho_apresentação.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "joao-victor",
-    "last_opened_file_path": "C:/Users/João Vitor/Documents/Faculdade/alysson/IA--SI/Supervised_Learning/unidade4/atividade de casa",
-    "node.js.detected.package.jshint": "true",
-    "node.js.selected.package.jshint": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;Python.0_class_anotation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_Clustering_2D_points.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_confusion_matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_create_features.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_k-Nearest-Neighbors-Fit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_pre_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_standardization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_build_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_inertia.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_log_normalization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_crosstab.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_logistic_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_training_and_test_sets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_visualize_predictions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3b_cluster_fish.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_fit_prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_roc_curve.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_auc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_normalizer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_cross_validadation_r_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_hyperparam_tuning_grid_search.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7_hyperparam_tunig_random_search.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7_ridge_regularization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.8_lasso_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Atividade_de_casa.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q1 trab.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trab2_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trabalho_apresentação.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;joao-victor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/João Vitor/Documents/Faculdade/alysson/IA--SI/Supervised_Learning/unidade4/atividade de casa&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\João Vitor\Documents\Faculdade\alysson\IA--SI\Supervised_Learning\unidade4\atividade de casa" />
       <recent name="C:\Users\João Vitor\Documents\Faculdade\alysson\IA--SI\AV1\datasets" />
       <recent name="C:\Users\João Vitor\Documents\Faculdade\alysson\IA--SI\Pre-processing\Unidade2" />
       <recent name="D:\mega\Drive\UFC_Itapaje\SI\IA\IA--SI" />
@@ -104,8 +124,8 @@
       <recent name="C:\Users\João Vitor\Documents\Faculdade\alysson\IA--SI\AV1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.6_cross_validadation_r_2">
-    <configuration name="1_create_features" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.5_normalizer">
+    <configuration name="1_Clustering_2D_points" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,13 +134,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2_build_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2_inertia" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,13 +158,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +173,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3_visualize_predictions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="3_crosstab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,13 +182,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,7 +197,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4_fit_prediction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="4_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,13 +206,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/4_fit_prediction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,7 +221,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="6_cross_validadation_r_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="5_normalizer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA--SI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,13 +230,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supervised_Learning/unidade4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supervised_Learning/unidade4/6_cross_validadation_r_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.6_cross_validadation_r_2" />
-        <item itemvalue="Python.4_fit_prediction" />
-        <item itemvalue="Python.3_visualize_predictions" />
-        <item itemvalue="Python.2_build_regression" />
-        <item itemvalue="Python.1_create_features" />
+        <item itemvalue="Python.5_normalizer" />
+        <item itemvalue="Python.4_pipeline" />
+        <item itemvalue="Python.1_Clustering_2D_points" />
+        <item itemvalue="Python.2_inertia" />
+        <item itemvalue="Python.3_crosstab" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791424385141</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="entrega da atividade de casa sobre regressao linear">
+      <option name="closed" value="true" />
+      <created>1793241149769</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1793241149769</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +387,8 @@
     <MESSAGE value="AV1_FINAL" />
     <MESSAGE value="ENTREGA FINAL DA AV1" />
     <MESSAGE value="ENTREGA_FINAL_DA_AV1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ENTREGA_FINAL_DA_AV1" />
+    <MESSAGE value="entrega da atividade de casa sobre regressao linear" />
+    <option name="LAST_COMMIT_MESSAGE" value="entrega da atividade de casa sobre regressao linear" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
