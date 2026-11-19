@@ -32,6 +32,8 @@ dataset: https://archive.ics.uci.edu/dataset/165/concrete-compressive-strength
 
 Camila Araújo
 
+gabriely
+
 Yasmin Coelho
 
 dataset: https://archive.ics.uci.edu/dataset/275/bike-sharing-dataset
@@ -54,7 +56,6 @@ Marcone Silva
 
 dataset: https://archive.ics.uci.edu/dataset/360/air+quality
 
-Gabriely Moura Altenhofen
 
 Habacuqui
 
