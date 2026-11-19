@@ -5,7 +5,7 @@
 * As apresentações das soluções ocorrerão nos dias **08/10 e 09/10**.
 
 * A solução deverá ser enviada por meio da **branch correspondente no GitHub**.
-
+    
 * A entrega deverá conter:
 
   * o código-fonte utilizado;

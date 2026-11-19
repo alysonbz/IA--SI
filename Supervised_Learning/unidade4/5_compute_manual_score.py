@@ -6,10 +6,12 @@ def compute_RSS(predictions,y):
     RSS = np.sum(sub_square)
     return RSS
 def compute_MSE(predictions,y):
-    MSE= None
+    RSS = compute_RSS(predictions,y)
+    MSE= np.divide(RSS,len(predictions))
     return MSE
 def compute_RMSE(predictions,y):
-    RMSE = None
+    MSE = np.sqrt(compute_MSE(predictions,y))
+    RMSE = np.
     return RMSE
 def compute_R_squared(predictions,y):
     r_squared = None
