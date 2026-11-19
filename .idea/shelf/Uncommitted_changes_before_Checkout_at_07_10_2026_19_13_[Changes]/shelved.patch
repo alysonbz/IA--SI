@@ -1,0 +1,181 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d3792958-b6c1-47bd-8ecc-329f35c7c8a5\" name=\"Changes\" comment=\"AV2\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Pre-processing/Unidade2/Atividade_de_casa.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pre-processing/Unidade2/Atividade_de_casa.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2,\r\n  &quot;fromUser&quot;: false\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2sOtjbe6q6u9jbey9jYe1OH2mqL\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Git.Branch.Popup.ShowAllRemotes\": \"true\",\r\n    \"Python.0_class_anotation.executor\": \"Run\",\r\n    \"Python.1_k-Nearest-Neighbors-Fit.executor\": \"Run\",\r\n    \"Python.1_pre_processing.executor\": \"Run\",\r\n    \"Python.1_standardization.executor\": \"Run\",\r\n    \"Python.2_data_types.executor\": \"Run\",\r\n    \"Python.2_log_normalization.executor\": \"Run\",\r\n    \"Python.3_Scaling_data.executor\": \"Run\",\r\n    \"Python.3_training_and_test_sets.executor\": \"Run\",\r\n    \"Python.Atividade_de_casa.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\r\n    \"git-widget-placeholder\": \"joao-victor\",\r\n    \"last_opened_file_path\": \"C:/Users/João Vitor/Documents/Faculdade/alysson/IA--SI/Pre-processing/Unidade2\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\João Vitor\\Documents\\Faculdade\\alysson\\IA--SI\\Pre-processing\\Unidade2\" />\r\n      <recent name=\"D:\\mega\\Drive\\UFC_Itapaje\\SI\\IA\\IA--SI\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.2_data_types\">\r\n    <configuration name=\"0_class_anotation\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"IA--SI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Supervised_Learning/unidade3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"DEBUG_JUST_MY_CODE\" value=\"false\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"1_k-Nearest-Neighbors-Fit\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"IA--SI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Supervised_Learning/unidade3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"DEBUG_JUST_MY_CODE\" value=\"false\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"1_pre_processing\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"IA--SI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Pre-processing/Unidade1\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"DEBUG_JUST_MY_CODE\" value=\"false\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"2_data_types\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"IA--SI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Pre-processing/Unidade1\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"DEBUG_JUST_MY_CODE\" value=\"false\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Atividade_de_casa\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"IA--SI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Pre-processing/Unidade2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"DEBUG_JUST_MY_CODE\" value=\"false\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Pre-processing/Unidade2/Atividade_de_casa.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.2_data_types\" />\r\n        <item itemvalue=\"Python.1_pre_processing\" />\r\n        <item itemvalue=\"Python.1_k-Nearest-Neighbors-Fit\" />\r\n        <item itemvalue=\"Python.0_class_anotation\" />\r\n        <item itemvalue=\"Python.Atividade_de_casa\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d3792958-b6c1-47bd-8ecc-329f35c7c8a5\" name=\"Changes\" comment=\"\" />\r\n      <created>1738338589352</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1738338589352</updated>\r\n      <workItem from=\"1788527514833\" duration=\"3903000\" />\r\n      <workItem from=\"1789040140738\" duration=\"3618000\" />\r\n      <workItem from=\"1789133605981\" duration=\"2287000\" />\r\n      <workItem from=\"1789644645916\" duration=\"1812000\" />\r\n      <workItem from=\"1789697180918\" duration=\"1357000\" />\r\n      <workItem from=\"1790249319576\" duration=\"1641000\" />\r\n      <workItem from=\"1790724692060\" duration=\"2629000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"resultado av1\">\r\n      <created>1738338975384</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738338975384</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"resultado av1\">\r\n      <created>1738339536783</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738339536783</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"resultado av1\">\r\n      <created>1738352194222</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738352194222</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"resultado av1\">\r\n      <created>1738352303165</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738352303165</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"resultado av1\">\r\n      <created>1738352425037</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738352425037</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"questão nova\">\r\n      <created>1739283324475</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739283324475</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"AV2\">\r\n      <created>1739361532509</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739361532509</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"joao-victor\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"resultado av1\" />\r\n    <MESSAGE value=\"questão nova\" />\r\n    <MESSAGE value=\"AV2\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"AV2\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$0_class_anotation.coverage\" NAME=\"0_class_anotation Coverage Results\" MODIFIED=\"1790250543920\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Supervised_Learning/unidade3\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$Atividade_de_casa.coverage\" NAME=\"Atividade_de_casa Coverage Results\" MODIFIED=\"1789698414349\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Pre-processing/Unidade2\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$2_data_types.coverage\" NAME=\"2_data_types Coverage Results\" MODIFIED=\"1790727140106\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Pre-processing/Unidade1\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$1_standardization.coverage\" NAME=\"1_standardization Coverage Results\" MODIFIED=\"1789135626105\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Pre-processing/Unidade2\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$1_k_Nearest_Neighbors_Fit.coverage\" NAME=\"1_k-Nearest-Neighbors-Fit Coverage Results\" MODIFIED=\"1790250555196\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Supervised_Learning/unidade3\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$2_log_normalization.coverage\" NAME=\"2_log_normalization Coverage Results\" MODIFIED=\"1789645514445\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Pre-processing/Unidade2\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$3_Scaling_data.coverage\" NAME=\"3_Scaling_data Coverage Results\" MODIFIED=\"1789645829417\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Pre-processing/Unidade2\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$1_pre_processing.coverage\" NAME=\"1_pre_processing Coverage Results\" MODIFIED=\"1790726934641\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Pre-processing/Unidade1\" />\r\n    <SUITE FILE_PATH=\"coverage/IA__SI$3_training_and_test_sets.coverage\" NAME=\"3_training_and_test_sets Coverage Results\" MODIFIED=\"1789043228842\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Pre-processing/Unidade1\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5ffdc952d789307ca279933907a86f82d5a20c0c)
++++ b/.idea/workspace.xml	(date 1791411118440)
+@@ -4,18 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="AV2">
++    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="entrega das atvds">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/0_class_anotation.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/1_pre_processing.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/Atividade_de_casa.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/Atividade_de_casa.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,6 +20,12 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="PUSH_TAGS">
++      <GitPushTagMode>
++        <option name="argument" value="--tags" />
++        <option name="title" value="All" />
++      </GitPushTagMode>
++    </option>
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+         <entry key="$PROJECT_DIR$" value="main" />
+@@ -37,6 +33,18 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Jaosntxx&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/alysonbz/IA--SI.git&quot;,
++    &quot;accountId&quot;: &quot;49ea6e02-1cbf-4a96-8406-bfe785192b5d&quot;
++  }
++}</component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -49,36 +57,36 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Git.Branch.Popup.ShowAllRemotes": "true",
+-    "Python.0_class_anotation.executor": "Run",
+-    "Python.1_k-Nearest-Neighbors-Fit.executor": "Run",
+-    "Python.1_pre_processing.executor": "Run",
+-    "Python.1_standardization.executor": "Run",
+-    "Python.2_data_types.executor": "Run",
+-    "Python.2_log_normalization.executor": "Run",
+-    "Python.3_Scaling_data.executor": "Run",
+-    "Python.3_training_and_test_sets.executor": "Run",
+-    "Python.Atividade_de_casa.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+-    "codeWithMe.voiceChat.enabledByDefault": "false",
+-    "git-widget-placeholder": "joao-victor",
+-    "last_opened_file_path": "C:/Users/João Vitor/Documents/Faculdade/alysson/IA--SI/Pre-processing/Unidade2",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
++    &quot;Python.0_class_anotation.executor&quot;: &quot;Run&quot;,
++    &quot;Python.1_k-Nearest-Neighbors-Fit.executor&quot;: &quot;Run&quot;,
++    &quot;Python.1_pre_processing.executor&quot;: &quot;Run&quot;,
++    &quot;Python.1_standardization.executor&quot;: &quot;Run&quot;,
++    &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
++    &quot;Python.2_log_normalization.executor&quot;: &quot;Run&quot;,
++    &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
++    &quot;Python.3_training_and_test_sets.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Atividade_de_casa.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
++    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;joao-victor&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/João Vitor/Documents/Faculdade/alysson/IA--SI/Pre-processing/Unidade2&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\João Vitor\Documents\Faculdade\alysson\IA--SI\Pre-processing\Unidade2" />
+       <recent name="D:\mega\Drive\UFC_Itapaje\SI\IA\IA--SI" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Python.2_data_types">
++  <component name="RunManager" selected="Python.1_k-Nearest-Neighbors-Fit">
+     <configuration name="0_class_anotation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="IA--SI" />
+       <option name="ENV_FILES" value="" />
+@@ -206,9 +214,9 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Python.1_k-Nearest-Neighbors-Fit" />
+         <item itemvalue="Python.2_data_types" />
+         <item itemvalue="Python.1_pre_processing" />
+-        <item itemvalue="Python.1_k-Nearest-Neighbors-Fit" />
+         <item itemvalue="Python.0_class_anotation" />
+         <item itemvalue="Python.Atividade_de_casa" />
+       </list>
+@@ -235,7 +243,10 @@
+       <workItem from="1789644645916" duration="1812000" />
+       <workItem from="1789697180918" duration="1357000" />
+       <workItem from="1790249319576" duration="1641000" />
+-      <workItem from="1790724692060" duration="2629000" />
++      <workItem from="1790724692060" duration="2931000" />
++      <workItem from="1790772145991" duration="264000" />
++      <workItem from="1790808891168" duration="3245000" />
++      <workItem from="1791411079080" duration="17000" />
+     </task>
+     <task id="LOCAL-00001" summary="resultado av1">
+       <created>1738338975384</created>
+@@ -286,7 +297,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1739361532509</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="entrega das atvds">
++      <option name="closed" value="true" />
++      <created>1790727576678</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1790727576678</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -319,14 +338,15 @@
+     <MESSAGE value="resultado av1" />
+     <MESSAGE value="questão nova" />
+     <MESSAGE value="AV2" />
+-    <option name="LAST_COMMIT_MESSAGE" value="AV2" />
++    <MESSAGE value="entrega das atvds" />
++    <option name="LAST_COMMIT_MESSAGE" value="entrega das atvds" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/IA__SI$0_class_anotation.coverage" NAME="0_class_anotation Coverage Results" MODIFIED="1790250543920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Supervised_Learning/unidade3" />
+     <SUITE FILE_PATH="coverage/IA__SI$Atividade_de_casa.coverage" NAME="Atividade_de_casa Coverage Results" MODIFIED="1789698414349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
+     <SUITE FILE_PATH="coverage/IA__SI$2_data_types.coverage" NAME="2_data_types Coverage Results" MODIFIED="1790727140106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />
+-    <SUITE FILE_PATH="coverage/IA__SI$1_standardization.coverage" NAME="1_standardization Coverage Results" MODIFIED="1789135626105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
+-    <SUITE FILE_PATH="coverage/IA__SI$1_k_Nearest_Neighbors_Fit.coverage" NAME="1_k-Nearest-Neighbors-Fit Coverage Results" MODIFIED="1790250555196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Supervised_Learning/unidade3" />
++    <SUITE FILE_PATH="coverage/IA__SI$1_standardization.coverage" NAME="1_standardization Coverage Results" MODIFIED="1790772168668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
++    <SUITE FILE_PATH="coverage/IA__SI$1_k_Nearest_Neighbors_Fit.coverage" NAME="1_k-Nearest-Neighbors-Fit Coverage Results" MODIFIED="1790808908335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Supervised_Learning/unidade3" />
+     <SUITE FILE_PATH="coverage/IA__SI$2_log_normalization.coverage" NAME="2_log_normalization Coverage Results" MODIFIED="1789645514445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
+     <SUITE FILE_PATH="coverage/IA__SI$3_Scaling_data.coverage" NAME="3_Scaling_data Coverage Results" MODIFIED="1789645829417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade2" />
+     <SUITE FILE_PATH="coverage/IA__SI$1_pre_processing.coverage" NAME="1_pre_processing Coverage Results" MODIFIED="1790726934641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pre-processing/Unidade1" />

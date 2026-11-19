@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="entrega da atividade de casa sobre regressao linear">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/7_ridge_regularization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/8_lasso_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/3_logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/3_logistic_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/4_roc_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/4_roc_curve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/5_auc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/5_auc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/6_hyperparam_tuning_grid_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/6_hyperparam_tuning_grid_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/7_hyperparam_tunig_random_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/7_hyperparam_tunig_random_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/1_Clustering_2D_points.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/2_inertia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3_crosstab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3b_cluster_fish.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/3b_cluster_fish.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/4_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unsupervised_Learning/unidade6/5_normalizer.py" afterDir="false" />
-    </list>
+    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="segundo envio das atividades" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -351,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793241149769</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="segundo envio das atividades">
+      <option name="closed" value="true" />
+      <created>1795091237387</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1795091237387</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +380,8 @@
     <MESSAGE value="ENTREGA FINAL DA AV1" />
     <MESSAGE value="ENTREGA_FINAL_DA_AV1" />
     <MESSAGE value="entrega da atividade de casa sobre regressao linear" />
-    <option name="LAST_COMMIT_MESSAGE" value="entrega da atividade de casa sobre regressao linear" />
+    <MESSAGE value="segundo envio das atividades" />
+    <option name="LAST_COMMIT_MESSAGE" value="segundo envio das atividades" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

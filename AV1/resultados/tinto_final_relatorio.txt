@@ -1,0 +1,16 @@
+Técnica: RobustScaler (mediana/IQR)
+K: 30
+Acurácia no teste: 0.5441
+
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         2
+           4       0.00      0.00      0.00        11
+           5       0.60      0.68      0.64       116
+           6       0.50      0.58      0.53       107
+           7       0.44      0.21      0.29        33
+           8       0.00      0.00      0.00         3
+
+    accuracy                           0.54       272
+   macro avg       0.26      0.25      0.24       272
+weighted avg       0.51      0.54      0.52       272

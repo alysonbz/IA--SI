@@ -1,0 +1,5 @@
+Configuração,Técnica utilizada,Acurácia (validação),Acurácia CV-5 (média),Desvio CV-5
+1,Sem normalização,0.4381,0.4258,0.0124
+2,StandardScaler (Z-score),0.4836,0.5088,0.0149
+3,"MinMaxScaler [0,1]",0.5139,0.5129,0.0199
+4,RobustScaler (mediana/IQR),0.5076,0.5111,0.0149

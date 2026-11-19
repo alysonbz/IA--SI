@@ -1,0 +1,12 @@
+,Mínimo,Máximo,Amplitude,Desvio-padrão
+fixed acidity,3.8,14.2,10.4,0.8669
+volatile acidity,0.08,1.1,1.02,0.1034
+citric acid,0.0,1.66,1.66,0.1224
+residual sugar,0.6,65.8,65.2,4.8616
+chlorides,0.009,0.346,0.337,0.0231
+free sulfur dioxide,2.0,289.0,287.0,17.21
+total sulfur dioxide,9.0,440.0,431.0,43.1291
+density,0.9871,1.039,0.0519,0.0029
+pH,2.72,3.82,1.1,0.1515
+sulphates,0.22,1.08,0.86,0.1135
+alcohol,8.0,14.2,6.2,1.2171
