@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="AV2">
-      <change afterPath="$PROJECT_DIR$/AV1/Apresentação.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AV1/main.py" afterDir="false" />
+    <list default="true" id="d3792958-b6c1-47bd-8ecc-329f35c7c8a5" name="Changes" comment="29/10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +20,20 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Camila_Ramos" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Camila" />
@@ -46,23 +58,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0000000000000013" />
-      <entry key="M30" value="1.0000004530464286" />
-      <entry key="H1" value="1.0101359137086543" />
-      <entry key="H2" value="2.8167654211504427" />
-      <entry key="H4" value="29.927766578172736" />
-      <entry key="D1" value="341.67821540787503" />
-      <entry key="W1" value="529.5846749619227" />
+      <entry key="MS100" value="1.000013375947269" />
+      <entry key="MS500" value="1.112315556873755" />
+      <entry key="S2" value="2.008540015529308" />
+      <entry key="S5" value="2.880096973263047" />
+      <entry key="S10" value="3.3624189556553" />
+      <entry key="S30" value="3.767134310718901" />
+      <entry key="S60" value="3.896705025454053" />
+      <entry key="M2" value="4.4882784402994655" />
+      <entry key="M5" value="10.734668231279878" />
+      <entry key="M10" value="22.04758628437286" />
+      <entry key="M15" value="29.67266854141875" />
+      <entry key="M30" value="41.31158111880776" />
+      <entry key="H1" value="49.673347964862685" />
+      <entry key="H2" value="54.86800412729594" />
+      <entry key="H4" value="58.26440530807739" />
+      <entry key="D1" value="225.9999754255608" />
+      <entry key="W1" value="551.7404646189595" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -71,36 +83,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="1.2669885720173378E-255" />
-      <entry key="M2" value="4.456694161286341E-128" />
-      <entry key="M5" value="1.9149585781211502E-51" />
-      <entry key="M10" value="7.442618526001134E-26" />
-      <entry key="M15" value="2.6528806561542904E-17" />
-      <entry key="M30" value="1.0705153498250523E-8" />
-      <entry key="H1" value="2.487240698619903E-4" />
-      <entry key="H2" value="0.04691584547609039" />
-      <entry key="H4" value="0.7800950851469542" />
-      <entry key="D1" value="9.522422359641242" />
-      <entry key="W1" value="14.851312293202422" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="4.442194738713718E-242" />
+      <entry key="M5" value="3.7739305199142844E-97" />
+      <entry key="M10" value="9.631295521223389E-49" />
+      <entry key="M15" value="1.374930933033541E-32" />
+      <entry key="M30" value="2.0085139833471526E-16" />
+      <entry key="H1" value="2.4482898186371133E-8" />
+      <entry key="H2" value="2.749064016527079E-4" />
+      <entry key="H4" value="0.03577506767163281" />
+      <entry key="D1" value="5.7494567039348405" />
+      <entry key="W1" value="15.972101508368242" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8645372313078652" />
-      <entry key="MS500" value="0.9713074955416333" />
-      <entry key="S2" value="0.992748375440308" />
-      <entry key="S5" value="0.9970930153280337" />
-      <entry key="S10" value="0.9985454498058832" />
-      <entry key="S30" value="0.9995149146655609" />
-      <entry key="S60" value="0.9997574279121715" />
-      <entry key="M2" value="0.9998787066000413" />
-      <entry key="M5" value="0.9999514808744516" />
-      <entry key="M10" value="0.9999757401429555" />
-      <entry key="M15" value="0.9999838266965776" />
-      <entry key="M30" value="0.9999923769404578" />
-      <entry key="H1" value="1.0103790025159671" />
-      <entry key="H2" value="2.863528142699005" />
-      <entry key="H4" value="30.706636617148035" />
-      <entry key="D1" value="351.19822492426744" />
-      <entry key="W1" value="544.4354524834882" />
+      <entry key="MS100" value="0.9202001308246278" />
+      <entry key="MS500" value="1.0941924046344127" />
+      <entry key="S2" value="1.9997872596184019" />
+      <entry key="S5" value="2.8748049187252938" />
+      <entry key="S10" value="3.359271502381522" />
+      <entry key="S30" value="3.7659436057094364" />
+      <entry key="S60" value="3.8958425774806176" />
+      <entry key="M2" value="4.48471498836868" />
+      <entry key="M5" value="10.722095540069043" />
+      <entry key="M10" value="22.031762647952693" />
+      <entry key="M15" value="29.657869719347303" />
+      <entry key="M30" value="41.30103126400507" />
+      <entry key="H1" value="49.66701063025637" />
+      <entry key="H2" value="54.864800177749196" />
+      <entry key="H4" value="58.29833194037467" />
+      <entry key="D1" value="231.74789952587633" />
+      <entry key="W1" value="567.7120119290335" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -112,46 +124,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "Python.0_class_anotation.executor": "Run",
-    "Python.1_pre_processing.executor": "Run",
-    "Python.1_standardization.executor": "Run",
-    "Python.2_data_types.executor": "Run",
-    "Python.2_log_normalization.executor": "Run",
-    "Python.3_Scaling_data.executor": "Run",
-    "Python.3_training_and_test_sets.executor": "Run",
-    "Python.5_manual_train_test_split.executor": "Run",
-    "Python.5_manual_trainnin_and_test_sets.executor": "Run",
-    "Python.Atividade_de_casa.executor": "Run",
-    "Python.atvidade_knn.executor": "Run",
-    "Python.dataset.executor": "Run",
-    "Python.importar dataset.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.teste.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "#8 on Camila__Ramos",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/adam27/PycharmProjects/IA--SI/AV1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;Python.0_class_anotation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_confusion_matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_create_features.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_pre_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_standardization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_build_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_data_types.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_log_normalization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_Scaling_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_training_and_test_sets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_visualize_predictions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_fit_prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_compute_manual_score.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_manual_train_test_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_manual_trainnin_and_test_sets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_cross_validadation_r_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7_ridge_regularization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.8_lasso_regression.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Atividade_de_casa.executor&quot;: &quot;Run&quot;,
+    &quot;Python.atvidade_knn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.importar dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#8 on Camila__Ramos&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/adam27/PycharmProjects/IA--SI/Supervised_Learning/unidade4/atividade de casa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;repository&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Supervised_Learning/unidade4/atividade de casa" />
       <recent name="$PROJECT_DIR$/AV1" />
       <recent name="D:\mega\Drive\UFC_Itapaje\SI\IA\IA--SI" />
     </key>
@@ -305,7 +333,8 @@
       <workItem from="1791416468699" duration="12367000" />
       <workItem from="1791464732004" duration="4015000" />
       <workItem from="1791504877099" duration="5834000" />
-      <workItem from="1791512177284" duration="5257000" />
+      <workItem from="1791512177284" duration="5878000" />
+      <workItem from="1792668320482" duration="76000" />
     </task>
     <task id="LOCAL-00001" summary="resultado av1">
       <created>1738338975384</created>
@@ -364,7 +393,63 @@
       <option name="project" value="LOCAL" />
       <updated>1789780684005</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Avaliação 1 - apresentação">
+      <option name="closed" value="true" />
+      <created>1791594903029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1791594903029</updated>
+    </task>
+    <task id="LOCAL-00010" summary="16/10">
+      <option name="closed" value="true" />
+      <created>1792761316859</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1792761316859</updated>
+    </task>
+    <task id="LOCAL-00011" summary="22/10">
+      <option name="closed" value="true" />
+      <created>1792761334061</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1792761334061</updated>
+    </task>
+    <task id="LOCAL-00012" summary="23/10">
+      <option name="closed" value="true" />
+      <created>1792764537748</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1792764537748</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Atividade p/ casa 23/10">
+      <option name="closed" value="true" />
+      <created>1792867609145</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1792867609145</updated>
+    </task>
+    <task id="LOCAL-00014" summary="29/10/26">
+      <option name="closed" value="true" />
+      <created>1793274740937</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1793274740937</updated>
+    </task>
+    <task id="LOCAL-00015" summary="29/10">
+      <option name="closed" value="true" />
+      <created>1793276610731</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1793276610731</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,9 +469,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resultado av1" />
     <MESSAGE value="questão nova" />
-    <MESSAGE value="AV2" />
     <MESSAGE value="Atividades" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atividades" />
+    <MESSAGE value="AV2" />
+    <MESSAGE value="Avaliação 1 - apresentação" />
+    <MESSAGE value="16/10" />
+    <MESSAGE value="22/10" />
+    <MESSAGE value="23/10" />
+    <MESSAGE value="Atividade p/ casa 23/10" />
+    <MESSAGE value="29/10/26" />
+    <MESSAGE value="29/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="29/10" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IA__SI$0_class_anotation.coverage" NAME="0_class_anotation Coverage Results" MODIFIED="1790249651903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Supervised_Learning/unidade3" />
