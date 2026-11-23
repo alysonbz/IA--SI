@@ -23,3 +23,8 @@ print("RSS: {}".format(compute_RSS(predictions,y)))
 print("MSE: {}".format(compute_MSE(predictions,y)))
 print("RMSE: {}".format(compute_RMSE(predictions,y)))
 print("R^2: {}".format(compute_R_squared(predictions,y)))
+
+print("RSS: {}".format(compute_RSS(predictions,y)))
+print("MSE: {}".format(compute_MSE(predictions,y)))
+print("RMSE: {}".format(compute_RMSE(predictions,y)))
+print("R^2: {}".format(compute_R_squared(predictions,y)))
