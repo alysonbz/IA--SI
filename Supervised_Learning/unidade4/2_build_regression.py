@@ -18,4 +18,6 @@ reg.fit(X, y)
 # Make predictions
 predictions = reg.predict(X)
 
-print(predictions)
+print("predições", predictions[:5])
+print("___________________________________________________________________________________________")
+print("Valores Reais", y[:5])

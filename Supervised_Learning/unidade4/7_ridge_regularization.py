@@ -1,12 +1,10 @@
-from src.utils import load_sales_clean_dataset
 from sklearn.model_selection import train_test_split
+
+from src.utils import load_sales_clean_dataset
 # Import Ridge
 from sklearn.linear_model import Ridge
 
-
-
 sales_df = load_sales_clean_dataset()
-
 # Create X and y arrays
 X = sales_df.drop(["sales","influencer"], axis=1)
 y = sales_df["sales"].values

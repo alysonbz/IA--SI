@@ -1,4 +1,3 @@
-
 from src.utils import processing_sales_clean
 # Import matplotlib.pyplot
 import matplotlib.pyplot as plt

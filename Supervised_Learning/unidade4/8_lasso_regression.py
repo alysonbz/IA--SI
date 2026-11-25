@@ -13,12 +13,10 @@ sales_columns = X.columns
 
 # Instantiate a lasso regression model
 lasso = Lasso(alpha=0.3)
-lasso.fit(X, y)
 
 # Compute and print the coefficients
 lasso_coef = lasso.fit(X, y).coef_
 print(lasso_coef)
-
 plt.bar(sales_columns, lasso_coef)
 plt.xticks(rotation=45)
 plt.show()

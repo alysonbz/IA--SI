@@ -3,7 +3,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 
 #Import confusion matrix
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import classification_report, confusion_matrix
 
 diabetes_df = load_diabetes_clean_dataset()
 X = diabetes_df.drop(['diabetes'],axis=1)
