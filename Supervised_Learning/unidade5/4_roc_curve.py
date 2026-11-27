@@ -1,18 +1,19 @@
-import matplotlib.pyplot as plt
+
 from src.utils import log_reg_diabetes
-# Import roc_curve
-____
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import roc_auc_score
 
-y_prob,y_test ,_= log_reg_diabetes()
+# Obter probabilidades e valores reais
+y_prob, y_test, y_pred = log_reg_diabetes()
 
-# Generate ROC curve values: fpr, tpr, thresholds
-fpr, tpr, thresholds = ____(____, ____)
+# Calcular AUC
+print("AUC:")
+print(roc_auc_score(y_test, y_prob))
 
-plt.plot([0, 1], [0, 1], 'k--')
+# Exibir matriz de confusão
+print("\nMatriz de confusão:")
+print(confusion_matrix(y_test, y_pred))
 
-# Plot tpr against fpr
-plt.plot(____, ____)
-plt.xlabel('False Positive Rate')
-plt.ylabel('True Positive Rate')
-plt.title('ROC Curve for Diabetes Prediction')
-plt.show()
+# Exibir relatório de classificação
+print("\nClassificação Report:")
+print(classification_report(y_test, y_pred))
