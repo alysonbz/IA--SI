@@ -1,14 +1,12 @@
-# ==============================================================================
-# AV2 – INTELIGÊNCIA ARTIFICIAL
-# Alunos: João Victor e Antônio Erick
 # Dataset: Student Performance (UCI, id=320) | Alvo: G3
 # ==============================================================================
 
-# Importa bibliotecas básicas para cálculo numérico, manipulação de tabelas e gráficos
+# Importa bibliotecas básicas para cálculo numérico, tabelas e gráficos
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.model_selection import train_test_split
 
 # Importa função para baixar a base de dados diretamente do repositório da UCI
 from ucimlrepo import fetch_ucirepo
@@ -19,6 +17,10 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
+from sklearn.impute import SimpleImputer
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.metrics import mean_squared_error, r2_score
+
 
 # Configura o pandas para exibir todas as colunas e usar largura maior ao imprimir tabelas
 pd.set_option("display.max_columns", None)
@@ -46,11 +48,10 @@ tabela_alunos = pd.concat(
 # ------------------------------------------------------------------------------
 # 3. ANÁLISE EXPLORATÓRIA DOS DADOS
 # ------------------------------------------------------------------------------
-print("\n--- 3. ANÁLISE EXPLORATÓRIA ---")
 
 # 3a) Exibe quantidade de linhas e colunas da tabela e informações de tipos de dados
 print("Dimensões (amostras, colunas):", tabela_alunos.shape)
-tabela_alunos.info()
+print("info", tabela_alunos.info())
 
 # Separa os nomes das colunas numéricas e das colunas categóricas (texto) em listas
 colunas_numericas = tabela_alunos.select_dtypes(include=[np.number]).columns.tolist()
@@ -257,24 +258,25 @@ print("\n5g) Distribuição dos clusters:\n", tabela_distribuicao_clusters)
 # ------------------------------------------------------------------------------
 print("\n--- 6. INTERPRETAÇÃO DOS CLUSTERS ---")
 
-# Adiciona a coluna com o número do cluster na tabela de valores originais
+# Adiciona o cluster encontrado e traz G3 de volta apenas para análise posterior (fora do K-Means)
 tabela_clusters_original["cluster"] = clusters_finais
+tabela_clusters_original["G3"] = tabela_alunos_limpa["G3"]
 
-# Lista todas as colunas numéricas da tabela, exceto a própria coluna 'cluster'
+# Lista todas as colunas numéricas da tabela (agora incluindo G3), exceto 'cluster'
 colunas_numericas_cluster = [
     coluna for coluna in tabela_clusters_original.select_dtypes(include=np.number).columns
     if coluna != "cluster"
 ]
 
-# 6a e 6b) Calcula média e mediana de cada variável numérica por cluster na escala original
+# 6a e 6b) Calcula média e mediana de cada variável numérica por cluster na escala original (incluindo G3)
 medias_por_cluster = tabela_clusters_original.groupby("cluster")[colunas_numericas_cluster].mean().round(2).T
 medianas_por_cluster = tabela_clusters_original.groupby("cluster")[colunas_numericas_cluster].median().round(2).T
 
 print("\n6a/6b) Médias por cluster (escala original):\n", medias_por_cluster)
 print("\n6a/6b) Medianas por cluster (escala original):\n", medianas_por_cluster)
 
-# 6c) Compara visualmente faltas e tempo de estudo entre os clusters via boxplots
-figura_perfis, eixos_perfis = plt.subplots(1, 2, figsize=(12, 4.5))
+# 6c) Compara visualmente faltas, tempo de estudo e nota final (G3) entre os clusters via boxplots
+figura_perfis, eixos_perfis = plt.subplots(1, 3, figsize=(16, 4.5))
 
 sns.boxplot(x="cluster", y="absences", data=tabela_clusters_original, ax=eixos_perfis[0])
 eixos_perfis[0].set_title("6c) Faltas (absences) por cluster")
@@ -282,10 +284,13 @@ eixos_perfis[0].set_title("6c) Faltas (absences) por cluster")
 sns.boxplot(x="cluster", y="studytime", data=tabela_clusters_original, ax=eixos_perfis[1])
 eixos_perfis[1].set_title("6c) Tempo de estudo (studytime) por cluster")
 
+sns.boxplot(x="cluster", y="G3", data=tabela_clusters_original, ax=eixos_perfis[2])
+eixos_perfis[2].set_title("6c) Nota final (G3) por cluster")
+
 plt.tight_layout()
 plt.show()
 
-# 6d) Principais diferenças entre grupos: consumo de álcool, tempo de estudo, escolaridade dos pais e faltas.
+# 6d) Principais diferenças entre grupos: consumo de álcool, tempo de estudo, escolaridade dos pais, faltas e G3.
 # 6e) Na apresentação, nomear o perfil de cada cluster com base nas médias e medianas acima.
 # 6f) Os grupos fazem sentido na prática, mas muitas colunas binárias (0/1) aumentam a
 #     dimensionalidade e naturalmente reduzem o valor do Silhouette Score.
@@ -331,7 +336,6 @@ plt.tight_layout()
 plt.show()
 
 # 7d) Verifica correlação entre variáveis preditoras numéricas (possível multicolinearidade)
-# Quando preditoras são muito correlacionadas, a Regressão Linear fica instável e Ridge/Lasso ajudam
 colunas_preditoras_numericas = preditoras_regressao.select_dtypes(include=np.number).columns.tolist()
 plt.figure(figsize=(10, 8))
 sns.heatmap(
@@ -343,5 +347,293 @@ sns.heatmap(
     annot_kws={"size": 7}
 )
 plt.title("7d) Correlação entre variáveis independentes")
+plt.tight_layout()
+plt.show()
+
+#------------------------------------------------------------------------------
+# 8. Preparação dos dados para regressão
+# ------------------------------------------------------------------------------
+print("\n--- 8. Preparação dos dados para regressão ---")
+
+# 8a)Dividir o dataset em conjuntos de treinamento e teste, utilizando uma proporção de 80% e 20%.
+X = tabela_alunos.drop(columns=["G1", "G2", "G3"])
+y = tabela_alunos["G3"].values
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# ==============================================================================
+# 8b) Aplicar o tratamento necessário às características categóricas e numéricas.
+# 8c) Padronizar as características preditoras, especialmente para os modelos Ridge e Lasso.
+colunas_numericas = X_train.select_dtypes(include=['number']).columns.tolist()
+colunas_categoricas = X_train.select_dtypes(exclude=['number']).columns.tolist()
+
+pipeline_numerico = Pipeline(steps=[
+    ('imputador', SimpleImputer(strategy='median')),
+    ('escalonador', StandardScaler())  # Item 8c: Padronização para Ridge e Lasso
+])
+
+pipeline_categorico = Pipeline(steps=[
+    ('imputador', SimpleImputer(strategy='most_frequent')),
+    ('onehot', OneHotEncoder(drop='first', handle_unknown='ignore'))  # Item 8b: Categóricas
+])
+
+preprocessador = ColumnTransformer(
+    transformers=[
+        ('num', pipeline_numerico, colunas_numericas),
+        ('cat', pipeline_categorico, colunas_categoricas)
+    ]
+)
+X_train_tratado = preprocessador.fit_transform(X_train)
+X_test_tratado = preprocessador.transform(X_test)
+
+# 8d) Garantir que as transformações sejam ajustadas somente com os dados de treinamento e posteriormente aplicadas ao conjunto de teste.
+# 8e) Utilizar a mesma divisão de dados para os três modelos, garantindo condições equivalentes de comparação.
+
+from sklearn.model_selection import GridSearchCV, KFold
+
+alphas = [0.001, 0.01, 0.1, 1, 10, 100]
+
+kfold = KFold(n_splits=5, shuffle=True, random_state=42)
+
+modelos = {
+
+    # 9a) Treinar um modelo de regressão linear convencional.
+
+    "Regressão Linear": Pipeline([
+        ("prep", preprocessador),
+        ("reg", LinearRegression())
+    ]),
+
+    # 9b) Treinar um modelo Ridge, avaliando diferentes valores do hiperparâmetro \(\alpha\).
+
+    "Ridge": GridSearchCV(
+        Pipeline([
+            ("prep", preprocessador),
+            ("reg", Ridge())
+        ]),
+        param_grid={"reg__alpha": alphas},
+        cv=kfold,
+        scoring="r2"
+    ),
+
+    # 9c) Treinar um modelo Lasso, avaliando diferentes valores do hiperparâmetro \(\alpha\).
+
+    "Lasso": GridSearchCV(
+        Pipeline([
+            ("prep", preprocessador),
+            ("reg", Lasso(max_iter=100000))
+        ]),
+        param_grid={"reg__alpha": alphas},
+        cv=kfold,
+        scoring="r2"
+    )
+}
+
+for nome, modelo in modelos.items():
+
+    modelo.fit(X_train, y_train)
+
+    y_pred = modelo.predict(X_test)
+
+    if hasattr(modelo, "best_params_"):
+        print(nome, "melhor alpha:", modelo.best_params_["reg__alpha"])
+
+    print(
+        f"{nome} -> "
+        f"MSE: {mean_squared_error(y_test, y_pred):.2f} | "
+        f"R²: {r2_score(y_test, y_pred):.4f}"
+    )
+
+# ------------------------------------------------------------------------------
+# 9. Treinamento dos modelos de regressão
+# ------------------------------------------------------------------------------
+print("\n--- 9. Treinamento dos modelos de regressão ---")
+
+# 9e) Registrar as configurações utilizadas nos três modelos
+print("\n--- [9e] CONFIGURAÇÕES DOS MODELOS ---")
+for nome, modelo in modelos.items():
+    if hasattr(modelo, "best_params_"):
+        print(f"{nome}: Melhor Alpha = {modelo.best_params_['reg__alpha']} | Config = {modelo.best_estimator_.named_steps['reg'].get_params()}")
+    else:
+        print(f"{nome}: Config = {modelo.named_steps['reg'].get_params()}")
+
+# 9f) Comparar os coeficientes obtidos pelos modelos
+
+lr_final = modelos["Regressão Linear"]
+ridge_final = modelos["Ridge"].best_estimator_
+lasso_final = modelos["Lasso"].best_estimator_
+
+nomes_features = lr_final.named_steps["prep"].get_feature_names_out()
+
+df_coefs = pd.DataFrame({
+    "Característica": nomes_features,
+    "Linear": lr_final.named_steps["reg"].coef_,
+    "Ridge": ridge_final.named_steps["reg"].coef_,
+    "Lasso": lasso_final.named_steps["reg"].coef_
+})
+
+zeros_lasso = (df_coefs["Lasso"] == 0).sum()
+print(f"\n--- [9f] COMPARAÇÃO DE COEFICIENTES (Zerados no Lasso: {zeros_lasso} de {len(nomes_features)}) ---")
+print(df_coefs.to_string(index=False))
+
+# Extrai os resultados dos modelos Ridge e Lasso do GridSearch
+resultados_ridge = modelos["Ridge"].cv_results_
+resultados_lasso = modelos["Lasso"].cv_results_
+
+# Pega os valores de alpha testados (convertidos para string ou float para o eixo X)
+alphas_testados = modelos["Ridge"].param_grid["reg__alpha"]
+
+# Pega a pontuação média (mean_test_score) de cada alpha na validação cruzada
+scores_ridge = resultados_ridge["mean_test_score"]
+scores_lasso = resultados_lasso["mean_test_score"]
+
+# Configuração do Gráfico
+plt.figure(figsize=(9, 5))
+
+# Plotando as curvas (usamos escala logarítmica no eixo X porque os alphas variam muito de magnitude, ex: 0.001 a 100)
+plt.plot(alphas_testados, scores_ridge, marker='o', linestyle='-', label='Ridge (L2)', color='#DD8452', linewidth=2)
+plt.plot(alphas_testados, scores_lasso, marker='s', linestyle='--', label='Lasso (L1)', color='#55A868', linewidth=2)
+
+# Personalização
+plt.xscale('log') # Essencial para alphas em ordens de grandeza diferentes
+plt.xlabel('Valor de Alpha ($alpha$) [Escala Log]', fontsize=11)
+plt.ylabel('Score Médio ($R^2$ na Validação Cruzada)', fontsize=11)
+plt.title('Performance dos Modelos por Valor de Alpha (Grid Search K-Fold)', fontsize=13, fontweight='bold', pad=15)
+plt.grid(True, which="both", ls="--", alpha=0.5)
+plt.legend(fontsize=11)
+
+plt.tight_layout()
+plt.show()
+
+# 1. Copia a tabela e limpa os nomes técnicos (tira 'num__' e 'cat__')
+df_slide = df_coefs.copy()
+df_slide["Característica"] = df_slide["Característica"].str.replace("num__|cat__", "", regex=True)
+
+# 2. Pega apenas as 10 variáveis de maior impacto (pelo peso absoluto na Linear)
+top_10 = df_slide.reindex(df_slide["Linear"].abs().sort_values(ascending=True).index).tail(10)
+
+# 3. Plota o gráfico limpo para o slide
+ax = top_10.plot(
+    x="Característica",
+    y=["Linear", "Ridge", "Lasso"],
+    kind="barh",
+    figsize=(10, 6),
+    color=["#4C72B0", "#DD8452", "#55A868"], # Cores suaves e profissionais
+    width=0.75
+)
+
+# 4. Deixa o visual minimalista (sem bordas desnecessárias)
+plt.title("Top 10 Variáveis: Impacto da Regularização nos Coeficientes", fontsize=14, fontweight="bold", pad=15)
+plt.xlabel("Peso (Coeficiente)", fontsize=11)
+plt.ylabel("") # Remove o título "Característica" pois já é óbvio
+plt.axvline(0, color="black", linewidth=0.8) # Linha central no zero para destacar positivos/negativos
+plt.grid(axis="x", linestyle="--", alpha=0.4)
+
+# Remove as bordas de cima e da direita
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
+
+plt.tight_layout()
+plt.show()
+
+# ------------------------------------------------------------------------------
+# 10. Avaliação e comparação dos modelos
+# ------------------------------------------------------------------------------
+print("\n--- 10. Avaliação e comparação dos modelos ---")
+
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
+# 1. Calcula as métricas para cada modelo e guarda na lista
+resultados_metricas = []
+
+for nome, modelo in modelos.items():
+    y_pred = modelo.predict(X_test)
+
+    mae = mean_absolute_error(y_test, y_pred)
+    mse = mean_squared_error(y_test, y_pred)
+    rmse = np.sqrt(mse)
+    r2 = r2_score(y_test, y_pred)
+
+    resultados_metricas.append({
+        "Modelo": nome,
+        "MAE": mae,
+        "MSE": mse,
+        "RMSE": rmse,
+        "R²": r2
+    })
+
+# 2. Cria o DataFrame com as métricas (agora a variável 'df_metricas' existe!)
+df_metricas = pd.DataFrame(resultados_metricas)
+
+# Exibe também no console por segurança
+print("\n--- TABELA COMPARATIVA DE MÉTRICAS ---")
+print(df_metricas.round(4).to_string(index=False))
+
+# 3. Plota a tabela usando o matplotlib (plt)
+fig, ax = plt.subplots(figsize=(8, 2.5))
+ax.axis('tight')
+ax.axis('off')
+
+dados_tabela = df_metricas.round(4).values
+colunas = df_metricas.columns
+
+tabela = ax.table(
+    cellText=dados_tabela,
+    colLabels=colunas,
+    cellLoc='center',
+    loc='center'
+)
+
+tabela.auto_set_font_size(False)
+tabela.set_fontsize(11)
+tabela.scale(1.2, 1.5)
+
+plt.title('Tabela Comparativa de Métricas (Linear, Ridge e Lasso)', fontsize=13, fontweight='bold', pad=15)
+plt.tight_layout()
+plt.show()
+
+fig, axes = plt.subplots(1, 3, figsize=(15, 5), sharey=True)
+cores = ['#4C72B0', '#DD8452', '#55A868']
+
+for i, (nome, modelo) in enumerate(modelos.items()):
+    y_pred = modelo.predict(X_test)
+
+    # Scatter plot
+    axes[i].scatter(y_test, y_pred, alpha=0.6, color=cores[i], edgecolor='k', s=40)
+
+    # Linha ideal de 45 graus (y = x)
+    min_val = min(y_test.min(), y_pred.min())
+    max_val = max(y_test.max(), y_pred.max())
+    axes[i].plot([min_val, max_val], [min_val, max_val], 'r--', lw=2, label='Previsão Perfeita')
+
+    axes[i].set_title(f"{nome}", fontsize=12, fontweight='bold')
+    axes[i].set_xlabel("Valores Reais", fontsize=10)
+    if i == 0:
+        axes[i].set_ylabel("Valores Previstos", fontsize=10)
+    axes[i].grid(True, linestyle='--', alpha=0.5)
+    axes[i].legend(loc='upper left', fontsize=8)
+
+plt.suptitle("Comparação: Valores Reais vs. Previstos", fontsize=14, fontweight='bold', y=1.03)
+plt.tight_layout()
+plt.show()
+
+fig, axes = plt.subplots(1, 3, figsize=(15, 5), sharey=True)
+
+for i, (nome, modelo) in enumerate(modelos.items()):
+    y_pred = modelo.predict(X_test)
+    residuos = y_test - y_pred
+
+    # Histograma dos resíduos
+    axes[i].hist(residuos, bins=20, color=cores[i], edgecolor='black', alpha=0.7)
+    axes[i].axvline(0, color='red', linestyle='--', linewidth=2, label='Erro Zero')
+
+    axes[i].set_title(f"Resíduos - {nome}", fontsize=12, fontweight='bold')
+    axes[i].set_xlabel("Erro (Real - Previsto)", fontsize=10)
+    if i == 0:
+        axes[i].set_ylabel("Frequência", fontsize=10)
+    axes[i].grid(True, linestyle='--', alpha=0.5)
+    axes[i].legend(fontsize=8)
+
+plt.suptitle("Análise da Distribuição dos Resíduos", fontsize=14, fontweight='bold', y=1.03)
 plt.tight_layout()
 plt.show()
