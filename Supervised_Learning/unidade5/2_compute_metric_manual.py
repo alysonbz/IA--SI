@@ -73,4 +73,4 @@ print("F1-score classe 0:")
 print("F1-score classe 1:")
 #
 print("Matriz de confusão")
-#
+##
